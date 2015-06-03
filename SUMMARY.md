@@ -1,7 +1,7 @@
 # Summary
 
+* [Cover](Cover.md)
 * はじめに
-   * [Cover](Cover.md)
    * [はじめに](intro/Introduction.md)
    * [Torrentとは](intro/About.md)
    * [ゴール](intro/Goal.md)
