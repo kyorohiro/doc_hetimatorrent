@@ -1,2 +1,2 @@
 # doc_hetimatorrent
-[Jump Introduction](Introduction.md)
+[Jump Introduction](intro/Introduction.md)
