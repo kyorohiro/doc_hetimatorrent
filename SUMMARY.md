@@ -1,5 +1,6 @@
 # Summary
 
+* [introduction](README.md)
 * はじめに
    * [Cover](Cover.md)
    * [はじめに](intro/Introduction.md)
@@ -8,5 +9,5 @@
 * おまかな仕組み
    * xxx
 * Torrentファイルを読み込む
-   * yyy
+   * TorrentFile
 
