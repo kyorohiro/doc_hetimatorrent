@@ -35,6 +35,8 @@ dictelements : benstring benobject (benstring benobject)*
 ```
 そして、上記のようなフォーマットで書かれています。
 
+
+
 #### 文字列を扱える
 
 Bencode で文字列は、「<文字の長さ> “:” <文字>」という形式
