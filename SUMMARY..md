@@ -2,5 +2,5 @@
 
 * [Cover ](Cover.md)
 * [はじめに](Introduction.md)
-* Torrentって何
+* [Torrentって何](About.md)
 
