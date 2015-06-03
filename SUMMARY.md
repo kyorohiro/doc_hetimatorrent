@@ -11,5 +11,5 @@
 * Torrentファイルを読み込む
    * [TorrentFile](torrentfile/About.md)
    * [Bencode](torrentfile/Bencode.md)
-   * Bencodeの実装
+   * [Bencodeの実装](torrentfile/Implementation.md)
 
