@@ -10,5 +10,5 @@
    * xxx
 * Torrentファイルを読み込む
    * [TorrentFile](torrentfile/About.md)
-   * Bencode
+   * [Bencode](torrentfile/Bencode.md)
 
