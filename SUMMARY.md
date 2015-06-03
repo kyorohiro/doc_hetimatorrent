@@ -7,7 +7,6 @@
    * [Torrentとは](intro/About.md)
    * [ゴール](intro/Goal.md)
 * おまかな仕組み
-   * xxx
 * Torrentファイルを読み込む
    * [TorrentFile](torrentfile/About.md)
    * [Bencode](torrentfile/Bencode.md)
