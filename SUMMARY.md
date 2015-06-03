@@ -12,4 +12,5 @@
    * [TorrentFile](torrentfile/About.md)
    * [Bencode](torrentfile/Bencode.md)
    * [Bencodeの実装](torrentfile/Implementation.md)
+   * TorrentFileの中身
 
