@@ -1,10 +1,10 @@
 # Summary
 
 * はじめに
- * [Cover ](Cover.md)
- * [はじめに](Introduction.md)
- * [Torrentとは](About.md)
- * [ゴール](Goal.md)
+ * [Cover ](intro/Cover.md)
+ * [はじめに](intro/Introduction.md)
+ * [Torrentとは](intro/About.md)
+ * [ゴール](intro/Goal.md)
 
 * おまかな仕組み
  * xxx
