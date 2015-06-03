@@ -9,5 +9,5 @@
 * おまかな仕組み
    * xxx
 * Torrentファイルを読み込む
-   * TorrentFile
+   * [TorrentFile](torrentfile/About.md)
 
