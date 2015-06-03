@@ -1,6 +1,5 @@
 # Summary
 
-* [Readme](README.md)
 * はじめに
    * [Cover](Cover.md)
    * [はじめに](intro/Introduction.md)
