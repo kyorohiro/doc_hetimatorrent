@@ -54,3 +54,30 @@ dart_hetimalib_test/tree/master/hetimalib_sample/TorrentFileParser」を利用�
 }
 ```
 
+###  announce
+Tracker サーバーのアドレスが記載されています。本アドレス
+のサーバー
+にからデータを配信してくれる端末を紹介してもらえます。
+
+### created by
+本ファイル生成したツールを示す名前のようです。
+
+### creation date
+本ファイルが生成された日にちを表しているようです。
+
+### info.length
+配信されているデータのサイズです。1024byte のデータである
+事がわかります。
+
+### info.name
+配信されているデータのファイル名です。xxx という名前であ
+る事が解ります。
+
+### piece length
+データを配信する際に、分割するサイズです。16kb単位で分割
+する事がわかります。
+
+### pieces
+分割されたデータごとのHash値です。データーの正当性を判定
+するのに使用します。
+
