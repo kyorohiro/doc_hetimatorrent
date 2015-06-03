@@ -1,6 +1,4 @@
 # Summary
 
-* Cover
-* [はじめに](Introduction.md)
-
+* Cover 
 
