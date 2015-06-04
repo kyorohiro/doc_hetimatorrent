@@ -95,6 +95,7 @@ ST: urn:schemas-upnp-org:service:WANIPConnection:1
 難しい事はないですね。これで、UPnPに対応したルーターが存在していれば、前の章で説明した。<controlURL>タグを含むxmlファイルを取得できます。
 
 
+* ** AA **
 
 
 
