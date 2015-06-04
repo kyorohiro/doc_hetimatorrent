@@ -30,10 +30,10 @@
 
 なので、本章では実際に実装しながら、処理の流れを解説していきます
 
-```
-Dart を利用するのてすが、Socket API は、hetimanetを使用します。2015/6/1において、Dart用に提供されている socketは、"chrome api"、"dart:io", sky
-また、"私がマッピングしたものを利用します。
-```
+##### 注意
+Dart を利用するのてすが、Socket API は、hetimanetを使用します。2015/6/1において、Dart用に提供されている socketは、"chrome api ver1 " "chrome api ver2"、"dart:io"等いくつかあります。
+
+利用するAPIに依存しないように、hetimanetでsocketを再定義して対応することにしました。
 
 
 ### UDPサーバーを立ち上げる。
