@@ -1,5 +1,12 @@
-# doc_hetimatorrent
+# なぜなにTorrent
 
-torrent client 作成時のメモ等
+<hr>
+
+###  author kyorohiro
+
+##### Torrentクライアント開発時のメモとか
+
 
 [Jump Table Contents](SUMMARY.md)
+
+<hr>
