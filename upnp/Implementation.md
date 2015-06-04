@@ -17,10 +17,15 @@
 
 ## UPnPを実装しよう
 
+概要は説明した通りです。実際に実装してみましょう。サンプル実装を以下におきました。
 
-次のサンプル実装を以下におきました。
-* https://github.com/kyorohiro/dart_hetimanet/tree/master/lib/src/upnp
-* https://github.com/kyorohiro/HetimaPortMap
+* ライブラリ
+  https://github.com/kyorohiro/dart_hetimanet/tree/master/lib/src/upnp
+
+* サンプルアプリ
+  https://github.com/kyorohiro/HetimaPortMap
+
+
 
 
 * プライベートネットワークを調べる
