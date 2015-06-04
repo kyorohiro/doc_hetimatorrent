@@ -37,7 +37,7 @@ P2P通信するするためには、相手に自分の「IPアドレス」と「
 ```
 とコマンドを入力してみましょう。「192.168.100.1」といったアドレスが端末に割り振られている事が確認できます。このアドレスを相手に伝えても、通信ができません。
 
-## ルータから教えてもらおう
+### ルータから教えてもらおう
 
 しかし、ルーターからインターネットに接続できているという事は、「Global IP」をルーターは持っているから通信できるのです。つまり、ルーターは「Global IP」をルーターは知っている。しかし、ルーターを利用している端末は「Global IP」をしらないという問題があります。
 
@@ -52,16 +52,59 @@ UPNPを実現するには、UDPとTCPを用いて通信できる必要があり�
 といった事をします。実際にTryしてみましょう。
 
 
-### 
+### 依頼先を調べる
+
+UDPで以下のメッセージを通知する
+```
+M-SEARCH * HTTP/1.1
+MX: 3
+HOST: 239.255.255.250:1900
+MAN: "ssdp:discover"
+ST: urn:schemas-upnp-org:service:WANIPConnection:1
+```
+
+もしもルーターが存在していれば、以下のような返答があります。
+```
+HTTP/1.1 200 OK
+CACHE-CONTROL: max-age=1800
+ST: urn:schemas-upnp-org:service:WANIPConnection:1
+USN: uuid:E8088BD3-E808-8BD3-A042-E8088BD3A042::urn:schemas-upnp-org:service:WANIPConnection:1
+EXT:
+SERVER: E588 UPnP/1.0 MiniUPnPd/1.6
+LOCATION: http://192.168.100.1:54616/rootDesc.xml
+OPT: "http://schemas.upnp.org/upnp/1/0/"; ns=01
+01-NLS: 1
+BOOTID.UPNP.ORG: 1
+CONFIGID.UPNP.ORG: 1337
+DATE: Sun, 14 Sep 2014 00:42:14 GMT
+```
+
+LOCATIONで指定されたアドレスのXMLファイルの<controlURL>タグの中に依頼先のアドレスが記載されています。このアドレスへ依頼をだせば、インターネットから、あなたの端末へアクセスできるようになります。
+
+### 外部の端末から見えているアドレスを聞く
+
+```
+POST 192.168.100.1 HTTP/1.1
+Host: 192.168.100.1
+Connection: close
+SOAPACTION: "urn:schemas-upnp-org:service:WANIPConnection:1#GetExternalIPAddress"
+Content-Length: 324
+```
+
+成功すると、以下のような返信を受け取ります。
+```
+HTTP/1.1 200 OK
+Content-Type: text/xml; charset="utf-8"
+Connection: close
+Content-Length: 360
+Server: E588 UPnP/1.0 MiniUPnPd/1.6
+EXT:
+DATE: Sun, 14 Sep 2014 01:46:07 GMT
+```
 
 
+## UPnPを実装しよう
 
+* https://github.com/kyorohiro/dart_hetimanet/tree/master/lib/src/upnp
+* https://github.com/kyorohiro/HetimaPortMap
 
-ルーターに聞くのが良いでしょう。ルーターと会話する方法として、UPnPというプロトコルがあります。本方法を通じて、
-
-
-用のアドレスですね。このアドレスを相手に教えてもアクセスしてもらう事はできません。
-
-
-
-「Nat越え」ができなければ、サーバー
