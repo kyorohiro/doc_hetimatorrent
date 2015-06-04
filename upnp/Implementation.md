@@ -123,11 +123,6 @@ client.connect(host, port).then((int v) {
 
 
 ## 作成したライブラリは以下の通り
-* プライベートネットワークを調べる
-```
-HetiSocketBuilderChrome#getNetworkInterfaces().then((List<HetiNetworkInterface> il) {
-  });
-```
 
 * ルータを発見する
 ```
