@@ -104,7 +104,8 @@ UPnPに対応しているルーターは、TCPサーバーが立ち上がって�
 ```
 HetiHttpClient client = new HetiHttpClient(new HetiSocketBuilderChrome()));
 client.connect(host, port).then((int v) {
-
+  return client.post(path, convert.UTF8.encode(body), {
+  });
 });
 ```
 
