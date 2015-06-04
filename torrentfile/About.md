@@ -11,3 +11,5 @@ Torrentでのデータのダウンロード処理は、Torrentファイルを読
 み込む所からはじまります。
 それにならい、実際に Torrent ファイルを読み込み、必要な必
 要な情報を取得するところからはじめて見ましょう。
+
+<hr style="page-break-before: always;">
