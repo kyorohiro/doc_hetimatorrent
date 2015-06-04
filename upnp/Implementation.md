@@ -76,9 +76,7 @@ _socket.bind("0.0.0.0", 0).then((int v){
     async.Completer completer = new async.Completer();
 
     _socket.send(convert.UTF8.encode(SSDP_M_SEARCH_WANPPPConnectionV1), SSDP_ADDRESS, SSDP_PORT).then((HetiUdpSendInfo iii) {
-      return _socket.send(convert.UTF8.encode(SSDP_M_SEARCH_WANIPConnectionV1), SSDP_ADDRESS, SSDP_PORT);
-    }).then((HetiUdpSendInfo iii) {
-      return _socket.send(convert.UTF8.encode(SSDP_M_SEARCH_WANIPConnectionV2), SSDP_ADDRESS, SSDP_PORT);
+      print("send ok");
     }).catchError((e) {
       completer.completeError(e);
     });
@@ -91,6 +89,14 @@ _socket.bind("0.0.0.0", 0).then((int v){
 ```
 
 先ほど生成したUDPSocketを利用して、"239.255.255.250"、Portが"1900"に
+以下のメッセージを送っているだけです。
+```
+M-SEARCH * HTTP/1.1
+MX: 3
+HOST: 239.255.255.250:1900
+MAN: "ssdp:discover"
+ST: urn:schemas-upnp-org:service:WANIPConnection:1
+```
 
 
 ## 作成したライブラリは以下の通り
