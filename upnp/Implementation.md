@@ -72,23 +72,14 @@ _socket.bind("0.0.0.0", 0).then((int v){
 無事にUDPソケットを生成できる事を確認できたら、次はSSDPグループに、ポートマップに対応できるデバイスがないか依頼を出します。
 
 ```
-  async.Future<int> searchWanPPPDevice([int timeoutSec=4]) {
-    async.Completer completer = new async.Completer();
-
-    _socket.send(
-        convert.UTF8.encode(SSDP_M_SEARCH_WANPPPConnectionV1), 
-        SSDP_ADDRESS,
-        SSDP_PORT).then((HetiUdpSendInfo iii) {
-      print("send ok");
-    }).catchError((e) {
-      completer.completeError(e);
-    });
-
-    new async.Future.delayed(new Duration(seconds: timeoutSec), () {
-      completer.complete(0);
-    });
-    return completer.future;
-  }
+_socket.send(
+   convert.UTF8.encode(SSDP_M_SEARCH_WANPPPConnectionV1), 
+   SSDP_ADDRESS,
+   SSDP_PORT).then((HetiUdpSendInfo iii) {
+  print("send ok");
+}).catchError((e) {
+  completer.completeError(e);
+});
 ```
 
 先ほど生成したUDPSocketを利用して、"239.255.255.250"、Portが"1900"に
