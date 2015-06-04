@@ -6,7 +6,7 @@
     "pluginsConfig": {
         "fontSettings": {
             // ...
-            "size": 4
+            "size":1 to 4
         }
     },
     "pdf": {
