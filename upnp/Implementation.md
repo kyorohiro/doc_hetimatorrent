@@ -102,7 +102,7 @@ ST: urn:schemas-upnp-org:service:WANIPConnection:1
 UPnPに対応しているルーターは、TCPサーバーが立ち上がっています。TCPサーバーへリクエストを送ります。
 
 ```
-HetiHttpClient client = new HetiHttpClient(_base.getSocketBuilder());
+HetiHttpClient client = new HetiHttpClient(new HetiSocketBuilderChrome()));
 
 ```
 
