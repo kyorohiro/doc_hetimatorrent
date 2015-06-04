@@ -11,8 +11,8 @@
    * [Bencode](torrentfile/Bencode.md)
    * [Bencodeの実装](torrentfile/Implementation.md)
    * [TorrentFileの中身](torrentfile/Content.md)
-*  UPnpによるポートマップ
+* UPnpによるポートマップ
    * [UPnPによるポートマップ](upnp/About.md)
-   * [UPnpの実装](upnp/Implementation.md)
+   * [UPnPの実装](upnp/Implementation.md)
 * Trackerへアクセス してみる
 
