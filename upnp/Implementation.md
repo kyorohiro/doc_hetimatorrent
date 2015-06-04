@@ -44,7 +44,7 @@ Dart を利用するのてすが、Socket API は、hetimanetを使用します�
 しかし、Chrome Socketから、上手く動作できなかったので、今回は、グループに参加していません。
 
 
-* 1. UDPソケットを生成します。
+* **UDPソケットを生成します。**
 
 ```
 src/upnp/upnpdevicesearcher.dart
@@ -52,6 +52,9 @@ src/upnp/upnpdevicesearcher.dart
 HetiSocketBuilder _socketBuilder = new hetima.HetiSocketBuilderChrome();
 
 HetiUdpSocket _socket = _socketBuilder.createUdpClient();
+_socket.onReceive().listen((HetiReceiveUdpInfo info) {
+    print("udp info");
+});
 
 _socket.bind("0.0.0.0", 0).then((int v){
     print("bind ok");
@@ -60,7 +63,7 @@ _socket.bind("0.0.0.0", 0).then((int v){
 
 ```
 
-2. 
+* ** ** 
 
 
 
