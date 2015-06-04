@@ -111,7 +111,7 @@ client.connect(host, port).then((int v) {
 }).then((HetiHttpClientResponse response) {
   print("receive response");
 }).catchError((e){
-  print("failed post");
+  print("failed request");
 });
 ```
 
