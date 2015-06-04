@@ -109,7 +109,9 @@ client.connect(host, port).then((int v) {
     "Content-Type": "text/xml"
   });
 }).then((HetiHttpClientResponse response) {
-  print();
+  print("receive response");
+}).catchError((e){
+  print("failed post");
 });
 ```
 
