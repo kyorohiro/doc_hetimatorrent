@@ -52,13 +52,16 @@ HetiSocketBuilder _socketBuilder = new hetima.HetiSocketBuilderChrome();
 
 HetiUdpSocket _socket = _socketBuilder.createUdpClient();
 _socket.onReceive().listen((HetiReceiveUdpInfo info) {
-    print("udp info");
+    print("receive udp info");
 });
 
 _socket.bind("0.0.0.0", 0).then((int v){
-    print("bind ok");
+    if (v >=0) {
+      print("bind ok");
+    } else {
+      print("bind errir");
+    }
 }
-
 
 ```
 
