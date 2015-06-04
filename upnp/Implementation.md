@@ -71,7 +71,28 @@ _socket.bind("0.0.0.0", 0).then((int v){
 *　** SSDPグループからデバイスを検索する**
 無事にUDPソケットを生成できる事を確認できたら、次はSSDPグループに、ポートマップに対応できるデバイスがないか依頼を出します。
 
+```
+  async.Future<int> searchWanPPPDevice([int timeoutSec=4]) {
+    async.Completer completer = new async.Completer();
 
+    _socket.send(convert.UTF8.encode(SSDP_M_SEARCH_WANPPPConnectionV1), SSDP_ADDRESS, SSDP_PORT).then((HetiUdpSendInfo iii) {
+      print("### result SSDP_M_SEARCH_WANPPPConnectionV1=" + iii.resultCode.toString());
+      return _socket.send(convert.UTF8.encode(SSDP_M_SEARCH_WANIPConnectionV1), SSDP_ADDRESS, SSDP_PORT);
+    }).then((HetiUdpSendInfo iii) {
+      print("### result SSDP_M_SEARCH_WANIPConnectionV1=" + iii.resultCode.toString());
+      return _socket.send(convert.UTF8.encode(SSDP_M_SEARCH_WANIPConnectionV2), SSDP_ADDRESS, SSDP_PORT);
+    }).then((HetiUdpSendInfo iii) {
+      print("### result SSDP_M_SEARCH_WANIPConnectionV2=" + iii.resultCode.toString());
+    }).catchError((e) {
+      completer.completeError(e);
+    });
+
+    new async.Future.delayed(new Duration(seconds: timeoutSec), () {
+      completer.complete(0);
+    });
+    return completer.future;
+  }
+```
 
 
 
