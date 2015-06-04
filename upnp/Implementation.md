@@ -76,13 +76,9 @@ _socket.bind("0.0.0.0", 0).then((int v){
     async.Completer completer = new async.Completer();
 
     _socket.send(convert.UTF8.encode(SSDP_M_SEARCH_WANPPPConnectionV1), SSDP_ADDRESS, SSDP_PORT).then((HetiUdpSendInfo iii) {
-      print("### result SSDP_M_SEARCH_WANPPPConnectionV1=" + iii.resultCode.toString());
       return _socket.send(convert.UTF8.encode(SSDP_M_SEARCH_WANIPConnectionV1), SSDP_ADDRESS, SSDP_PORT);
     }).then((HetiUdpSendInfo iii) {
-      print("### result SSDP_M_SEARCH_WANIPConnectionV1=" + iii.resultCode.toString());
       return _socket.send(convert.UTF8.encode(SSDP_M_SEARCH_WANIPConnectionV2), SSDP_ADDRESS, SSDP_PORT);
-    }).then((HetiUdpSendInfo iii) {
-      print("### result SSDP_M_SEARCH_WANIPConnectionV2=" + iii.resultCode.toString());
     }).catchError((e) {
       completer.completeError(e);
     });
