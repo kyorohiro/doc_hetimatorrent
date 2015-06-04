@@ -36,6 +36,7 @@ dictelements : benstring benobject (benstring benobject)*
 そして、上記のようなフォーマットで書かれています。
 
 
+<hr style="page-break-before: always;">
 
 #### 文字列を扱える
 
