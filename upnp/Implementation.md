@@ -36,9 +36,33 @@ Dart を利用するのてすが、Socket API は、hetimanetを使用します�
 利用するAPIに依存しないように、hetimanetでsocketを再定義して対応することにしました。
 
 
-### UDPサーバーを立ち上げる。
+### SSDPグループに参加する
 
-まずは、UDP
+通常、UDP Socketを生成して、IPが"239.255.255.250"、Portが"1900"のグループに参加します。
+参加することで、SSDPグループに追加されたデバイス等が把握できるようになったり、グループに参加していないデバイスを無視したりできるようになります。
+
+しかし、Chrome Socketから、上手く動作できなかったので、今回は、グループに参加していません。
+
+
+* 1. UDPソケットを生成します。
+
+```
+src/upnp/upnpdevicesearcher.dart
+
+HetiSocketBuilder _socketBuilder = new hetima.HetiSocketBuilderChrome();
+
+HetiUdpSocket _socket = _socketBuilder.createUdpClient();
+
+_socket.bind("0.0.0.0", 0).then((int v){
+    print("bind ok");
+}
+
+
+```
+
+2. 
+
+
 
 
 
