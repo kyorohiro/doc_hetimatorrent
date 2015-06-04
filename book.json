@@ -10,7 +10,7 @@
         }
     },
     "pdf": {
-        "fontSize": 12,
+        "fontSize": 16,
         "paperSize": "a4",
     }
 }
