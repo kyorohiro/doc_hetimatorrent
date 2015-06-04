@@ -59,7 +59,7 @@ _socket.bind("0.0.0.0", 0).then((int v){
     if (v >=0) {
       print("bind ok");
     } else {
-      print("bind errir");
+      print("bind error");
     }
 }
 
