@@ -126,7 +126,9 @@ client.connect(host, port).then((int v) {
 
 * ルータを発見する
 ```
-UpnpDeviceSearcher.createInstance(new hetimacl.HetiSocketBuilderChrome()).then((hetima.UpnpDeviceSearcher searcher) {
+UpnpDeviceSearcher
+  .createInstance(new hetimacl.HetiSocketBuilderChrome())
+  .then((hetima.UpnpDeviceSearcher searcher) {
     searcher.onReceive().listen((hetima.UPnpDeviceInfo info) {
     });
     searcher.searchWanPPPDevice();
@@ -135,32 +137,37 @@ UpnpDeviceSearcher.createInstance(new hetimacl.HetiSocketBuilderChrome()).then((
 
 * ポートマッピングする
 ```
-UpnpPPPDevice#addPortMapping(localIP, localPort, remotePort, UPnpPPPDevice.VALUE_PORT_MAPPING_PROTOCOL_TCP)
-           .then((UpnpPortMappingResult r) {
-});
+UpnpPPPDevice#addPortMapping(
+  localIP, 
+  localPort, 
+  remotePort,
+  UPnpPPPDevice.VALUE_PORT_MAPPING_PROTOCOL_TCP)
+    .then((UpnpPortMappingResult r) {
+    });
 ```
 
 * グローバルアドレスを調べる
 ```
-UpnpPPPDevice#requestGetExternalIPAddress().then((String address){
-});
+UpnpPPPDevice#requestGetExternalIPAddress()
+  .then((String address){
+  });
 ```
-
-
 
 
 * ポートマッピングする
 ```
-UpnpPPPDevice#addPortMapping(localIP, localPort, remotePort, UPnpPPPDevice.VALUE_PORT_MAPPING_PROTOCOL_TCP)
-           .then((UpnpPortMappingResult r) {
+UpnpPPPDevice#addPortMapping(
+  localIP, 
+  localPort, 
+  remotePort,
+  UPnpPPPDevice.VALUE_PORT_MAPPING_PROTOCOL_TCP)
+    .then((UpnpPortMappingResult r) {
 });
 ```
 
 * グローバルアドレスを調べる
 ```
-UpnpPPPDevice#requestGetExternalIPAddress().then((String address){
+UpnpPPPDevice#requestGetExternalIPAddress()
+  .then((String address){
 });
 ```
-
-
-
