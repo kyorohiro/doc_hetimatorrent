@@ -3,17 +3,20 @@
 <br>
 
 
-* **Bencodingはパースしやすい構造**
+* ** xxx **
 
 <br>
 
-* **BNFから機械的にコードを抽出**
+* ** yyy **
 
 
 <br>
 <hr>
 
+
+
 ## UPnPを実装しよう
+
 
 次のサンプル実装を以下におきました。
 * https://github.com/kyorohiro/dart_hetimanet/tree/master/lib/src/upnp
