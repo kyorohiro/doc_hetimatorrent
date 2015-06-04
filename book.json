@@ -4,6 +4,9 @@
         "mermaid"
     ],
     "pluginsConfig": {
-        "size": 4
+        "fontSettings": {
+            // ...
+            "size": 1 to 4
+        }
     }
 }
