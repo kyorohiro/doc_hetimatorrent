@@ -102,6 +102,46 @@ EXT:
 DATE: Sun, 14 Sep 2014 01:46:07 GMT
 ```
 
+### ポートマッピングの依頼をだす
+```
+POST 192.168.100.1 HTTP/1.1
+Host: 192.168.100.1
+Connection: close
+SOAPACTION: "urn:schemas-upnp-org:service:WANIPConnection:1#AddPortMapping"
+Content-Length: 629
+
+<?xml version="1.0"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV:="http://schemas.xmlsoap.org/soap/envelope/" SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+<SOAP-ENV:Body><m:AddPortMapping xmlns:m="urn:schemas-upnp-org:service:WANIPConnection:1">
+<NewRemoteHost></NewRemoteHost>
+<NewExternalPort>48083</NewExternalPort>
+<NewProtocol>TCP</NewProtocol>
+<NewInternalPort>8083</NewInternalPort>
+<NewInternalClient>192.168.100.100</NewInternalClient>
+<NewEnabled>1</NewEnabled>
+<NewPortMappingDescription>test</NewPortMappingDescription>
+<NewLeaseDuration>0</NewLeaseDuration>
+</m:AddPortMapping></SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+```
+
+```
+HTTP/1.1 200 OK
+Content-Type: text/xml; charset="utf-8"
+Connection: close
+Content-Length: 263
+Server: E588 UPnP/1.0 MiniUPnPd/1.6
+EXT:
+DATE: Sun, 14 Sep 2014 01:39:27 GMT
+
+<?xml version="1.0"?>
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" s:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+<s:Body>
+<u:AddPortMappingResponse xmlns:u="urn:schemas-upnp-org:service:WANIPConnection:1"/>
+</s:Body>
+</s:Envelope>
+```
+
 
 ## UPnPを実装しよう
 
