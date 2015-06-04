@@ -46,7 +46,7 @@ Dart を利用するのてすが、Socket API は、hetimanetを使用します�
 
 * **UDPソケットを生成します。**
 
-まずは、UDPソケットを生成しましょう。
+まずは、UDPソケットを生成しましょう。こんな感じです。
 ```
 HetiSocketBuilder _socketBuilder = new hetima.HetiSocketBuilderChrome();
 
@@ -65,7 +65,7 @@ _socket.bind("0.0.0.0", 0).then((int v){
 
 ```
 
-* ** ** 
+*　
 
 
 
