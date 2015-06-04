@@ -69,7 +69,7 @@ _socket.bind("0.0.0.0", 0).then((int v){
 
 
 
-
+## 作成したライブラリは以下の通り
 * プライベートネットワークを調べる
 ```
 HetiSocketBuilderChrome#getNetworkInterfaces().then((List<HetiNetworkInterface> il) {
