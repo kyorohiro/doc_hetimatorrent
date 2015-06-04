@@ -75,7 +75,10 @@ _socket.bind("0.0.0.0", 0).then((int v){
   async.Future<int> searchWanPPPDevice([int timeoutSec=4]) {
     async.Completer completer = new async.Completer();
 
-    _socket.send(convert.UTF8.encode(SSDP_M_SEARCH_WANPPPConnectionV1), SSDP_ADDRESS, SSDP_PORT).then((HetiUdpSendInfo iii) {
+    _socket.send(
+        convert.UTF8.encode(SSDP_M_SEARCH_WANPPPConnectionV1), 
+        SSDP_ADDRESS,
+        SSDP_PORT).then((HetiUdpSendInfo iii) {
       print("send ok");
     }).catchError((e) {
       completer.completeError(e);
@@ -97,6 +100,9 @@ HOST: 239.255.255.250:1900
 MAN: "ssdp:discover"
 ST: urn:schemas-upnp-org:service:WANIPConnection:1
 ```
+難しい事はないですね。
+
+
 
 
 ## 作成したライブラリは以下の通り
