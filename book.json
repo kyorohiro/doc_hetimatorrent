@@ -3,5 +3,7 @@
         "mathjax",
         "mermaid"
     ],
-    "pluginsConfig": {}
+    "pluginsConfig": {
+            "size": 1 to 4
+    }
 }
