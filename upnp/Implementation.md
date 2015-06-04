@@ -115,6 +115,8 @@ client.connect(host, port).then((int v) {
 });
 ```
 
+前章で説明した値を、pathとbodyに設定すれば無事リクエストを送信できます。
+
 
 
 ## 作成したライブラリは以下の通り
