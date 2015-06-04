@@ -91,7 +91,8 @@ HOST: 239.255.255.250:1900
 MAN: "ssdp:discover"
 ST: urn:schemas-upnp-org:service:WANIPConnection:1
 ```
-難しい事はないですね。
+
+難しい事はないですね。これで、前の章で説明した。デバイス
 
 
 
