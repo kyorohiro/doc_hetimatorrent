@@ -26,27 +26,10 @@
   https://github.com/kyorohiro/HetimaPortMap
 
 
+## UDPサーバーを立ち上げる。
 
 
-* プライベートネットワークを調べる
-```
-HetiSocketBuilderChrome#getNetworkInterfaces().then((List<HetiNetworkInterface> il) {
-  });
-```
 
-* ルータを発見する
-```
-UpnpDeviceSearcher.createInstance(new hetimacl.HetiSocketBuilderChrome()).then((hetima.UpnpDeviceSearcher searcher) {
-    searcher.onReceive().listen((hetima.UPnpDeviceInfo info) {
-    });
-    searcher.searchWanPPPDevice();
-  });
-```
-## UPnPを実装しよう
-
-次のサンプル実装を以下におきました。
-* https://github.com/kyorohiro/dart_hetimanet/tree/master/lib/src/upnp
-* https://github.com/kyorohiro/HetimaPortMap
 
 
 * プライベートネットワークを調べる
