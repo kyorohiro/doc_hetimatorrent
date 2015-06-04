@@ -107,9 +107,12 @@ client.connect(host, port).then((int v) {
     return client.post(path, convert.UTF8.encode(body), {
       KEY_SOAPACTION: soapAction,
       "Content-Type": "text/xml"
+    }).then((HetiHttpClientResponse response) {
+      
     });
 });
 ```
+
 
 
 ## 作成したライブラリは以下の通り
