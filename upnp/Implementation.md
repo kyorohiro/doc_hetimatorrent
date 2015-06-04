@@ -48,7 +48,7 @@ Dart を利用するのてすが、Socket API は、hetimanetを使用します�
 
 まずは、UDPソケットを生成しましょう。こんな感じです。
 ```
-HetiSocketBuilder _socketBuilder = new hetima.HetiSocketBuilderChrome();
+HetiSocketBuilder _socketBuilder = new HetiSocketBuilderChrome();
 
 HetiUdpSocket _socket = _socketBuilder.createUdpClient();
 _socket.onReceive().listen((HetiReceiveUdpInfo info) {
@@ -99,7 +99,12 @@ ST: urn:schemas-upnp-org:service:WANIPConnection:1
 #### **(3) グローバルIPを取得する **
 ルーターへ依頼をだせるようになりました。試しに、ルーターにGlobal IPについて問い合わせて見ましょう。
 
-UPnPに対応しているルーターは、TCPサーバーが立ち上がっています。
+UPnPに対応しているルーターは、TCPサーバーが立ち上がっています。TCPサーバーへリクエストを送ります。
+
+```
+HetiHttpClient client = new HetiHttpClient(_base.getSocketBuilder());
+
+```
 
 
 ## 作成したライブラリは以下の通り
