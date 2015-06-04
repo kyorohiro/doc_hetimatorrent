@@ -46,9 +46,8 @@ Dart を利用するのてすが、Socket API は、hetimanetを使用します�
 
 * **UDPソケットを生成します。**
 
+まずは、UDPソケットを生成しましょう。
 ```
-src/upnp/upnpdevicesearcher.dart
-
 HetiSocketBuilder _socketBuilder = new hetima.HetiSocketBuilderChrome();
 
 HetiUdpSocket _socket = _socketBuilder.createUdpClient();
