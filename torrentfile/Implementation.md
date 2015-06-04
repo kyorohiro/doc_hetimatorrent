@@ -22,6 +22,7 @@ Dart言語には、Bencoding のデータ構造をもっています。今回
 Bencodeの文字列は、Dart言語ではcore.Stringで表せます。
 Bencodeの数字は、Dart言語では、core.int で表せます。 Bencodeのリストは、Dart言語のcore.List、Bencodeの辞書は、Dart言語ではMapで表現できます。
 
+<hr style="page-break-before: always;">
 
 ## Bencodeはパースしやすい構造
 
