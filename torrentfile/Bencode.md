@@ -15,11 +15,11 @@
 
 ## Torrentファイルは Bencoding 
 
-Torrentファイルは、bencoding という形式で書かれています。
+Torrentファイルは、bencode という形式で書かれています。
 Torrentファイルに記載されている事を読み解くためには、
-bencding/bencode を解釈できるようにならなくてはなりませ
-ん。
-まずは、Bencosingのパーサーを書いていきましょう。
+bencode を解釈できるようにならなくてはなりません。まずは、Bencode のパーサーを書いていきましょう。
+
+
 Bencodingは、文字列、整数、辞書、リストの4つのデータを
 扱うことができます。
 
