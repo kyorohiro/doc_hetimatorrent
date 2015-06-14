@@ -26,14 +26,8 @@ BencodeのNumberは、Dartのnumで表現できます。BencodeのStringは、UI
 
 ```
 class Bencode {
-  static Uint8List encode(Object obj) {
-    return _encoder.enode(obj);
-  }
-
-  static Object decode(List<int> buffer) {
-    return _decoder.decode(buffer);
-  }
-..
+  static Uint8List encode(Object obj);
+  static Object decode(List<int> buffer);
 }
 
 ```
