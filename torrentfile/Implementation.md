@@ -135,8 +135,8 @@ BNFと一対一の関係がある事が解ると思います。Dictionary は
 
 ```
 unit.test("bencode: number", () {
- num ret = hetima.Bencode.decode(toBuffer("i1024e"));
- unit.expect(1024, ret);
+  num ret = hetima.Bencode.decode(toBuffer("i1024e"));
+  unit.expect(1024, ret);
 });
 ```
 
