@@ -25,6 +25,7 @@ BencodeのNumberは、Dartのnumで表現できます。BencodeのStringは、UI
 具体的には、以下のようなAPIを考えます。
 
 ```
+class Bencode {
   static data.Uint8List encode(Object obj) {
     return _encoder.enode(obj);
   }
@@ -32,6 +33,9 @@ BencodeのNumberは、Dartのnumで表現できます。BencodeのStringは、UI
   static Object decode(List<int> buffer) {
     return _decoder.decode(buffer);
   }
+..
+}
+
 ```
 
 もちろん、Bencodeの実装は見慣れた形式に落とす方法だけではありません。BencodeのStringはBenString、ListはBenList、DictionaryはBenDict、といった方法で表現することも可能です。
