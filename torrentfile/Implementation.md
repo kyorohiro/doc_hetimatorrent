@@ -137,7 +137,7 @@ BNFと一対一の関係がある事が解ると思います。Dictionary は
 unit.test("bencode: number", () {
  num ret = hetima.Bencode.decode(toBuffer("i1024e"));
  unit.expect(1024, ret);
- });
+});
 ```
 
 このテストを満たすように、パーサーを書きます。bencodingで整数は、
