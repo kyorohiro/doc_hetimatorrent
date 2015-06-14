@@ -52,12 +52,19 @@ bencodeでは、「7:torrent」と書く事ができます。
 0x83, 0x43」の4バイトで表現できます。この場合、Bencode
 では、「4:アイ」と表記できます。
 
+
+###### oden を、Bencodeで表現する
 ```
-oden
-　　4:oden
-オデン SJIS
-　　6:オデン
-SHA1Hashデータ
+4:oden
+```
+
+###### おでん(SJIS)を、Bencodeで表現する
+```
+6:オデン
+```
+
+###### SHA1Hashデータを、Bencodeで表現する
+```
  20:<SHA1 Hashデータ>
 ```
 
@@ -80,8 +87,7 @@ i2e
 ```
 
 ###### 3.14を、Bencodeで表現する
-「3.14」BencodeのNumber表見をできません。
-
+「3.14」BencodeのNumber表見する事ができません。扱えるのは整数値だけです。
 
 
 
