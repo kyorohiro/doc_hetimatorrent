@@ -11,5 +11,11 @@
     "pdf": {
         "fontSize": 24,
         "paperSize": "a4",
+        "margin": {
+            "right": 72,
+            "left": 72,
+            "top": 36,
+            "bottom": 36
+        },
     }
 }
