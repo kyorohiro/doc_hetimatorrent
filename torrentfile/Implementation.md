@@ -109,16 +109,16 @@ BNFで書かれた構文は機械的にパーサーを書く事ができます�
 
 ```
 Map decodeDiction(data.Uint8List buffer) {
- Map ret = new Map();
- if(buffer[index++] != 0x64) {
- throw new ParseError("bendiction", buffer, index);
- }
- ret = decodeDictionElements(buffer);
- if(buffer[index++] != 0x65) {
- throw new ParseError("bendiction", buffer, index);
- }
- return ret;
- }
+  Map ret = new Map();
+  if(buffer[index++] != 0x64) {
+    throw new ParseError("bendiction", buffer, index);
+  }
+  ret = decodeDictionElements(buffer);
+  if(buffer[index++] != 0x65) {
+    throw new ParseError("bendiction", buffer, index);
+  }
+  return ret;
+}
 ```
 
 BNFと一対一の関係がある事が解ると思います。Dictionary は
