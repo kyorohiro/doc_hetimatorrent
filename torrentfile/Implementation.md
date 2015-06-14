@@ -145,29 +145,28 @@ unit.test("bencode: number", () {
 ールに従って以下のように書けます。
 
 ```
- num decodeNumber(data.Uint8List buffer) {
- if(buffer[index++] != 0x69) {
- throw new ParseError("bennumber", buffer, index);
- }
- int returnValue = 0;
- while(index<buffer.length && buffer[index] != 0x65) {
- if(!(0x30 <= buffer[index] && buffer[index]<=0x39)) {
- throw new ParseError("bennumber", buffer, index);
- }
- returnValue = returnValue*10+(buffer[index++]-0x30);
- }
- if(buffer[index++] != 0x65) {
- throw new ParseError("bennumber", buffer, index);
- }
- return returnValue;
- }
+num decodeNumber(data.Uint8List buffer) {
+  if(buffer[index++] != 0x69) {
+    throw new ParseError("bennumber", buffer, index);
+  }
+  int returnValue = 0;
+  while(index<buffer.length && buffer[index] != 0x65) {
+    if(!(0x30 <= buffer[index] && buffer[index]<=0x39)) {
+      throw new ParseError("bennumber", buffer, index);
+    }
+    returnValue = returnValue*10+(buffer[index++]-0x30);
+  }
+  if(buffer[index++] != 0x65) {
+    throw new ParseError("bennumber", buffer, index);
+  }
+  return returnValue;
+}
 ```
 
 数字を取り出す部分が少し複雑ですが、無事テストが通るコー
 ドがかけました。この調子で、文字列、リスト、と同じように
 テストしながら、作成すれば完成です。kyorohiroが作成した物
-は、以下にあります。「https://github.com/kyorohiro/
-dart_hetimalib」 事の顛末を知りたい方は参照してください。
+は、以下にあります。「https://github.com/kyorohiro/dart_hetimatorrent」 事の顛末を知りたい方は参照してください。
 
 
 
