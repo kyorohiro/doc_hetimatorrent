@@ -201,8 +201,8 @@ Torrentクライアントり状態を表します。“started”, “stopped”
 ##### "left"
 ダウンロードが済んでいないデータのバイト数
 これらのデータを結合して、URLを生成するば完成です。
-```
 
+```
 String toString() {
 return scheme + "://" + trackerHost + ":"
 + trackerPort.toString() + ""
