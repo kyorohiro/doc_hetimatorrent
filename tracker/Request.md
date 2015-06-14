@@ -204,12 +204,13 @@ Torrentクライアントり状態を表します。“started”, “stopped”
 
 ```
 String toString() {
-return scheme + "://" + trackerHost + ":"
+  return scheme + "://" + trackerHost + ":"
 + trackerPort.toString() + ""
 + path + toHeader();
 }
+
 String toHeader() {
-return "?" + KEY_INFO_HASH + "=" + infoHashValue
+  return "?" + KEY_INFO_HASH + "=" + infoHashValue
 + "&" + KEY_PORT + "=" + port.toString()
 + "&" + KEY_PEER_ID + "=" + peerID
 + "&" + KEY_EVENT + "=" + event
