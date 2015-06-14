@@ -15,9 +15,12 @@
 
 ## 見慣れたデータ構造に落とす
 
-Dart言語には、Bencoding のデータ構造をもっています。今回
-は、Bencdoingのデータを読み込み、Dart言語のデータ構造に
-落とこみます。
+Benodingを実装してみましょう。Bencodingで扱えるデータは、Number, String, List, Dictionary でした。これらを、Dartから扱えるようにします。
+
+具体的には、Dartでサポートされているデータ構造に変換していきます。Dartのnumber,Uint8Array,List,Mapへ変換するのです。
+
+BencodeのNumberは、Dartのnumで表現できます。BencodeのStringは、UInt8Arrayで表現できます。Stringでないところは少しトリッキーです。Bencodeでは、バイト配列を扱うこともあります。Unicodeでは使えないデータもStringとして扱うことになりまいから、Stringでなく、UInt8Arrayを利用します。
+
 
 Bencodeの文字列は、Dart言語ではcore.Stringで表せます。
 Bencodeの数字は、Dart言語では、core.int で表せます。 Bencodeのリストは、Dart言語のcore.List、Bencodeの辞書は、Dart言語ではMapで表現できます。
