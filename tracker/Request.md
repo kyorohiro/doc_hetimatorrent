@@ -164,3 +164,60 @@ Torrent クライアントは、サーバーの機能とクライアントの機
 }
 ```
 
+以前、書いたHttpサーバーのコードで指定したPort番号で良い
+です。
+実際には、ご家庭ネットワーク環境では、ここで指定したポー
+ト番号と、実際に外部から見えているポート番号が異なる場合
+があります。このような場合に対処するには、もうひと工夫必
+要です。
+付録の「なぜなにNat Travarsal」を参照してください。
+
+
+## アドレスを生成する
+
+だいたい必要な情報は整いました。さっそくアドレスを生成し
+てみましょう。
+実際には、以下のような情報も追加してアドレスを作成する事
+になります。
+
+##### "info_hash"
+TorrentファイルのInfo辞書のSHA1
+
+##### "peer_id"
+生成した20byteのバイナリデータ
+
+##### "event"
+Torrentクライアントり状態を表します。“started”, “stopped”,”completed”
+の3つ。それぞれ、データーのダウンロード中である場合は、”started”、
+データのダウンロードと配信から抜ける場合は、”stopped”、データのダ
+ウンロードを完了した場合は、”completed”が指定されます。
+
+##### "downloaded"
+今までダウンロードが完了したバイト数
+
+##### "uploaded"
+今までに配信したバイト数
+
+##### "left"
+ダウンロードが済んでいないデータのバイト数
+これらのデータを結合して、URLを生成するば完成です。
+```
+
+String toString() {
+return scheme + "://" + trackerHost + ":"
++ trackerPort.toString() + ""
++ path + toHeader();
+}
+String toHeader() {
+return "?" + KEY_INFO_HASH + "=" + infoHashValue
++ "&" + KEY_PORT + "=" + port.toString()
++ "&" + KEY_PEER_ID + "=" + peerID
++ "&" + KEY_EVENT + "=" + event
++ "&" + KEY_UPLOADED + "=" + uploaded.toString()
++ "&" + KEY_DOWNLOADED + "=" + downloaded.toString()
++ "&" + KEY_LEFT + "=" + left.toString();
+}
+```
+
+といった感じで書けます。無事URLを生成する事ができました
+ね。
