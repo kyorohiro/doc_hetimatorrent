@@ -19,5 +19,9 @@ Torrentファイルを解析が終わると、次にTrackerにアクセスし
 
 <hr>
 
+<hr style="page-break-before: always;">
+
+
+
 
 
