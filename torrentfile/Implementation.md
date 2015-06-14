@@ -62,6 +62,7 @@ Bencode はパースが容易な構造になっています。なぜならば、
 これを、コードに直すと、以下のような感じになります。
 
 ```
+int index = 0;
 Object decodeBenObject(Uint8List buffer) {
   if( 0x30 <= buffer[index] && buffer[index]<=0x39) {//0-9
     return decodeBytes(buffer);
