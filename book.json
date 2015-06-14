@@ -9,6 +9,7 @@
         }
     },
     "pdf": {
+        "pageNumbers": true,
         "fontSize": 24,
         "paperSize": "a4",
         "margin": {
