@@ -4,10 +4,10 @@
         "mermaid"
     ],
     "styles": {
-        "website": "styles/test.css",
-        "ebook": "styles/test.css",
-        "pdf": "styles/test.css",
-        "mobi": "styles/test.css",
-        "epub": "styles/test.css"
+        "website": "styles/website.css",
+        "ebook": "styles/ebook.css",
+        "pdf": "styles/pdf.css",
+        "mobi": "styles/mobi.css",
+        "epub": "styles/epub.css"
     }
 }
