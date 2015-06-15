@@ -128,10 +128,12 @@ di5:leveli13e4:name4山田e
 ##  今後の表記について
 
 今後、データ構造を表す場合は、以下の表記を利用します。
+
 リスト
-「li512e4:teste」は、[512,test]
+「li512e4:teste」は、[512,"test"]
+
 辞書
-「d5:leveli13e5magic6halitoe」は {level:13,magic:halito}
+「d5:leveli13e5magic6halitoe」は {level:13,magic:"halito"}
 
 
 
