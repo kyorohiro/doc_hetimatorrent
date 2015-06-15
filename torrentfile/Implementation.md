@@ -32,7 +32,7 @@ class Bencode {
 
 ```
 
-もちろん、Bencodeの実装は見慣れた形式に落とす方法だけではありません。BencodeのStringはBenString、ListはBenList、DictionaryはBenDict、といった方法で表現することも可能です。
+もちろん、Bencodeの実装は見慣れた形式に落とす方法だけではありません。BencodeのStringはBenString、ListはBenList、DictionaryはBenDict、といった専用のクラスに変換する方法も可能です。
 
 Dartの Map は、BencodeのMapよりも扱える範囲が広いですから、Dartのデータ構造から、Bencodeのデータ構造へ変換ができないパターンがあります。例えば、以下のような形式はBencodeでは表現できません。
 
