@@ -46,7 +46,7 @@ Map<int, String> // keyがStringでない場合
 
 このような制約がある事を、BenString, BenList といった構造を定義する事でAPIとして表現する事ができます。
 
-今回は「見慣れた構造に落とす」という方針で設計しました。
+しかし、今回は「見慣れた構造に落とす」という方針で設計しました。
 
 
 <hr style="page-break-before: always;">
