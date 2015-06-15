@@ -4,25 +4,6 @@
         "mermaid"
     ],
     "styles": {
-        "website": {
-            "fontSize": 24,
-        },
-        "ebook"{
-            "fontSize": 24,  
-        },
-        "epub": {
-            "fontSize": 24, 
-        },
-        "pdf": {
-            "pageNumbers": true,
-            "fontSize": 24,
-            "paperSize": "a4",
-            "margin": {
-                "right": 72,
-                "left": 72,
-                "top": 36,
-                "bottom": 36
-            },
-        }
+        "website": test.css
     }
 }
