@@ -3,11 +3,10 @@
         "mathjax",
         "mermaid"
     ],
-    "pluginsConfig": {
-        "fontSettings": {
-            "size":1 to 4
+    "styles": {
+        "website": {
+            "fontSize": 24
         }
-    },
     "pdf": {
         "pageNumbers": true,
         "fontSize": 24,
@@ -18,5 +17,6 @@
             "top": 36,
             "bottom": 36
         },
+    }
     }
 }
