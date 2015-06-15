@@ -20,5 +20,3 @@
    * [リクエストの中身](tracker/Request.md)
    * [レスポンスの中身](tracker/Response.md)
    * [テスト](tracker/Test.md)
-* xxx
-* 
