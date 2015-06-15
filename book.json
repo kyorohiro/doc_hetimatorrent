@@ -5,8 +5,14 @@
     ],
     "styles": {
         "website": {
-            "fontSize": 24
-        }
+            "fontSize": 24,
+        },
+        "ebook"{
+            "fontSize": 24,  
+        },
+        "epub": {
+            "fontSize": 24, 
+        },
         "pdf": {
             "pageNumbers": true,
             "fontSize": 24,
