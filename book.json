@@ -2,12 +2,5 @@
     "plugins": [
         "mathjax",
         "mermaid"
-    ],
-    "styles": {
-        "website": "styles/test.css",
-        "ebook": "styles/test.css",
-        "pdf": "styles/test.css",
-        "mobi": "styles/test.css",
-        "epub": "styles/test.css"
-    }
+    ]
 }
