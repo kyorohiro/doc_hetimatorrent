@@ -81,6 +81,10 @@ Kademulia の RootingTableは、0〜160の161個のkBucketを所持する事が�
 
 このように、xor距離は、図形的に見ると直感的で合理的な構造になっているのです。
 
+-------
+Kyorohiro work
+
+http://kyorohiro.strikingly.com
 
 
 
