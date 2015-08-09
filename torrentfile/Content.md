@@ -179,3 +179,8 @@ ddd.mp3」という2つのデータが含まれている事が読み取れま
 
 といったコードで生成できます。
 
+
+-------
+Kyorohiro work
+
+http://kyorohiro.strikingly.com
