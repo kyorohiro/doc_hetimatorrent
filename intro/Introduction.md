@@ -113,4 +113,10 @@ Torrent のネガティブなイメージは一面にすぎない事。多くの
 
 
 
+-------
+Kyorohiro work
+
+http://kyorohiro.strikingly.com
+
+
 
