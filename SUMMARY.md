@@ -24,3 +24,4 @@
    * [リダイレクト](tracker/Redirect.md)
 * DHTに対応してみる
    * [Tracker無しでPeerを探す](dht/About.md)
+   * [Kademuliaを使っている](dht/Kademulia.md)
