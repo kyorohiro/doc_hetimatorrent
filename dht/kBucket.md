@@ -1,4 +1,4 @@
-# KademuliaのkBucketについて
+# KademuliaのkBucketを利用している
 <hr>
 * **距離はXOR**
 <br>
