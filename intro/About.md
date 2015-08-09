@@ -62,3 +62,9 @@ Torrent はデータをダウンロードするユーザーもデータの配
 Torrentはこのような仕組みを実際に形にしました。Torrentによ
 って、データを欲しがっている全ての人に素早くデータを配信
 する事ができるようになったのです。
+
+
+-------
+Kyorohiro work
+
+http://kyorohiro.strikingly.com
