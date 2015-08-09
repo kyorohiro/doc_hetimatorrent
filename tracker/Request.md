@@ -222,3 +222,8 @@ String toHeader() {
 
 といった感じで書けます。無事URLを生成する事ができました
 ね。
+
+-------
+Kyorohiro work
+
+http://kyorohiro.strikingly.com
