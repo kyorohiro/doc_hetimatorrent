@@ -17,3 +17,9 @@ Redirect機能とは、指定された
 ## Httpリダイレクト
 
 かきかけ
+
+
+-------
+Kyorohiro work
+
+http://kyorohiro.strikingly.com
