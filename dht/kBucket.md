@@ -1,6 +1,5 @@
 # KademuliaのkBucketについて
 <hr>
-<br>
 * **距離はXOR**
 <br>
 * **kBucketでRootingTableを構築している**
