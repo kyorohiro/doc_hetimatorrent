@@ -25,3 +25,5 @@
 * DHTに対応してみる
    * [Tracker無しでPeerを探す](dht/About.md)
    * [KademuliaのkBucketについて](dht/kBucket.md)
+   * [FindNodeでネットワークの構築](dht/FindNodes.md)
+   * [GetPeersでInfoHashに対応するPeerを探す](dht/GetPeers.md)
