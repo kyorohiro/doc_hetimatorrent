@@ -108,3 +108,8 @@ failure reason:<benstring 失敗した理由>
 た。では、実際にTrackerサーバー、Trackerクライアントほ実
 装してみましょう。
 
+-------
+Kyorohiro work
+
+http://kyorohiro.strikingly.com
+
