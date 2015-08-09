@@ -56,8 +56,8 @@ graph TD;
     A-->C;
     sub graph
     B-->D;
-    B-->E;
     end
+    B-->E;
     C-->F;
     C-->G;
 ```
