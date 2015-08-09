@@ -50,11 +50,12 @@ Kademulia の RootingTableは、0〜160の161個のkBucketを所持する事が�
 
 ##### 距離に応じて
 
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
+%% Example diagram
+graph LR
+    A[Square Rect] -- Link text --> B((Circle))
+    A --> C(Round Rect)
+    B --> D{Rhombus}
+    C --> D
 
 地
 
