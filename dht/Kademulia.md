@@ -68,6 +68,9 @@ Kademulia の RootingTableは、0〜160の161個のkBucketを所持する事が�
 
 各値に応じて、xor距離、どのkBucketに記録されるかが解るようにしました。
 
+例えば、ID 010 のPeerとのxor距離は 0 です。そして、0番目のkBucketに格納されます。
+同IDの場合の説明は当然すぎるので、IDが101の場合も見てみましょう。Peerとの距離は、xot
+
 
 ![](a002.png)
 
