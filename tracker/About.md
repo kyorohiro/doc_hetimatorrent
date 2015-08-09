@@ -31,4 +31,8 @@ Trackerサーバーはデータを配信している端末をすべて把握し�
 
 
 
+-------
+Kyorohiro work
+
+http://kyorohiro.strikingly.com
 
