@@ -168,6 +168,11 @@ num decodeNumber(data.Uint8List buffer) {
 は、以下にあります。「https://github.com/kyorohiro/dart_hetimatorrent」 事の顛末を知りたい方は参照してください。
 
 
+-------
+Kyorohiro work
+
+http://kyorohiro.strikingly.com
+
 
 
 
