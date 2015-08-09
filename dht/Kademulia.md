@@ -52,7 +52,7 @@ Kademulia の RootingTableは、0〜160の161個のkBucketを所持する事が�
 
 ```mermaid
 graph TD;
-    A-1->B
+    A-->B
     A-->C
     B-->D;
     B-->E;
