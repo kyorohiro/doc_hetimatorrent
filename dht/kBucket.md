@@ -1,4 +1,4 @@
-# KademuliaのkBucketを利用している
+# MainlineDHTはKademuliaのkBucketを利用している
 <hr>
 * **距離はXOR**
 <br>
