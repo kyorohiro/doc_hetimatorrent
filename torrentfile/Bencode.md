@@ -136,4 +136,9 @@ di5:leveli13e4:name4山田e
 「d5:leveli13e5magic6halitoe」は {level:13,magic:"halito"}
 
 
+-------
+Kyorohiro work
+
+http://kyorohiro.strikingly.com
+
 
