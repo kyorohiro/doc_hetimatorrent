@@ -21,6 +21,10 @@ Torrent File には、さまざまなP2Pのエッセンスが含まれていま�
 
 
 
+-------
+Kyorohiro work
+
+http://kyorohiro.strikingly.com
 
 
 
