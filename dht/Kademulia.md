@@ -3,9 +3,7 @@
 <br>
 * **距離はXOR**
 <br>
-* **kBucketつかつたRootingTabke**
+* **kBucketでRootingTableを構築**
 <br>
-* **kBucketつかつたRootingTabke**
 
-<br>
 <hr>
