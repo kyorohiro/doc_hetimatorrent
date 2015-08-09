@@ -171,3 +171,9 @@ UpnpPPPDevice#requestGetExternalIPAddress()
   .then((String address){
 });
 ```
+
+
+-------
+Kyorohiro work
+
+http://kyorohiro.strikingly.com
