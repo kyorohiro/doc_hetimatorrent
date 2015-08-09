@@ -1,4 +1,4 @@
-# Trackerなしで、Peerを探す。
+# Mainline DHTについて、TrackerなしでPeerを探す。
 <hr>
 <br>
 * **Trackerがなくてもデータを探せる**
