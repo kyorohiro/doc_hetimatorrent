@@ -86,3 +86,7 @@ Trackerサーバーが完成します。
 
 
 
+-------
+Kyorohiro work
+
+http://kyorohiro.strikingly.com
