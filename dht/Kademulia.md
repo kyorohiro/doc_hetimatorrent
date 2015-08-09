@@ -41,7 +41,8 @@ xorを距離として使うと、Peer間の距離が、お互いに同じにな�
 
 
 #### kBucket の RootingTable
-Kade
+前章で、DHTでは各PeerがPeerの一覧を持っいると説明しました。そして、その一覧には偏りがあり自分に近いPeerについてはより詳しいのでした。
+所持しているPeerのリストをKademulia
 
 
 
