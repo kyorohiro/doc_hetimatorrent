@@ -225,6 +225,8 @@ class KRootingTable {
 
 ### Peerの情報が渡されたら、対応するkBucketに追加する
 
+いままで、作成した機能を合わせる事で、RootingTableを更新できるようになります。
+
 ```
 class KRootingTable {
   ...
@@ -239,6 +241,8 @@ class KRootingTable {
   ...
 }
 ```
+
+これで、RootingTableの作成は完了です。次の章の説明を得て、findNodeメソッドが追加されます。しかし、今までに解説した内容で実走できるのはここまでです。
 
 -------
 Kyorohiro work
