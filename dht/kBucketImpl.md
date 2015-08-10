@@ -61,7 +61,59 @@ class KId {
 }
 ```
 
-#### 大小比較
+#### 大小比較の機能を追加する
+```dart
+  bool operator >(KId b) {
+    for (int i = 0; i < b._values.length; i++) {
+      if (this._values[i] == b._values[i]) {
+        continue;
+      } else if (this._values[i] > b._values[i]) {
+        return true;
+      } else {
+        return false;
+      }
+    }
+    return false;
+  }
+
+  bool operator ==(KId b) {
+    for (int i = 0; i < b._values.length; i++) {
+      if (this._values[i] != b._values[i]) {
+        return false;
+      }
+    }
+    return true;
+  }
+
+  bool operator >=(KId b) {
+    if (this == b) {
+      return true;
+    } else if (this > b) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  bool operator <(KId b) {
+    if (this == b) {
+      return false;
+    } else {
+      return !(this > b);
+    }
+  }
+
+  bool operator <=(KId b) {
+    if (this == b) {
+      return true;
+    } else if (this > b) {
+      return false;
+    } else {
+      return true;
+    }
+  }
+```
+
 
 #### RootingTable 
 
