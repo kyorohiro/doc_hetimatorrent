@@ -176,6 +176,7 @@ class KRootingTable {
 
 RootingTableを所持しているPeerとのXORを計算してもその値をもとに、どのxBucketに追加するかを決めます。
 
+
 | 値 |2進|index |
 | -- |--|-- |
 | 0 | 000 | 0 |
