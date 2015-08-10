@@ -112,6 +112,7 @@ class KId {
 以上でKIDの作成は完了です。事の顛末を知りたい方は、以下を参照してください。
 https://github.com/kyorohiro/dart_hetimatorrent/tree/master/lib/src/dht
 
+実装作業は、必ずテストを書きながら、動作確認しながら、進めてください。
 
 ## kBucketを実装する。
 kBucketは、
