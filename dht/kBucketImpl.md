@@ -136,9 +136,6 @@ class KBucket {
       peerInfos.remove(peerInfo);
     }
     peerInfos.add(peerInfo);
-    peerInfos.sort((KPeerInfo a, KPeerInfo b) {
-      return (a.id == b.id ? 0 : (a.id > b.id ? 1 : -1));
-    });
     if (peerInfos.length > k) {
       peerInfos.removeAt(0);
     }
@@ -157,8 +154,7 @@ https://github.com/kyorohiro/dart_hetimatorrent/tree/master/lib/src/dht
 
 
 ## RootingTableを実装する
-
-
+前章で説明したとおり、RootingTableは
 
 
 
