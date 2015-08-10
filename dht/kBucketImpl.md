@@ -45,12 +45,14 @@ class KId {
 KIdはXOR距離が計算できる必要があります。数値としては表現する事は諦めましたが、計算した結果はKIDとして返す事にしました。
 
 ```dart
-  KId xor(KId b) {
-    List<int> ret = [];
-    for (int i = 0; i < b._values.length; i++) {
-      ret.add(this._values[i] ^ b._values[i]);
+  KId xor(KId b, [KId output = null]) {
+    if (output == null) {
+      output = new KId.zeroClear();
     }
-    return new KId(ret);
+    for (int i = 0; i < b._values.length; i++) {
+      output._values[i] = this._values[i] ^ b._values[i];
+    }
+    return output;
   }
 ```
 
