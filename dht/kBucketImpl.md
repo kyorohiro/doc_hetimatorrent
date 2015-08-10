@@ -124,8 +124,8 @@ kBucketは、K個のPeetについての情報を格納する入れ物です。�
 class KBucket {
   int _k = 8;
   int get k => _k;
-
   List<KPeerInfo> peerInfos = null;
+
   KBucket(int kBucketSize) {
     this._k = kBucketSize;
     this.peerInfos = [];
