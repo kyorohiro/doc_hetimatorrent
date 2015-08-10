@@ -2,7 +2,9 @@
 <hr>
 * **KIDを実装する**
 <br>
-* **リスポンスを受けたらRootingTableを更新する**
+* **kBucketを実装する**
+<br>
+* **RootingTableを実装する**
 <br>
 <hr>
 
