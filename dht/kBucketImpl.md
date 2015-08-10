@@ -115,7 +115,44 @@ https://github.com/kyorohiro/dart_hetimatorrent/tree/master/lib/src/dht
 実装作業は、必ずテストを書きながら、動作確認しながら、進めてください。
 
 ## kBucketを実装する。
-kBucketは、
+kBucketは、K個のPeetについての情報を格納する入れ物です。これは、値を追加する時に制限をもたせたListとして表現できますね。
+
+```dart
+class KBucket {
+  int _k = 8;
+  int get k => _k;
+
+  List<KPeerInfo> peerInfos = null;
+  KBucket(int kBucketSize) {
+    this._k = kBucketSize;
+    this.peerInfos = [];
+  }
+
+  add(KPeerInfo peerInfo) {
+    if (peerInfos.contains(peerInfo) == true) {
+      peerInfos.remove(peerInfo);
+    }
+    peerInfos.add(peerInfo);
+    peerInfos.sort((KPeerInfo a, KPeerInfo b) {
+      if (a.id == b.id) {
+        return 0;
+      } else if (a.id > b.id) {
+        return 1;
+      } else {
+        return -1;
+      }
+    });
+    if (peerInfos.length > k) {
+      peerInfos.removeAt(0);
+    }
+  }
+
+  int get length => peerInfos.length;
+  KPeerInfo operator[](int idx) => peerInfos[idx];
+  Iterator<KPeerInfo> get iterator => peerInfos.iterator;
+}
+
+```
 
 
 
