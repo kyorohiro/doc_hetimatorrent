@@ -27,6 +27,7 @@ XORでは160bitの値を扱う必要があります。しかし、Dart言語で�
 ```dart
 class KId {
   List<int> _values = null;
+  List<int> get value => new List.from(_values);
   KId(List<int> id) {
     if(id == null || id.length != 20) {
       throw {};
