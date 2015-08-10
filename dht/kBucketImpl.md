@@ -137,13 +137,7 @@ class KBucket {
     }
     peerInfos.add(peerInfo);
     peerInfos.sort((KPeerInfo a, KPeerInfo b) {
-      if (a.id == b.id) {
-        return 0;
-      } else if (a.id > b.id) {
-        return 1;
-      } else {
-        return -1;
-      }
+      return (a.id == b.id ? 0 : (a.id > b.id ? 1 : -1));
     });
     if (peerInfos.length > k) {
       peerInfos.removeAt(0);
@@ -151,11 +145,15 @@ class KBucket {
   }
 
   int get length => peerInfos.length;
-  KPeerInfo operator[](int idx) => peerInfos[idx];
+  KPeerInfo operator [](int idx) => peerInfos[idx];
   Iterator<KPeerInfo> get iterator => peerInfos.iterator;
 }
 
 ```
+
+以上でKIDの作成は完了です。事の顛末を知りたい方は、以下を参照してください。
+https://github.com/kyorohiro/dart_hetimatorrent/tree/master/lib/src/dht
+
 
 
 
