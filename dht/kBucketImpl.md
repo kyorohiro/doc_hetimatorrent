@@ -108,6 +108,9 @@ class KId {
 
 ```
 
+以上でKIDの作成は完了です。事の顛末を知りたい方は、以下を参照してください。
+https://github.com/kyorohiro/dart_hetimatorrent/tree/master/lib/src/dht
+
 
 #### RootingTableのIndex求める機能を追加
 
