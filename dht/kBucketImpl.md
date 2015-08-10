@@ -1,6 +1,6 @@
 # RootingTableを実装してみよう。
 <hr>
-* **と**
+* **KIDを実装する**
 <br>
 * **リスポンスを受けたらRootingTableを更新する**
 <br>
