@@ -1,6 +1,6 @@
 # RootingTableを実装してみよう。
 <hr>
-* **KIDを実装する**
+* **KIdを実装する**
 <br>
 * **kBucketを実装する**
 <br>
