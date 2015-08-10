@@ -15,7 +15,7 @@
    * [UPnPによるポートマップ](upnp/About.md)
    * [UPnPの実装](upnp/Implementation.md)
 * Trackerへアクセスしてみる
-   * [Trackerへアクセスしてみる](tracker/About.md)]
+   * [Trackerへアクセスしてみる](tracker/About.md)
    * [TrackerはHttpサーバ](tracker/Http.md)
    * [リクエストの中身](tracker/Request.md)
    * [レスポンスの中身](tracker/Response.md)
@@ -27,3 +27,5 @@
    * [KademuliaのkBucketを利用している](dht/kBucket.md)
    * [FindNodeでネットワークの構築](dht/FindNodes.md)
    * [GetPeersでInfoHashに対応するPeerを探す](dht/GetPeers.md)
+   * RootingTableを実装してみよう
+
