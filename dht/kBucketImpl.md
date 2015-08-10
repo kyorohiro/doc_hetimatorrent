@@ -188,6 +188,20 @@ RootingTableを所持しているPeerとのXORを計算してもその値をも�
 
 これをコードに落としましょう。
 ```dart
+class KRootingTable {
+  List<KBucket> _kBuckets = [];
+  int _kBucketSize = 0;
+  KId _ownerKId = null;
+  KId get ownerKId => _ownerKId;
+
+  KRootingTable(int k_bucketSize, KId ownerKId) {
+    this._kBucketSize = k_bucketSize;
+    for (int i = 0; i < 161; i++) {
+      _kBuckets.add(new KBucket(k_bucketSize));
+    }
+    this._ownerKId = ownerKId;
+  }
+
   int getRootingTabkeIndex(KId v) {
     v = v.xor(_ownerKId);
     for (int i = 0, ret = 19; i < 20; i++, ret--) {
@@ -202,7 +216,7 @@ RootingTableを所持しているPeerとのXORを計算してもその値をも�
     }
     return 0;
   }
-
+}
 ```
 
 
