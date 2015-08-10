@@ -27,5 +27,5 @@
    * [KademuliaのkBucketを利用している](dht/kBucket.md)
    * [FindNodeでネットワークの構築](dht/FindNodes.md)
    * [GetPeersでInfoHashに対応するPeerを探す](dht/GetPeers.md)
-   * [RootingTableを実装してみよう](.dht/kbucketimplmd.md)
+   * [RootingTableを実装してみよう](dht/kBucketImpl.md)
 
