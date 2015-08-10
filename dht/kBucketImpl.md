@@ -173,6 +173,10 @@ class KRootingTable {
 ```
 
 
+#### KIdに値に応じて、追加するxBucketを決める機能を追加する
+
+
+
 
 
 -------
