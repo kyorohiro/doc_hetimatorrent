@@ -174,6 +174,12 @@ class KRootingTable {
 
 #### KIdに値に応じて、追加するxBucketを決める機能を追加する
 
+RootingTableを所持しているPeerとのXORを計算してもその値をもとに、どのxBucketに追加するかを決めます。
+
+| 0:0 | 1:0 |
+| 0:2 | 1:2 |
+
+数式に直すと、log2(XORを数値化した値)でしょうか?
 
 
 
