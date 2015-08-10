@@ -117,6 +117,9 @@ https://github.com/kyorohiro/dart_hetimatorrent/tree/master/lib/src/dht
 ## kBucketを実装する。
 kBucketは、K個のPeetについての情報を格納する入れ物です。これは、値を追加する時に制限をもたせたListとして表現できますね。
 
+今回の実装ではkBucketが満杯になった場合は古いデータから削除するようにしています。
+このあたりは、実際に動作させてみて最適な方法を試行錯誤すべきでしょう。
+
 ```dart
 class KBucket {
   int _k = 8;
