@@ -205,6 +205,7 @@ class KRootingTable {
   int getRootingTabkeIndex(KId v) {
     // xor距離を計算する
     v = v.xor(_ownerKId);
+
     // 対応するkBucketを探す。
     for (int i = 0, ret = 19; i < 20; i++, ret--) {
       if (v[i] != 0) {
