@@ -6,7 +6,10 @@
 <br>
 <hr>
 
-と
+前章で、kBucketとRootingTableについては説明しました。このRootinhTableを更新しながら、実際にDHTのネットワークを組んでみましょう。
+
+
+## kBucketを実装する。
 
 
 -------
