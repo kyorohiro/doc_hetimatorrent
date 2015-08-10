@@ -58,6 +58,7 @@ class KId {
     }
     return output;
   }
+}
 ```
 
 #### 大小比較
