@@ -27,7 +27,7 @@ XORでは160bitの値を扱う必要があります。しかし、Dart言語で�
 
 
 
-まずは、最初の定義、KID は、20byteのデータを持つ
+まずは、最初の定義、KID は、20byteのデータを持つ事とする。
 ```dart
 class KId {
   List<int> _values = null;
@@ -39,6 +39,11 @@ class KId {
   }
 }
 ```
+
+#### XOR の計算機能を追加する
+xor の計算機能を追加しましょう。
+
+
 #### RootingTable 
 
 
