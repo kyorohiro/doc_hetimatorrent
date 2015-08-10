@@ -11,9 +11,15 @@
 RootingTableを実装してみましょう。コードに落とす事で理解も深まります。
 
 ## KIDを実装する。
+
+#### InfoHashもPeerIDもKIDとして表せる。
 InfoHash と InfoHash、Peer IDとInfoHash Peer ID とPeer ID のXOR距離を計算する必要があるのでした。
-これらのIDは、すべて20バイトのデータであり同じものとして定義できます。
-KID
+これらのIDは、すべて20バイトのデータであり同じものとして定義できます。本文ではKIDと呼ぶことにします。
+
+#### KID
+
+
+
 
 
 
