@@ -90,33 +90,17 @@ class KId {
   }
 
   bool operator >=(KId b) {
-    if (this == b) {
-      return true;
-    } else if (this > b) {
-      return true;
-    } else {
-      return false;
-    }
+    return (this == b ? true : (this > b ? true : false));
   }
 
   bool operator <(KId b) {
-    if (this == b) {
-      return false;
-    } else {
-      return !(this > b);
-    }
+    return (this == b ? false : !(this > b));
   }
 
   bool operator <=(KId b) {
-    if (this == b) {
-      return true;
-    } else if (this > b) {
-      return false;
-    } else {
-      return true;
-    }
+    return (this == b ? true : (this > b ? false : true));
   }
-}
+
 ```
 
 
