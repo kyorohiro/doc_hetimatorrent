@@ -112,8 +112,8 @@ class KId {
 https://github.com/kyorohiro/dart_hetimatorrent/tree/master/lib/src/dht
 
 
-#### RootingTableのIndex求める機能を追加
-
+## kBucketを実装する。
+kBucketは、
 
 
 
