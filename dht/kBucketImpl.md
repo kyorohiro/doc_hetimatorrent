@@ -223,7 +223,22 @@ class KRootingTable {
 ```
 
 
+### Peerの情報が渡されたら、対応するkBucketに追加する
 
+```
+class KRootingTable {
+  ...
+  ...
+  ...
+  Future update(KPeerInfo info) {
+    return new Future(() {
+      _kBuckets[getRootingTabkeIndex(info.id)].add(info);
+    });
+  }
+  ...
+  ...
+}
+```
 
 -------
 Kyorohiro work
