@@ -158,12 +158,9 @@ https://github.com/kyorohiro/dart_hetimatorrent/tree/master/lib/src/dht
 まずは、最初の定義、kBucketを161個保持することができる。
 
 ```dart
-
 class KRootingTable {
   List<KBucket> _kBuckets = [];
   int _kBucketSize = 0;
-  KId _amId = null;
-  KId get amId => _amId;
 
   KRootingTable(int k_bucketSize, KId amId) {
     this._kBucketSize = k_bucketSize;
