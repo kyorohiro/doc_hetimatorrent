@@ -242,7 +242,7 @@ class KRootingTable {
 }
 ```
 
-これで、RootingTableの作成は完了です。次の章の説明を得て、findNodeメソッドが追加されます。しかし、今までに解説した内容で実走できるのはここまでです。
+これで、RootingTableの作成は完了です。次の章の説明を得て、findNodeメソッドが追加されます。しかし、今までに解説した内容で実装できるのはここまでとなります。
 
 -------
 Kyorohiro work
