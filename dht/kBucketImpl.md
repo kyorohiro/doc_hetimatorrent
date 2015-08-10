@@ -30,8 +30,8 @@ XORでは160bitの値を扱う必要があります。しかし、Dart言語で�
 まずは、最初の定義、KID は、20byteのデータを持つ
 ```dart
 class KId {
-    List<int> _values = null;
-      KId(List<int> id) {
+  List<int> _values = null;
+  KId(List<int> id) {
     if(id == null || id.length != 20) {
       throw {};
     }
