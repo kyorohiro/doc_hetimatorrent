@@ -151,11 +151,12 @@ class KBucket {
 
 ```
 
-以上でKIDの作成は完了です。事の顛末を知りたい方は、以下を参照してください。
+以上でkBucketの作成は完了です。事の顛末を知りたい方は、以下を参照してください。
 https://github.com/kyorohiro/dart_hetimatorrent/tree/master/lib/src/dht
 
 
 
+## RootingTableを実装する
 
 
 
