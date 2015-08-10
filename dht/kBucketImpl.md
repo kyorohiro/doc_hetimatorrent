@@ -42,9 +42,13 @@ class KId {
 ```
 
 #### XOR の計算機能を追加する
-KIdはXOR距離が計算できる必要があります。数値としては表現する事は諦めましたが、計算した結果はKIDとして返す事にしました。
+KIdはXOR距離が計算できる必要があります。数値としては表現する事は諦めましたが、計算した結果はKIDとして返す機能は必要です。
 
 ```dart
+class KId {
+  ...
+  ...
+  ...
   KId xor(KId b, [KId output = null]) {
     if (output == null) {
       output = new KId.zeroClear();
@@ -56,7 +60,7 @@ KIdはXOR距離が計算できる必要があります。数値としては表�
   }
 ```
 
-
+#### 大小比較
 
 #### RootingTable 
 
