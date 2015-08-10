@@ -63,6 +63,10 @@ class KId {
 
 #### 大小比較の機能を追加する
 ```dart
+class KId {
+  ...
+  ...
+  ...
   bool operator >(KId b) {
     for (int i = 0; i < b._values.length; i++) {
       if (this._values[i] == b._values[i]) {
@@ -112,6 +116,7 @@ class KId {
       return true;
     }
   }
+}
 ```
 
 
