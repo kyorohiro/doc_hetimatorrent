@@ -162,12 +162,11 @@ class KRootingTable {
   List<KBucket> _kBuckets = [];
   int _kBucketSize = 0;
 
-  KRootingTable(int k_bucketSize, KId amId) {
+  KRootingTable(int k_bucketSize) {
     this._kBucketSize = k_bucketSize;
     for (int i = 0; i < 161; i++) {
       _kBuckets.add(new KBucket(k_bucketSize));
     }
-    this._amId = amId;
   }
 }
 ```
