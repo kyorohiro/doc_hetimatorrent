@@ -8,11 +8,12 @@
 <br>
 <hr>
 
-前章で、kBucketとRootingTableについては説明しました。このRootinhTableを更新しながら、実際にDHTのネットワークを組んでみましょう。
+RootingTableを実装してみましょう。コードに落とす事で理解も深まります。
 
-
-## kBucketを実装する。
-まずは、
+## KIDを実装する。
+InfoHash と InfoHash、Peer IDとInfoHash Peer ID とPeer ID のXOR距離を計算する必要があるのでした。
+これらのIDは、すべて20バイトのデータであり同じものとして定義できます。
+KID
 
 
 
