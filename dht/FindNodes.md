@@ -23,7 +23,16 @@ FindNodeクエリを利用すると事で、指定したKIDともっとも距離
 
 以下のようなBencodeで表現できます。
 ```
-arguments:  {"t":"aa", "y":"q", "q":"find_node", "a":{"id" : "<querying nodes id>", "target" : "<id of target node>"}}
+arguments:  
+{
+ "t":"aa",
+ "y":"q",
+ "q":"find_node", 
+ "a":{
+   "id" : "<querying nodes id>", 
+   "target" : "<id of target node>"
+  }
+}
 
 response: {"t":"aa", "y":"r", "r":{"id" : "<queried nodes id>", "nodes" : "<compact node info>"}}
 ```
