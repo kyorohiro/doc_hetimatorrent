@@ -19,12 +19,15 @@ DHRのネットワークを構築は、FindNodeクエリとFindNodeレスポン�
 
 ### 指定したKIDに近い距離にあるPeerを紹介してもらう事ができる
 
-FindNodeクエリの機能はとても単純です。 指定したKIDのを指定して
-```
-arguments:  {"id" : "<querying nodes id>", "target" : "<id of target node>"}
+FindNodeクエリを利用すると事で、指定したKIDともっとも距離が近いNodeを教えてもらう事ができます。
 
-response: {"id" : "<queried nodes id>", "nodes" : "<compact node info>"}
+以下のようなBencodeで表現できます。
 ```
+arguments:  {"t":"aa", "y":"q", "q":"find_node", "a":{"id" : "<querying nodes id>", "target" : "<id of target node>"}}
+
+response: {"t":"aa", "y":"r", "r":{"id" : "<queried nodes id>", "nodes" : "<compact node info>"}}
+```
+
 ref http://www.bittorrent.org/beps/bep_0005.html
 
 -------
