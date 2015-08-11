@@ -59,6 +59,7 @@ response:
 "id" に自分自信のPeer ID を指定して、 Node の一覧を取得します。 Rooting Table の中の上位 K個について、 FindNode を行います。この上位K個が固定されまで、 FindNod eを繰り返します。
 
 
+なんども、この操作を繰り返しているうちに、DHT上でもっとも自分自信に近いPeerを発見できまます。
 
 
 ref http://www.bittorrent.org/beps/bep_0005.html
