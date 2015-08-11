@@ -49,7 +49,16 @@ response:
 
 "id"には、クエリを送信するPeerのKIDがして入ります。
 "target"に指定したKIDと距離が近いPeerが帰りまする
-"nodes" には、
+"nodes" は、26byteのbyteデータの集まりで、20byteのPeer IDとIPとPort番号が格納されています。
+
+
+### ネッワークへの参加/構築
+ネットワークの構築はFindNodeクエリを利用します。我々は、自分に近いKIDを持つPeerについて詳しくなる必要があるのでした。
+
+
+"id" に自分自信のPeer ID を指定して、 Node の一覧を取得します。 Rooting Table の中の上位 K個について、 FindNode を行います。この上位K個が固定されまで、 FindNod eを繰り返します。
+
+
 
 ref http://www.bittorrent.org/beps/bep_0005.html
 
