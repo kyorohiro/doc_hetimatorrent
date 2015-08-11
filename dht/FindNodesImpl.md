@@ -28,8 +28,6 @@ class KNode {
       });
       //////
       _isStart = true;
-      _ai.start(this);
-      ai.startTick(this);
     });
   }
 
