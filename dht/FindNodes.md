@@ -1,4 +1,4 @@
-# FindNodeでネットワークを構築
+# FindNodeでネットワークを構築する
 <hr>
 * **FindNodeクエリでネットワークを構築する**
 <br>
@@ -19,7 +19,13 @@ DHRのネットワークを構築は、FindNodeクエリとFindNodeレスポン�
 
 ### 指定したKIDに近い距離にあるPeerを紹介してもらう事ができる
 
+FindNodeクエリの機能はとても単純です。 指定したKIDのを指定して
+```
+arguments:  {"id" : "<querying nodes id>", "target" : "<id of target node>"}
 
+response: {"id" : "<queried nodes id>", "nodes" : "<compact node info>"}
+```
+ref http://www.bittorrent.org/beps/bep_0005.html
 
 -------
 Kyorohiro work
