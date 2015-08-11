@@ -29,7 +29,7 @@ arguments:
  "y":"q",
  "q":"find_node", 
  "a":{
-  "id" : "<querying nodes id>", 
+  "id" : "<nodes id>", 
   "target" : "<id of target node>"
  }
 }
@@ -39,7 +39,7 @@ response:
  "t":"aa",
  "y":"r",
  "r":{
-  "id" : "<queried nodes id>",
+  "id" : "<nodes id>",
   "nodes" : "<compact node info>"
  }
 }
@@ -47,7 +47,9 @@ response:
 
 "t" は送信側が任意に決める事ができる値です。レスポンスには、送信時に指定した値が渡されます。この値を元にどのクエリのレスポンスかを判断する事がてきます。
 
-
+"id"には、クエリを送信するPeerのKIDがして入ります。
+"target"に指定したKIDと距離が近いPeerが帰りまする
+"nodes" には、
 
 ref http://www.bittorrent.org/beps/bep_0005.html
 
