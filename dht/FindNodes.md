@@ -1,6 +1,6 @@
 # FindNodeでネットワークを構築
 <hr>
-* **単一リエストでネットワークを構築できる**
+* **FindNodeクエリでネットワークを構築する**
 <br>
 * **リスポンスを受けたらRootingTableを更新する**
 <br>
@@ -9,8 +9,7 @@
 前章で、kBucketとRootingTableについては説明しました。このRootinhTableを更新しながら、実際にDHTのネットワークを組んでみましょう。
 
 
-## kBucketを実装する。
-まずは、
+## FindNodeクエリでネットワークを構築する
 
 
 
