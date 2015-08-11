@@ -56,7 +56,9 @@ response:
 ネットワークの構築はFindNodeクエリを利用します。我々は、自分に近いKIDを持つPeerについて詳しくなる必要があるのでした。
 
 
-"id" に自分自信のPeer ID を指定して、 Node の一覧を取得します。 Rooting Table の中の上位 K個について、 FindNode を行います。この上位K個が固定されまで、 FindNod eを繰り返します。
+"id" に自分自信のPeer ID を指定して、 Node の一覧を取得します。 Rooting Table の中の上位 K個について、 FindNode を行います。この上位K個が固定されまで、 FindNod eを繰り返すします。
+
+
 
 
 
