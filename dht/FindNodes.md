@@ -29,12 +29,20 @@ arguments:
  "y":"q",
  "q":"find_node", 
  "a":{
-   "id" : "<querying nodes id>", 
-   "target" : "<id of target node>"
-  }
+  "id" : "<querying nodes id>", 
+  "target" : "<id of target node>"
+ }
 }
 
-response: {"t":"aa", "y":"r", "r":{"id" : "<queried nodes id>", "nodes" : "<compact node info>"}}
+response: 
+{
+ "t":"aa",
+ "y":"r",
+ "r":{
+  "id" : "<queried nodes id>",
+  "nodes" : "<compact node info>"
+ }
+}
 ```
 
 ref http://www.bittorrent.org/beps/bep_0005.html
