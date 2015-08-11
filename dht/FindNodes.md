@@ -74,8 +74,10 @@ response:
 | 157 | 6 | |
 | 158 | 8 | |
 | 159 | 8 | |
-| 160 | 8 | |
+| 160 | 8 |  |
 
+
+はい、TorrentのDHTネットワークに接続した場合も同じような結果になります。自分自信に近いNodeは、Rooting Tabe index の、l130-150くらいのところに集まります。
 
 
 ref http://www.bittorrent.org/beps/bep_0005.html
