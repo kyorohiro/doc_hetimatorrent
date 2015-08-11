@@ -15,6 +15,8 @@
 まずは、UDPを用いて、通信部分を書いてみましょう。Torrentの仕様では、DHTとして動作するPeerをNodeと読んでいます。
 DHTの通信を行う主体として、KNode class を定義することにします。
 
+UDP serverは、メッセージを受け取るメッセージはbencodeなのでした。パースして必要な処理に回します。
+
 ```
 class KNode {
   Future start({String ip: "0.0.0.0", int port: 28080}) async {
