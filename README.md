@@ -1,3 +1,4 @@
+![](cover.jpg)
 # なぜなにTorrent
 
 <hr>
@@ -36,7 +37,7 @@
    * [KademuliaのkBucketを利用している](dht/kBucket.md)
    * [RootingTableを実装してみよう](dht/kBucketImpl.md)
    * [FindNodeでネットワークの構築](dht/FindNodes.md)
-   * [FindNodeを実装](dht/FindNodesImpl.md)
+
    * [GetPeersでInfoHashに対応するPeerを探す](dht/GetPeers.md)
 
 
