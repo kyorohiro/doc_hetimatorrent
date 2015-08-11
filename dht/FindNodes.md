@@ -10,6 +10,14 @@
 
 
 ## FindNodeクエリでネットワークを構築する
+Mainline DHT こと、KademliaではUDPを利用してPeerどうしが通信を行います。
+
+DHRのネットワークを構築は、FindNodeクエリとFindNodeレスポンスのみで実現しています。
+
+本章では、FindNodeクエリについて解説していきます。
+
+
+### 指定したKIDに近い距離にあるPeerを紹介してもらう事ができる
 
 
 
