@@ -42,6 +42,15 @@ class KNode {
     });
   }
 
+  Future stop() async {
+    if (_isStart == false || _udpSocket == null) {
+      return null;
+    }
+    return _udpSocket.close().whenComplete(() {
+      _isStart = false;
+      _ai.stop(this);
+    });
+  }
 }
 ```
 
