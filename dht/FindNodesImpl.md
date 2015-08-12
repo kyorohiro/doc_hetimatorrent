@@ -17,10 +17,9 @@ DHTの通信を行う主体として、KNode class を定義することにし�
 
 UDP serverは、メッセージを受け取るメッセージはbencodeなのでした。パースしてそのMessageを使うclassに渡します。
 
-```
+```dart
 class KNode {
-  KNode(HetiSocketBuilder socketBuilder,
-      {int kBucketSize: 8, List<int> nodeIdAsList: null, KNodeAI ai: null, intervalSecondForMaintenance: 10, intervalSecondForAnnounce: 3 * 60, bool verbose: false}) {
+  KNode(HetiSocketBuilder socketBuilder) {
     this._verbose = verbose;
     this._intervalSecondForMaintenance = intervalSecondForMaintenance;
     this._intervalSecondForAnnounce = intervalSecondForAnnounce;
@@ -30,6 +29,7 @@ class KNode {
     this._ai = (ai == null ? new KNodeAIBasic(verbose: verbose) : ai);
     this._nodeDebugId = id++;
   }
+  
   Future start({String ip: "0.0.0.0", int port: 28080}) async {
     (_isStart != false ? throw "already started" : 0);
     _udpSocket = this._socketBuilder.createUdpClient();
