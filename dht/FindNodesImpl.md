@@ -54,3 +54,30 @@ class KNode {
 ```
 
 ### (2) Krpc Messageをパースする
+
+MainLine DHT では、PeerとPeerの通信には、Bencodeが利用されます。
+すでにBencodeのパーサーは作成ずみなので、難しいことはないはずです。
+
+```
+class KrpcMessage {
+  KrpcMessage.fromMap(Map map) {
+    _messageAsMap = map;
+  }
+
+  static Future<KrpcMessage> decode(List<int> data) async {
+    Map<String, Object> messageAsMap = null;
+    try {
+      Object v = Bencode.decode(data);
+      messageAsMap = v;
+    } catch (e) {
+      throw {};
+    }
+    return  new KrpcMessage.fromMap(messageAsMap);
+  }
+}
+```
+
+
+
+
+
