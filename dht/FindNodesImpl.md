@@ -80,6 +80,8 @@ class KrpcMessage {
 
 ````
 class KrpcMessage {
+...
+...
   List<int> get transactionId => (_messageAsMap["t"] is String ? UTF8.encode(_messageAsMap["t"]) : _messageAsMap["t"]);
   String get transactionIdAsString => UTF8.decode(transactionId);
 
@@ -90,9 +92,11 @@ class KrpcMessage {
   //
   List<int> get query => (_messageAsMap["q"] is String ? UTF8.encode(_messageAsMap["q"]) : _messageAsMap["q"]);
   String get queryAsString => UTF8.decode(query);
-
+...
+...
 }
 ````
+こんな感じです。
 
 
 
