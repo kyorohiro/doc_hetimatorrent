@@ -37,7 +37,6 @@ class KNode {
           onReceiveMessage(info, message);
         });
       });
-      //////
       _isStart = true;
     });
   }
