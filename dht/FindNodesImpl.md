@@ -21,7 +21,6 @@ UDP serverは、メッセージを受け取るメッセージはbencodeなので
 class KNode {
   KNode(HetiSocketBuilder socketBuilder) {
     this._socketBuilder = socketBuilder;
-    this._rootingtable = new KRootingTable(kBucketSize, _nodeId);
     this._ai = (ai == null ? new KNodeAIBasic(verbose: verbose) : ai);
     this._nodeDebugId = id++;
   }
