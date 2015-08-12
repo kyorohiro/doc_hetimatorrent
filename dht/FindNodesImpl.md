@@ -21,6 +21,7 @@ UDP serverは、メッセージを受け取るメッセージはbencodeなので
 class KNode {
   bool _isStart = false;
   bool get isStart => _isStart;
+  HetiSocketBuilder _socketBuilder = null;
   HetiUdpSocket _udpSocket = null;
  
   KNode(HetiSocketBuilder socketBuilder) {
