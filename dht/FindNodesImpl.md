@@ -76,8 +76,23 @@ class KrpcMessage {
   }
 }
 ```
+こんな感じです。あとは、必要に応じて、パースした結果を読み取るだけです。
 
+````
+class KrpcMessage {
+  List<int> get transactionId => (_messageAsMap["t"] is String ? UTF8.encode(_messageAsMap["t"]) : _messageAsMap["t"]);
+  String get transactionIdAsString => UTF8.decode(transactionId);
 
+  //
+  List<int> get messageType => (_messageAsMap["y"] is String ? UTF8.encode(_messageAsMap["y"]) : _messageAsMap["y"]);
+  String get messageTypeAsString => UTF8.decode(messageType);
+
+  //
+  List<int> get query => (_messageAsMap["q"] is String ? UTF8.encode(_messageAsMap["q"]) : _messageAsMap["q"]);
+  String get queryAsString => UTF8.decode(query);
+
+}
+````
 
 
 
