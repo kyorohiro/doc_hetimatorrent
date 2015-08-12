@@ -19,6 +19,17 @@ UDP serverは、メッセージを受け取るメッセージはbencodeなので
 
 ```
 class KNode {
+  KNode(HetiSocketBuilder socketBuilder,
+      {int kBucketSize: 8, List<int> nodeIdAsList: null, KNodeAI ai: null, intervalSecondForMaintenance: 10, intervalSecondForAnnounce: 3 * 60, bool verbose: false}) {
+    this._verbose = verbose;
+    this._intervalSecondForMaintenance = intervalSecondForMaintenance;
+    this._intervalSecondForAnnounce = intervalSecondForAnnounce;
+    this._nodeId = (nodeIdAsList == null ? KId.createIDAtRandom() : new KId(nodeIdAsList));
+    this._socketBuilder = socketBuilder;
+    this._rootingtable = new KRootingTable(kBucketSize, _nodeId);
+    this._ai = (ai == null ? new KNodeAIBasic(verbose: verbose) : ai);
+    this._nodeDebugId = id++;
+  }
   Future start({String ip: "0.0.0.0", int port: 28080}) async {
     (_isStart != false ? throw "already started" : 0);
     _udpSocket = this._socketBuilder.createUdpClient();
