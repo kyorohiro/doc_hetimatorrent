@@ -19,10 +19,10 @@ UDP serverは、メッセージを受け取るメッセージはbencodeなので
 
 ```dart
 class KNode {
+  bool _isStart = false;
+  bool get isStart => _isStart;
   KNode(HetiSocketBuilder socketBuilder) {
     this._socketBuilder = socketBuilder;
-    this._ai = (ai == null ? new KNodeAIBasic(verbose: verbose) : ai);
-    this._nodeDebugId = id++;
   }
   
   Future start({String ip: "0.0.0.0", int port: 28080}) async {
