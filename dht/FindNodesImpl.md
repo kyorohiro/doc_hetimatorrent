@@ -156,27 +156,6 @@ class KNodeWorkFindNode {
 class KNodeWorkFindNode {
   ...
   ...
-  onReceiveResponse(KNode node, HetiReceiveUdpInfo info, KrpcMessage response) {
-    if (response.queryFromTransactionId == KrpcMessage.QUERY_FIND_NODE) {
-      KrpcFindNode findNode = response.toFindNode();
-      for (KPeerInfo info in findNode.compactNodeInfoAsKPeerInfo) {
-        node.rootingtable.update(info);
-      }
-    }
-    node.rootingtable.update(new KPeerInfo(info.remoteAddress, info.remotePort, response.nodeIdAsKId));
-    updateP2PNetworkWithoutClear(node);
-  }
-  ...
-  ..
-}
-```
-
-## (5) FindeNodeクエリに対応したレスポンスを返せるようにしよう
-
-```
-class KNodeWorkFindNode {
-  ...
-  ...
   onReceiveQuery(KNode node, HetiReceiveUdpInfo info, KrpcMessage query) {
     if (query.queryAsString == KrpcMessage.QUERY_FIND_NODE) {
       KrpcFindNode findNode = query.toFindNode();
@@ -185,6 +164,35 @@ class KNodeWorkFindNode {
       });
     }
     node.rootingtable.update(new KPeerInfo(info.remoteAddress, info.remotePort, query.nodeIdAsKId));
+    updateP2PNetworkWithoutClear(node);
+  }
+  ...
+  ..
+}
+```
+
+一定時間だったら、もう一度アクセスする
+```
+class KNodeWorkFindNode {
+  ...
+  ...
+
+  onTicket(KNode node) {
+    updateP2PNetworkWithRandom(node);
+    for (List l in _todoFineNodes) {
+      node.sendFindNodeQuery(l[0], l[1], node.nodeId.value).catchError((_) {});
+    }
+    _todoFineNodes.clear();
+  }
+```
+
+## (5) FindeNodeクエリに対応したレスポンスを返せるようにしよう
+
+```
+class KNodeWorkFindNode {
+  ...
+  ...
+  onReceiveResponse(KNode node, HetiReceiveUdpInfo info, KrpcMessage response) {
     updateP2PNetworkWithoutClear(node);
   }
   ..
