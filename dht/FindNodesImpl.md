@@ -157,9 +157,6 @@ class KNodeWorkFindNode {
   ...
   ...
   onReceiveResponse(KNode node, HetiReceiveUdpInfo info, KrpcMessage response) {
-    if (_isStart == false) {
-      return null;
-    }
     if (response.queryFromTransactionId == KrpcMessage.QUERY_FIND_NODE) {
       KrpcFindNode findNode = response.toFindNode();
       for (KPeerInfo info in findNode.compactNodeInfoAsKPeerInfo) {
@@ -174,4 +171,23 @@ class KNodeWorkFindNode {
 }
 ```
 
+## (5) FindeNodeクエリに対応したレスポンスを返せるようにしよう
+
+```
+class KNodeWorkFindNode {
+  ...
+  ...
+  onReceiveQuery(KNode node, HetiReceiveUdpInfo info, KrpcMessage query) {
+    if (query.queryAsString == KrpcMessage.QUERY_FIND_NODE) {
+      KrpcFindNode findNode = query.toFindNode();
+      return node.rootingtable.findNode(findNode.targetAsKId).then((List<KPeerInfo> infos) {
+        return node.sendFindNodeResponse(info.remoteAddress, info.remotePort, query.transactionId, KPeerInfo.toCompactNodeInfos(infos)).catchError((_) {});
+      });
+    }
+    node.rootingtable.update(new KPeerInfo(info.remoteAddress, info.remotePort, query.nodeIdAsKId));
+    updateP2PNetworkWithoutClear(node);
+  }
+  ..
+}
+```
 
