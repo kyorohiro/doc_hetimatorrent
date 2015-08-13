@@ -13,6 +13,9 @@
 
 ```
 class KRootingTable {
+  ...
+  ...
+  ...
   List<KPeerInfo> findNode(KId id) {
     List<KPeerInfo> ids = [];
     for (KBucket b in _kBuckets) {
@@ -32,6 +35,8 @@ class KRootingTable {
     }
     return ret;
   }
+  ...
+  ...
 }
 ```
 
