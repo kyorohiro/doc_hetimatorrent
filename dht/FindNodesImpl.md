@@ -178,6 +178,7 @@ class KNodeWorkFindNode {
   ...
 
   onTicket(KNode node) {
+    _findNodesInfo.clear();
     updateP2PNetworkWithoutClear(node);
   }
 ```
