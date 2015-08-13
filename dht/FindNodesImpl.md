@@ -13,7 +13,7 @@
 
 ```
 class KRootingTable {
-  Future<List<KPeerInfo>> findNode(KId id) {
+  List<KPeerInfo> findNode(KId id) {
     List<KPeerInfo> ids = [];
     for (KBucket b in _kBuckets) {
       for (KPeerInfo i in b.iterable) {
@@ -23,7 +23,6 @@ class KRootingTable {
     ids.sort((KPeerInfo a, KPeerInfo b) {
       return a.id.xor(id).compareTo(b.id.xor(id));
     });
-    return new Future(() {
       List<KPeerInfo> ret = [];
       for (KPeerInfo p in ids) {
         ret.add(p);
@@ -32,7 +31,6 @@ class KRootingTable {
         }
       }
       return ret;
-    });
   }
 }
 ```
@@ -229,6 +227,7 @@ class KNodeWorkFindNode {
   ..
 }
 ```
+
 
 
 
