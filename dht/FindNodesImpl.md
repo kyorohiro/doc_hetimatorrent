@@ -178,11 +178,7 @@ class KNodeWorkFindNode {
   ...
 
   onTicket(KNode node) {
-    updateP2PNetworkWithRandom(node);
-    for (List l in _todoFineNodes) {
-      node.sendFindNodeQuery(l[0], l[1], node.nodeId.value).catchError((_) {});
-    }
-    _todoFineNodes.clear();
+    updateP2PNetworkWithoutClear
   }
 ```
 
@@ -193,6 +189,13 @@ class KNodeWorkFindNode {
   ...
   ...
   onReceiveResponse(KNode node, HetiReceiveUdpInfo info, KrpcMessage response) {
+    if (response.queryFromTransactionId == KrpcMessage.QUERY_FIND_NODE) {
+      KrpcFindNode findNode = response.toFindNode();
+      for (KPeerInfo info in findNode.compactNodeInfoAsKPeerInfo) {
+        node.rootingtable.update(info);
+      }
+    }
+    node.rootingtable.update(new KPeerInfo(info.remoteAddress, info.remotePort, response.nodeIdAsKId));
     updateP2PNetworkWithoutClear(node);
   }
   ..
