@@ -11,6 +11,8 @@
 
 ## RootingTableに、FindeNodeの機能を追加する
 
+所持しているPeerInfoを指定されたKIDでソートして探す。
+
 ```
 class KRootingTable {
   ...
