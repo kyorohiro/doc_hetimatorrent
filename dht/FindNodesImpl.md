@@ -178,7 +178,7 @@ class KNodeWorkFindNode {
   ...
 
   onTicket(KNode node) {
-    updateP2PNetworkWithoutClear
+    updateP2PNetworkWithoutClear(node);
   }
 ```
 
