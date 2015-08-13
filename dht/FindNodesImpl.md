@@ -100,9 +100,16 @@ class KrpcMessage {
 (3) メッセージを送信する
 
 ```
+class KNode {
+ ..
+ ..
   sendMessage(KrpcMessage message, String ip, int port) {
       return _udpSocket.send(message.messageAsBencode, ip, port);
   }
+ ..
+}
+
 ```
+
 
 
