@@ -114,9 +114,7 @@ class FindNode {
   static int queryID = 0;
 
   static KrpcMessage createQuery(List<int> queryingNodesId, List<int> targetNodeId) {
-    List<int> transactionId = UTF8.encode("fi${queryID++}");
-: new Uint8List.fromList(targetNodeId));
-    return new KrpcMessage.fromMap({"a": {"id": queryingNodesId, "target": targetNodeId}, "q": "find_node", "t": transactionId, "y": "q"});
+    List<int> transactionId = UTF8.encode("fi${queryID++}");     return new KrpcMessage.fromMap({"a": {"id": queryingNodesId, "target": targetNodeId}, "q": "find_node", "t": transactionId, "y": "q"});
   }
 
   static KrpcMessage createResponse(List<int> compactNodeInfo, List<int> queryingNodesId, List<int> transactionId) {
