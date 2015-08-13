@@ -97,5 +97,12 @@ class KrpcMessage {
 ````
 こんな感じです。
 
+(3) メッセージを送信する
+
+```
+  sendMessage(KrpcMessage message, String ip, int port) {
+      return _udpSocket.send(message.messageAsBencode, ip, port);
+  }
+```
 
 
