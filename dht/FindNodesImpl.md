@@ -151,3 +151,27 @@ class KNodeWorkFindNode {
 }
 ```
 
+レスポンスを受けとったら、もう一度繰り返す
+```
+class KNodeWorkFindNode {
+  ...
+  ...
+  onReceiveResponse(KNode node, HetiReceiveUdpInfo info, KrpcMessage response) {
+    if (_isStart == false) {
+      return null;
+    }
+    if (response.queryFromTransactionId == KrpcMessage.QUERY_FIND_NODE) {
+      KrpcFindNode findNode = response.toFindNode();
+      for (KPeerInfo info in findNode.compactNodeInfoAsKPeerInfo) {
+        node.rootingtable.update(info);
+      }
+    }
+    node.rootingtable.update(new KPeerInfo(info.remoteAddress, info.remotePort, response.nodeIdAsKId));
+    updateP2PNetworkWithoutClear(node);
+  }
+  ...
+  ..
+}
+```
+
+
