@@ -1,8 +1,6 @@
 # FindNodesを実装してみよう
 <hr>
-* **FindNodeクエリでネットワークを構築する**
-<br>
-* **リスポンスを受けたらRootingTableを更新する**
+* **MainLine DHT は、UDPで通信**
 <br>
 <hr>
 
