@@ -217,6 +217,7 @@ class KNodeWorkFindNode {
 
 ## (5) FindeNodeクエリに対応したレスポンスを返せるようにしよう
 
+
 ```
 class KNodeWorkFindNode {
   ...
