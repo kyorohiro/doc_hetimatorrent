@@ -23,14 +23,14 @@ class KRootingTable {
     ids.sort((KPeerInfo a, KPeerInfo b) {
       return a.id.xor(id).compareTo(b.id.xor(id));
     });
-      List<KPeerInfo> ret = [];
-      for (KPeerInfo p in ids) {
-        ret.add(p);
-        if (ret.length >= _kBucketSize) {
-          return ret;
-        }
+    List<KPeerInfo> ret = [];
+     for (KPeerInfo p in ids) {
+      ret.add(p);
+       if (ret.length >= _kBucketSize) {
+         return ret;
       }
-      return ret;
+    }
+    return ret;
   }
 }
 ```
