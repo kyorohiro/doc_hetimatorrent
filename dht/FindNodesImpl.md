@@ -83,7 +83,7 @@ class KNode {
 }
 ```
 
-## (2) Krpc Messageをパースする
+## (2) Krpc Messageをパースする機能を持つ
 
 MainLine DHT では、PeerとPeerの通信には、Bencodeが利用されます。
 すでにBencodeのパーサーは作成ずみなので、難しいことはないはずです。
@@ -128,7 +128,7 @@ class KrpcMessage {
 こんな感じです。BEP5のスペックをみると結構ありますがも気長にコーディングしていけば、半日くらいで終わると思います。
 
 
-## (3) メッセージを送信する
+## (3) メッセージを送信する機能を持つ
 
 
 ```
@@ -232,6 +232,7 @@ class KNodeWorkFindNode {
   ..
 }
 ```
+
 
 
 
