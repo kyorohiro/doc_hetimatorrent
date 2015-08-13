@@ -10,7 +10,7 @@
 通信ライブラリとして、hetimanetを使用しています。APIのインターフェイスは他の通信ライブラリと大きな違いはありません。なので、お使いのものと読み替えて読み進めてください。
 
 
-### (1) KNodeはUDPサーバー機能を持つ。
+## (1) KNodeはUDPサーバー機能を持つ。
 
 まずは、UDPを用いて、通信部分を書いてみましょう。Torrentの仕様では、DHTとして動作するPeerをNodeと読んでいます。
 DHTの通信を行う主体として、KNode class を定義することにします。
@@ -53,7 +53,7 @@ class KNode {
 }
 ```
 
-### (2) Krpc Messageをパースする
+## (2) Krpc Messageをパースする
 
 MainLine DHT では、PeerとPeerの通信には、Bencodeが利用されます。
 すでにBencodeのパーサーは作成ずみなので、難しいことはないはずです。
@@ -98,7 +98,7 @@ class KrpcMessage {
 こんな感じです。BEP5のスペックをみると結構ありますがも気長にコーディングしていけば、半日くらいで終わると思います。
 
 
-### (3) メッセージを送信する
+## (3) メッセージを送信する
 
 
 ```
@@ -128,6 +128,26 @@ class FindNode {
 
 メッセージの送信は、受信用に作成したUDPSocketを利用します。こうすることで、受信相手に、ポート番号を伝えることができます。
 
-(4) ネットワークへの参加用のコードを書く
+## (4) ネットワークへの参加用のコードを書く
 
+RootingTableに所持しているデータの中から、自分自信ともっとも近いKIDをもつPeerへFindNodeクエリを送信する
+
+```
+class KNodeWorkFindNode {
+  ...
+  ...
+  updateP2PNetworkWithoutClear(KNode node) {
+    node.rootingtable.findNode(node.nodeId).then((List<KPeerInfo> infos) {
+      for (KPeerInfo info in infos) {
+        if (!_findNodesInfo.rawsequential.contains(info)) {
+          _findNodesInfo.addLast(info);
+          node.sendFindNodeQuery(info.ipAsString, info.port, node.nodeId.value).catchError((_) {});
+        }
+      }
+    });
+  }
+  ...
+  ...
+}
+```
 
