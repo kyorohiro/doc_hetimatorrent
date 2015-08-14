@@ -79,6 +79,12 @@ FindNodeとほとんど同じですね。本書では"token"と"values"が初め
 ref http://www.bittorrent.org/beps/bep_0005.html
 
 
+## 実装について
+
+findNodeで解説したとおりです。findNodeを実装したノウハウでそのままgetPeersも実装できると思います。
+なので、特別、解説するページをさかないようにしました。
+
+
 
 -------
 Kyorohiro work
