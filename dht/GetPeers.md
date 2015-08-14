@@ -73,7 +73,8 @@ FindNodeとほとんど同じですね。本書では"token"と"values"が初め
 
 "token" は、レスポンスを返す側に自由に決めることができるバイトデータです。AnnouncePeerクエリを送信する時に使います。このバイトデータのサイズもレスポンスを返す側のクライアントによって、異なります。
 
-"value" は、6
+"value" は、6バイトのデータ[<IP 4bute> ,<Port 2byte>]をList形式で、複数個格納しています。
+
 
 ref http://www.bittorrent.org/beps/bep_0005.html
 
