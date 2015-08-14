@@ -37,9 +37,20 @@ K個のNodeへデータの記録を依頼します。複数のPeerへ依頼す�
 
 ## メッセージの構成
 
+```
+arguments:  
+{
+ "t":"aa",
+ "y":"q",
+ "q":"find_node", 
+"a": {"id" : "<querying nodes id>", "info_hash" : "<20-byte infohash of target torrent>"}
+}
+response: {"id" : "<queried nodes id>", "token" :"<opaque write token>", "values" : ["<peer 1 info string>", "<peer 2 info string>"]}
 
+or: {"id" : "<queried nodes id>", "token" :"<opaque write token>", "nodes" : "<compact node info>"}
+```
 
-
+ref http://www.bittorrent.org/beps/bep_0005.html
 
 -------
 Kyorohiro work
