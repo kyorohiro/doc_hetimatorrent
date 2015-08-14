@@ -29,5 +29,5 @@
    * [FindNodeでネットワークの構築](dht/FindNodes.md)
    * [FindNodeを実装](dht/FindNodesImpl.md)
    * [GetPeersでInfoHashに対応するPeerを探す](dht/GetPeers.md)
-   * テスト
+   * [テスト](dht/Test.md)
 
