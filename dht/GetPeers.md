@@ -69,6 +69,11 @@ response: have node info
 }
 ```
 
+FindNodeとほとんど同じですね。本書では"token"と"values"が初めて出てきました。
+
+"token" は、レスポンスを返す側に自由に決めることができるバイトデータです。AnnouncePeerクエリを送信する時に使います。このバイトデータのサイズもレスポンスを返す側のクライアントによって、異なります。
+
+"value" は、6
 
 ref http://www.bittorrent.org/beps/bep_0005.html
 
