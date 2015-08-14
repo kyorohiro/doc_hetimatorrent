@@ -78,6 +78,8 @@ FindNodeとほとんど同じですね。本書では"token"と"values"が初め
 
 ref http://www.bittorrent.org/beps/bep_0005.html
 
+
+
 -------
 Kyorohiro work
 
