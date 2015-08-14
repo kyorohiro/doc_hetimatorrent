@@ -42,7 +42,7 @@ arguments:
 {
   "t":"aa",
   "y":"q",
-  "q":"find_node", 
+  "q":"get_peers", 
   "a": {
     "id" : "<querying nodes id>", 
     "info_hash" : "<20-byte infohash of target torrent>"
@@ -68,6 +68,7 @@ response: have node info
   }
 }
 ```
+
 
 ref http://www.bittorrent.org/beps/bep_0005.html
 
