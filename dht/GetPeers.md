@@ -59,9 +59,13 @@ response: have value
 
 response: have node info
 {
+ "t":"aa",
+ "y":"r",
+ "r": {
   "id" : "<queried nodes id>",
   "token" :"<opaque write token>",
   "nodes" : "<compact node info>"
+  }
 }
 ```
 
