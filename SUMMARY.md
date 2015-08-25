@@ -11,6 +11,7 @@
    * [Bencode](torrentfile/Bencode.md)
    * [Bencodeの実装](torrentfile/Implementation.md)
    * [TorrentFileの中身](torrentfile/Content.md)
+* Httpサーバーを作成してみる
 * UPnpによるポートマップ
    * [UPnPによるポートマップ](upnp/About.md)
    * [UPnPの実装](upnp/Implementation.md)
@@ -22,6 +23,7 @@
    * [テスト](tracker/Test.md)
 * リダイレクトに対応
    * [リダイレクト](tracker/Redirect.md)
+* ダウンロードゲームへ参加してみる
 * DHTに対応してみる
    * [Tracker無しでPeerを探す](dht/About.md)
    * [KademuliaのkBucketを利用している](dht/kBucket.md)
