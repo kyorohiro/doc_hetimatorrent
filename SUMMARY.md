@@ -1,7 +1,7 @@
 # Summary
 
 * [Cover](README.md)
-* はじめに
+* はじめに(intro/Intro.md)
    * [はじめに](intro/Introduction.md)
    * [Torrentとは](intro/About.md)
    * [ゴール](intro/Goal.md)
