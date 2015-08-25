@@ -25,7 +25,7 @@
    * [リダイレクト](tracker/Redirect.md)
 * [ダウンロードゲームへ参加してみる](client/Client.md)
    * [ダウンロードゲーム](client/Readme.md)
-* DHTに対応してみる
+* [DHTに対応してみる](dht/Dht.md)
    * [Tracker無しでPeerを探す](dht/About.md)
    * [KademuliaのkBucketを利用している](dht/kBucket.md)
    * [RootingTableを実装してみよう](dht/kBucketImpl.md)
