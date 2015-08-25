@@ -24,7 +24,7 @@
 * リダイレクトに対応
    * [リダイレクト](tracker/Redirect.md)
 * ダウンロードゲームへ参加してみる
-   * [リダイレクト](client/Readme.md)
+   * [ダウンロードゲーム](client/Readme.md)
 * DHTに対応してみる
    * [Tracker無しでPeerを探す](dht/About.md)
    * [KademuliaのkBucketを利用している](dht/kBucket.md)
