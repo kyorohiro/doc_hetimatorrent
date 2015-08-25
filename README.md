@@ -1,5 +1,4 @@
 ![](cover.jpg)
-
 * はじめに
    * [はじめに](intro/Introduction.md)
    * [Torrentとは](intro/About.md)
