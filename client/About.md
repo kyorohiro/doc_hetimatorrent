@@ -1,8 +1,10 @@
 # Peerどうしの通信
+* TCPでデータのやりとりをする
 * 最初にHandshakeする
 <br>
 * 次にBitfieldする
 <hr>
+
 
 
 
