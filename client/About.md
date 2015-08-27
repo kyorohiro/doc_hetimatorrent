@@ -1,5 +1,5 @@
-# Mainline DHTはTrackerなしでPeerを探すことができる。
-* **Trackerがなくてもデータを探せる**
+# Peerどうしの通信
+* Handshake
 <br>
-* **六次の隔たりで実現している**
+* **
 <hr>
