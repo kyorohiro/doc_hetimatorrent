@@ -1,4 +1,5 @@
 ![](cover.jpg)
+* [Cover](README.md)
 * [イントロ](intro/Intro.md)
    * [はじめに](intro/Introduction.md)
    * [Torrentとは](intro/About.md)
@@ -22,7 +23,7 @@
 * リダイレクトに対応
    * [リダイレクト](tracker/Redirect.md)
 * [ダウンロードゲームへ参加してみる](client/Client.md)
-   * [ダウンロードゲーム](client/Readme.md)
+   * [ダウンロードゲーム](client/About.md)
 * [DHTに対応してみる](dht/Dht.md)
    * [Tracker無しでPeerを探す](dht/About.md)
    * [KademuliaのkBucketを利用している](dht/kBucket.md)
