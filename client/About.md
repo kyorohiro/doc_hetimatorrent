@@ -1,13 +1,15 @@
 # ダウンロードゲーム
 
-TrackerからPeerの一覧を取得できるようになりました。Peerどうしが所持してしいるデータをじ配信しあいます。
+TrackerからPeerの一覧を取得できるようになりました。TorrentのP2Pネットワークから、実際にデーターをダウンロードしてみましょう。
 
-例えば、
-"まぎか.mp4" というデータをPeer B が所持していて、Peer B が このデータを欲しい場合
+
+Torrentでは、Peerどうしが所持してしいるデータを配信しあいます。
+
+例えば、"まぎか.mp4" というデータをPeer A が所持していて、Peer B が このデータを欲しい場合
 
 ![](client_a.jpg)
 
-Peer A は Peer Bにデーターを提供します。
+Peer A が Peer Bにデーターを提供します。
 
 
 同様に、Peer B が Peer A が欲しがるデータを所持していた場合、
@@ -20,12 +22,24 @@ Peer A は Peer Bにデーターを提供します。
 
 Torrent の場合は、このデータを共有する単位が、ファイルではなくて、ブロック単位で管理しています。
 
+TorrentFile の中に記載されている、"piece length" の値でデータを共通します。
 
+```
+{
+ "announce":http://example.com/tracker,
+ "created by":torrent generator,
+ "creation date":1364723642,
+ "encoding":utf-8,
+ "info":{
+ "length":1024,
+ "name":xxx
+ "piece length":16384,
+ "pieces":<......20バイト単位のバイナリデータ>
+ }
+}
+```
 
-
-
-
-
+## 
 
 
 
