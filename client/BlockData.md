@@ -46,3 +46,10 @@ class BitfieldA {
 
 こんな感じです。
 
+
+
+
+
+
+
+
