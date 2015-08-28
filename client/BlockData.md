@@ -47,6 +47,8 @@ class BitfieldA {
 こんな感じです。
 
 
+## BlockDataの実装
+
 
 
 
