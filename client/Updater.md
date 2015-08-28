@@ -18,7 +18,10 @@
 reserved は、拡張用に予約されている領域。infohash の部分がtorrent file を識別するのに使用するID。peer_id がpeerを識別するIDです。
 
 
-BitTorrent protocol
+Trackerから、IPアドレスとPort番号を教えてもらうと、Torrent Clientは、このメッセージを送信します。
+InfoHashを検証して、回線に余裕があれば、相手からもこのメッセージが送信されます。
+
+これで、ハンドシェークの完了です。
 
 
 ## データ配信に必要なメッセージ
