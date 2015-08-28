@@ -12,7 +12,7 @@ Bitfieldを実装していきす。 Bitfield Bool値(0, 1)を持つ任意の長�
 ```:dart
 class BitfieldSample {
   List<bool> _data = [];
-  Bitfield(int length) {
+  BitfieldSample(int length) {
     _data = new List.filled(length, false);
   }
 
