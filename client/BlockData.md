@@ -15,6 +15,9 @@ class Bitfield {
  Bitfield(int length) {
    data = new List.filled(length, 0);
  }
+
+  bool operator [](int idx) => data[idx];
+  void operator []=(int index, bool value) => setIsOn(index, value);
 }
 ```
 
