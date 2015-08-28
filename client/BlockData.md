@@ -10,9 +10,9 @@
 Bitfieldを実装していきす。 Bitfield Bool値(0, 1)を持つ任意の長さの配列です。
 
 ```:dart
-class BitfieldA {
+class Bitfield {
   List<bool> _data = [];
-  BitfieldA(int length) {
+  Bitfield(int length) {
     _data = new List.filled(length, false);
   }
 
@@ -27,7 +27,7 @@ class BitfieldA {
 
 Torrentはこの値をバイト配列として利用するので、変換するメソッドを用意しておきましょう。
 ```
-class BitfieldA {
+class Bitfield {
 ....
 ....
 
