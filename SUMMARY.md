@@ -26,6 +26,7 @@
 * [ダウンロードゲームへ参加してみる](client/Client.md)
    * [ダウンロードゲーム](client/About.md)
    * [ブロックデータを作成](client/BlockData.md)
+   * [配信ようPeerの作成](client/Updater.md)
 * [DHTに対応してみる](dht/Dht.md)
    * [Tracker無しでPeerを探す](dht/About.md)
    * [KademuliaのkBucketを利用している](dht/kBucket.md)
