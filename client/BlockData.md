@@ -36,10 +36,13 @@ class BitfieldA {
     Uint8List ret = new Uint8List(bytesLengths);
     for (int i = 0; i < _data.length; i++) {
       if (this[i] == true) {
-        ret[i ~/ 8] |= 0x01 << i % 8;
+        ret[i ~/ 8] |= 0x80 >> (7 - (i % 8));
       }
     }
     return ret;
   }
 }
 ```
+
+こんな感じです。
+
