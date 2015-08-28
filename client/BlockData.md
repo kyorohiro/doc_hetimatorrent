@@ -31,5 +31,8 @@ class Bitfield {
   bool operator [](int idx) => _data[idx];
   void operator []=(int idx, bool value) => data[idx] = _value;
   int get length => _data.length;
+  
+  toBytes() {
+  }
 }
 ```
