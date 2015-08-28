@@ -17,7 +17,7 @@ class Bitfield {
  }
 
   bool operator [](int idx) => data[idx];
-  void operator []=(int index, bool value) => setIsOn(index, value);
+  void operator []=(int idx, bool value) => data[idx] = value;
 }
 ```
 
