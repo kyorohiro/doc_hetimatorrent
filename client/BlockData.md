@@ -16,8 +16,8 @@ class Bitfield {
    _data = new List.filled(length, 0);
  }
 
-  bool operator [](int idx) => data[idx];
-  void operator []=(int idx, bool value) => data[idx] = value;
+  bool operator [](int idx) => _data[idx];
+  void operator []=(int idx, bool value) => data[idx] = _value;
 }
 ```
 
