@@ -14,9 +14,9 @@
 中身はこんな感じ。
 ![](client_mha.jpg)
 
-19はプロトコル名の長さ、"Bittorrent protocol"がプロトコル、
-reserved は、拡張用に予約されている領域。
-infohash の部分が
+19はプロトコル名の長さ、"Bittorrent protocol"がプロトコル。
+reserved は、拡張用に予約されている領域。infohash の部分がtorrent file を識別するのに使用するID。peer_id がpeerを識別するIDです。
+
 
 BitTorrent protocol
 
