@@ -21,4 +21,15 @@ class Bitfield {
 }
 ```
 
-
+実際には、この値をバイト配列として利用します。
+```
+class Bitfield {
+  bool List<bool> _data = [];
+  Bitfield(int length) {
+    _data = new List.filled(length, 0);
+  }
+  bool operator [](int idx) => _data[idx];
+  void operator []=(int idx, bool value) => data[idx] = _value;
+  int get length => _data.length;
+}
+```
