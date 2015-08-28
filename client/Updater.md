@@ -59,7 +59,7 @@ indexが、Blockの位置、beginとlengthがアップロードして欲しい�
 
 
 Pieceメッセージを返します。
-
+![](client_mpi.jpg)
 
 
 
