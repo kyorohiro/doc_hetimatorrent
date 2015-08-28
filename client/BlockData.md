@@ -12,6 +12,10 @@ Bitfieldを実装していきす。 Bitfield Bool値(0, 1)を持つ任意の長�
 ```
 class Bitfield {
  bool List<bool> data = [];
+ Bitfield(int length) {
+   data = new List.filled(length, 0);
+ }
 }
+```
 
 
