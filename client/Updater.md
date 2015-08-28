@@ -53,6 +53,8 @@ Torrent Clientでは、配信リクエストを受けたBlockを配信します�
 Requestメッセージが相手から送られます。
 ![](client_mre.jpg)
 
+indexが、Blockの位置、beginとlengthがアップロードして欲しい、開始位置、その長さです。
+
 
 
 
