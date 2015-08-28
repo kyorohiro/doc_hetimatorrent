@@ -12,11 +12,11 @@
 まずは、ハンドシェイク処理を行います。Torrent Clientがサポートしているプロトコルは何か?このセッションでやりとりするデータは何かを交換します。
 
 中身はこんな感じ。
+![](client_mha.jpg)
 
-|0|1|2|3|4|5|6|7|8|9|a|b|c|d|e|f|
-| -- | -- | -- | -- | -- |
-| 19 | B | i | t | T | o | r | r | e | n | t | | p | r | o | t |
-| o  | c | o | l |   
+19はプロトコル名の長さ、"Bittorrent protocol"がプロトコル、
+reserved は、拡張用に予約されている領域。
+infohash の部分が
 
 BitTorrent protocol
 
