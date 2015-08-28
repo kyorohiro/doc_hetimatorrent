@@ -21,7 +21,7 @@ class Bitfield {
 }
 ```
 
-実際には、この値をバイト配列として利用します。
+Torrentはこの値をバイト配列として利用するので、変換するメソッドを用意しておきましょう。
 ```
 class Bitfield {
   bool List<bool> _data = [];
