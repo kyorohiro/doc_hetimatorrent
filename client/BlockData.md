@@ -49,6 +49,10 @@ class Bitfield {
 
 ## BlockDataの実装
 
+BlockDataは、メモリーに治らなまいデータを扱う可能性があるので、メモリーに記録する事ができません。
+
+ここでは、以下のような、インターフェイスを利用します。
+
 ```
 abstract class HetimaData {
   async.Future<int> getLength();
@@ -57,6 +61,16 @@ abstract class HetimaData {
 }
 ```
 
+
+BlockDataは、Blockごとにデータの状態を管理します。なので、blockごとにデータを所持しているか、所持していないかを判断できるようにします。
+
+```
+class BlockData {
+   Bitfield _info = null;
+   B
+}
+
+```
 
 
 　
