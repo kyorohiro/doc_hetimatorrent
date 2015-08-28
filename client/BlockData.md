@@ -75,7 +75,18 @@ class BlockDataSample {
 }
 
 ```
+class BlockDataSample {
+  BitfieldSample _info = null;
+  HetimaData _data = null;
+  BlockDataSample(int fileSize, int blockSize, HetimaData data) {
+    _info = new BitfieldSample(fileSize ~/ blockSize + (fileSize % blockSize == 0 ? 0 : 1));
+    _data = data;
+  }
 
+  bool operator [](int idx) => _info[idx];
+  int get length => _info.length;
+}
+```
 
 　
 
