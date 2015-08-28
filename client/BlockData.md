@@ -66,16 +66,6 @@ BlockDataは、Blockごとにデータの状態を管理します。なので、
 
 ```
 class BlockDataSample {
-  Bitfield _info = null;
-  HetimaData _data = null;
-  BlockDataSample(int fileSize, int blockSize, HetimaData data) {
-    _info = new Bitfield(fileSize ~/ blockSize + (fileSize % blockSize == 0 ? 0 : 1));
-    _data = data;
-  }
-}
-
-```
-class BlockDataSample {
   BitfieldSample _info = null;
   HetimaData _data = null;
   BlockDataSample(int fileSize, int blockSize, HetimaData data) {
@@ -86,6 +76,9 @@ class BlockDataSample {
   bool operator [](int idx) => _info[idx];
   int get length => _info.length;
 }
+
+```
+
 ```
 
 　
