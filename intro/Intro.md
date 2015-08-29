@@ -5,6 +5,6 @@
 * What is Torrrent
 
 <hr>
+![](intro.jpg)
 
-![](./intro.jpg)
 
