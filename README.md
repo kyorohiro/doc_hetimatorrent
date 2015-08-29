@@ -28,7 +28,7 @@
    * [基本戦術](client/BasicSs.md)
 * [DHTに対応してみる](dht/Dht.md)
    * [Tracker無しでPeerを探す](dht/About.md)
-   * [KademuliaのkBucketを利用している](dht/kBucket.md)
+   * [KademliaのkBucketを利用している](dht/kBucket.md)
    * [RootingTableを実装してみよう](dht/kBucketImpl.md)
    * [FindNodeでネットワークの構築](dht/FindNodes.md)
    * [FindNodeを実装](dht/FindNodesImpl.md)
