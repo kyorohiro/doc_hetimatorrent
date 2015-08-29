@@ -27,6 +27,7 @@
    * [ダウンロードゲーム](client/About.md)
    * [ブロックデーの実装](client/BlockData.md)
    * [配信用、Peerを作成してみよう](client/Updater.md)
+   * [基本戦術](client/BasicSs.md)
 * [DHTに対応してみる](dht/Dht.md)
    * [Tracker無しでPeerを探す](dht/About.md)
    * [KademuliaのkBucketを利用している](dht/kBucket.md)
