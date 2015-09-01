@@ -80,14 +80,10 @@ Chokeをする事によって、具体的にどうのような事が起きてい
 
 3つのPeerのネットワークで、各々のPeerは、2つがUnchokeする場合について見てみましよう。
 
-```
-ooo,
-xoo,oxo,oox,
-oxx,xox,xxo,
-xxx
-```
 あるPeerがChoke,Uncokeを受けるパターンは以上のとおり、8パターンあります。
 これに、Chokeされる確率は1/3であることを考慮すると。
+
+#### - peer数が3
 
 | Chokeの数| パターン| 確率|
 | -- | -- | -- |
@@ -97,13 +93,14 @@ xxx
 | 全部 | xxx | 1/3 * 1/3 * 1/3 * 1 == 3%|
 
 
-次は、Peer数が4つの場合、
+#### - peer数が4
 
 | Chokeの数| パターン| 確率|
 | -- | -- | -- |
 | 無し | oooo | 1/3 * 1/3 * 1/3 * 1 == 30% |
 | ひとつ | xooo,oxoo,ooxo, ooox | 1/3 * 2/3 * 2/3 * 3 == 45% |
-| ふたつ | xxoo,xoxo,xoox, oxxo, oxox, ooxx| 1/3 * 1/3 * 2/3 * 3 == 22% | みっつ | oxxxx,xoxx,xxox, xxxo | 1/3 * 2/3 * 2/3 * 3 == 45% |
+| ふたつ | xxoo,xoxo,xoox, oxxo, oxox, ooxx| 1/3 * 1/3 * 2/3 * 3 == 22%　|
+| みっつ | oxxxx,xoxx,xxox, xxxo | 1/3 * 2/3 * 2/3 * 3 == 45% |
 | 全部 | xxxx | 1/3 * 1/3 * 1/3 * 1 == 3%|
 
 
