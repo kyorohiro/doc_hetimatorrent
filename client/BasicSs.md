@@ -89,7 +89,8 @@ xxx
 あるPeerがChoke,Uncokeを受けるパターンは以上のとおり、8パターンあります。
 これに、Chokeされる確率は1/3であることを考慮すると。
 
-
+| -- | -- |
+| 全て unchpke |  ooo|
 | 全て unchpke |  ooo|
 
 xoo,oxo,oox,
