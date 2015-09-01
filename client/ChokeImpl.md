@@ -19,6 +19,21 @@ PeerInfoには、Peerのステータスの一覧が定義されています。
 
 
 ```
+abstract class TorrentClientPeerInfo {
+  String ip = "";
+  int port = 0;
 
+  List<int> get peerId;
+  int get speed;
+  int get downloadedBytesFromMe;
+  int get uploadedBytesToMe;
+  int get chokedFromMe;
+  int get chokedToMe;
+  int get interestedToMe;
+  int get interestedFromMe;
+  bool get amI;
+  bool get isClose;
+  int get uploadSpeedFromUnchokeFromMe;
+}
 
 ```
