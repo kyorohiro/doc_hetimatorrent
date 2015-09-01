@@ -15,7 +15,7 @@ Chokeを実装してみましょう。Torrentクライアントの通信部分�
 
 Chokeアルゴリズムに必要な要素を考えて、PeerInfoというクラスを定義しました。
 
-PeerInfoには、Peerのステータスの一覧が定義されています。
+PeerInfoには、Peerのステータスの一覧が定義しました。
 
 
 ```
@@ -34,6 +34,7 @@ abstract class TorrentClientPeerInfo {
   bool get isClose;
   int get uploadSpeedFromUnchokeFromMe;
 }
+
 
 ```
 
