@@ -116,3 +116,29 @@ List<TorrentClientPeerInfo> extractChokePeerFromUnchoke(TorrentClientPeerInfos i
 
 ### 
 
+```
+  TorrentAIChokeTestResult extractChokeAndUnchoke(TorrentClientPeerInfos infos, int maxUnchoke, int maxReplace) {
+    List<TorrentClientPeerInfo> unchokeFromMePeers = infos.getPeerInfos((TorrentClientPeerInfo info) {
+      return (info.isClose == false && info.chokedFromMe == TorrentClientPeerInfo.STATE_OFF && info.amI == false);
+    });
+    List<TorrentClientPeerInfo> aliveAndNotChokePeer = infos.getPeerInfos((TorrentClientPeerInfo info) {
+      return (info.isClose == false && info.amI == false && info.chokedFromMe != TorrentClientPeerInfo.STATE_OFF);
+    });
+    List<TorrentClientPeerInfo> chokePeers = extractChokePeerFromUnchoke(infos, maxReplace, maxUnchoke);
+    for (TorrentClientPeerInfo info in chokePeers) {
+      aliveAndNotChokePeer.remove(info);
+    }
+    int n = unchokeFromMePeers.length - chokePeers.length;
+    List<TorrentClientPeerInfo> unchokePeers = extractUnchokePeerFromChoke(infos, maxUnchoke - n);
+    for (TorrentClientPeerInfo info in unchokePeers) {
+      aliveAndNotChokePeer.remove(info);
+    }
+
+    TorrentAIChokeTestResult ret = new TorrentAIChokeTestResult();
+    ret.choke.addAll(chokePeers);
+    ret.choke.addAll(aliveAndNotChokePeer);
+    ret.unchoke.addAll(unchokePeers);
+    return ret;
+  }
+```
+
