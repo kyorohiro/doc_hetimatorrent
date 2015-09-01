@@ -90,5 +90,25 @@ List<TorrentClientPeerInfo> extractChokePeerFromUnchoke(TorrentClientPeerInfos i
   }
 ```
 
+### ChokeしたPeerから、UnchokeするPeerを選択する
+```
+  List<TorrentClientPeerInfo> extractUnchokePeerFromChoke(TorrentClientPeerInfos infos, int numOfUnchoke) {
+    List<TorrentClientPeerInfo> unchokeInterestedPeers = infos.getPeerInfos((TorrentClientPeerInfo info) {
+      return (info.isClose == false && info.interestedToMe == TorrentClientPeerInfo.STATE_ON && info.chokedFromMe == TorrentClientPeerInfo.STATE_ON && info.amI == false);
+    });
+    List<TorrentClientPeerInfo> unchokeNotInterestedPeers = infos.getPeerInfos((TorrentClientPeerInfo info) {
+      return (info.isClose == false && info.interestedToMe != TorrentClientPeerInfo.STATE_ON && info.chokedFromMe == TorrentClientPeerInfo.STATE_ON && info.amI == false);
+    });
+    unchokeInterestedPeers.shuffle();
+    List<TorrentClientPeerInfo> ret = [];
+    for (int i = 0; i < unchokeInterestedPeers.length && ret.length < numOfUnchoke; i++) {
+      ret.add(unchokeInterestedPeers[i]);
+    }
+    for (int i = 0; i < unchokeNotInterestedPeers.length && ret.length < numOfUnchoke; i++) {
+      ret.add(unchokeNotInterestedPeers[i]);
+    }
+    return ret;
+  }
+```
 
 
