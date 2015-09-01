@@ -35,6 +35,27 @@ abstract class TorrentClientPeerInfo {
   int get uploadSpeedFromUnchokeFromMe;
 }
 
+class TorrentClientPeerInfos {
+  List<TorrentClientPeerInfo> _peerInfos = [];
+  List<TorrentClientPeerInfo> get rawpeerInfos => _peerInfos;
+  int get numOfPeerInfo => _peerInfos.length;
+
+  TorrentClientPeerInfos() {}
+
+  List<TorrentClientPeerInfo> getPeerInfos(Function filter) {
+    List<TorrentClientPeerInfo> t = [];
+    for (TorrentClientPeerInfo x in _peerInfos) {
+      if (filter(x)) {
+        t.add(x);
+      }
+    }
+    return t;
+  }
+
+  void addPeerInfo(TorrentClientPeerInfo info) {
+    _peerInfos.add(info);
+  }
+}
 
 ```
 
