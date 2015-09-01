@@ -26,7 +26,6 @@ abstract class TorrentClientPeerInfo {
   String ip = "";
   int port = 0;
   List<int> get peerId;
-  int get speed;
   int get downloadedBytesFromMe;
   int get uploadedBytesToMe;
   int get chokedFromMe;
