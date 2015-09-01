@@ -92,7 +92,7 @@ xxx
 | 説明| パターン| 確率|
 | -- | -- | -- |
 | 全て unchoke | ooo | 2/3*2/3*2/3*(1/8)|
-| 全て unchoke | xoo,oxo,oox, | 2/3*2/3*2/3*(1/8)|
+| 全て unchoke | xoo,oxo,oox | 2/3*2/3*2/3*(1/8)|
 
 xoo,oxo,oox,
 oxx,xox,xxo,
