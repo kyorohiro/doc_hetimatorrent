@@ -34,7 +34,8 @@ abstract class TorrentClientPeerInfo {
   bool get isClose;
   int get uploadSpeedFromUnchokeFromMe;
 }
-
+```
+```
 class TorrentClientPeerInfos {
   List<TorrentClientPeerInfo> _peerInfos = [];
   List<TorrentClientPeerInfo> get rawpeerInfos => _peerInfos;
