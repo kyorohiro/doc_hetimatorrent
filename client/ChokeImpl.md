@@ -4,6 +4,7 @@
 * UnchokeしたPeerからChokeするPeerを選択する
 * ChokeしたPeerから、UnchokeするPeerを選択する
 
+<hr>
 
 Chokeを実装してみましょう。Torrentクライアントの通信部分やアプリケーションの部分と、アルゴリズムの部分は分離する事が望ましいです。
 
