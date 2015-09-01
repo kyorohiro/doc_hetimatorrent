@@ -103,8 +103,8 @@ xxx
 | -- | -- | -- |
 | 無し | oooo | 1/3 * 1/3 * 1/3 * 1 == 30% |
 | ひとつ | xooo,oxoo,ooxo, ooox | 1/3 * 2/3 * 2/3 * 3 == 45% |
-| ふたつ | xxoo,xoxo,xoox, oxxo, oxox, ooxx| 1/3 * 1/3 * 2/3 * 3 == 22% |
-| 全部 | xxx | 1/3 * 1/3 * 1/3 * 1 == 3%|
+| ふたつ | xxoo,xoxo,xoox, oxxo, oxox, ooxx| 1/3 * 1/3 * 2/3 * 3 == 22% | みっつ | oxxxx,xoxx,xxox, xxxo | 1/3 * 2/3 * 2/3 * 3 == 45% |
+| 全部 | xxxx | 1/3 * 1/3 * 1/3 * 1 == 3%|
 
 
 
