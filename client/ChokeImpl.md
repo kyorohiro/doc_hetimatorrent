@@ -37,3 +37,6 @@ abstract class TorrentClientPeerInfo {
 
 ```
 
+前章で定義したメッセージに対応したものですね。 
+
+
