@@ -23,6 +23,9 @@ PeerInfoには、Peerのステータスの一覧が定義しました。
 
 ```
 abstract class TorrentClientPeerInfo {
+  static const int STATE_NONE = 0;
+  static const int STATE_ON = 1;
+  static const int STATE_OFF = 2;
   String ip = "";
   int port = 0;
   List<int> get peerId;
