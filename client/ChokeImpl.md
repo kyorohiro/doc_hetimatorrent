@@ -1,6 +1,8 @@
 # Chokeを実装
 * アルゴリズムとして定義することで検証可能にする
-* B
+* PeerInfoクラスを定義する
+* UnchokeしたPeerからChokeするPeerを選択する
+* ChokeしたPeerから、UnchokeするPeerを選択する
 
 
 Chokeを実装してみましょう。Torrentクライアントの通信部分やアプリケーションの部分と、アルゴリズムの部分は分離する事が望ましいです。
@@ -111,4 +113,5 @@ List<TorrentClientPeerInfo> extractChokePeerFromUnchoke(TorrentClientPeerInfos i
   }
 ```
 
+### 
 
