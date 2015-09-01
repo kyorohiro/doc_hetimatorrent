@@ -65,12 +65,17 @@ class TorrentClientPeerInfos {
 ### UnchokeしたPeerからChokeするPeerを選択する
 
 ```
-  List<TorrentClientPeerInfo> extractChokePeerFromUnchoke(TorrentClientPeerInfos infos, int numOfReplace, int maxOfUnchoke) {
+  List<TorrentClientPeerInfo> extractChokePeerFromUnchoke(TorrentClientPeerInfos infos, int maxOfReplace, int maxOfUnchoke) {
     List<TorrentClientPeerInfo> unchokedPeers = infos.getPeerInfos((TorrentClientPeerInfo info) {
-      return (info.isClose == false && info.chokedFromMe == TorrentClientPeerInfo.STATE_OFF && info.amI == false);
+      return (
+          info.isClose == false && 
+          info.chokedFromMe == TorrentClientPeerInfo.STATE_OFF &&
+          info.amI == false);
     });
     List<TorrentClientPeerInfo> alivePeer = infos.getPeerInfos((TorrentClientPeerInfo info) {
-      return (info.isClose == false && info.amI == false);
+      return (
+          info.isClose == false && 
+          info.amI == false);
     });
 
     List<TorrentClientPeerInfo> ret = [];
@@ -79,7 +84,8 @@ class TorrentClientPeerInfos {
         return x.uploadSpeedFromUnchokeFromMe - y.uploadSpeedFromUnchokeFromMe;
       });
 
-      numOfReplace = (numOfReplace < (alivePeer.length - maxOfUnchoke) ? numOfReplace : (alivePeer.length - maxOfUnchoke));
+      int numOfReplace = alivePeer.length - maxOfUnchoke;
+      numOfReplace = ((maxOfReplace < numOfReplace) ? maxOfReplace : numOfReplace);
       for (int i = 0; i < numOfReplace && i < unchokedPeers.length; i++) {
         ret.add(unchokedPeers[i]);
       }
