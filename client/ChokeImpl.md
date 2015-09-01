@@ -11,7 +11,7 @@ Chokeを実装してみましょう。Torrentクライアントの通信部分�
 アルゴリズムとして定義する事で、検証が容易になります。
 
 
-# PeerInfoクラスを定義する
+### PeerInfoクラスを定義する
 
 Chokeアルゴリズムに必要な要素を考えて、PeerInfoというクラスを定義しました。
 
@@ -60,5 +60,9 @@ class TorrentClientPeerInfos {
 ```
 
 前章で定義したメッセージに対応したものですね。 
+
+
+### UnchokeしたPeerからChokeするPeerを選択する
+
 
 
