@@ -63,7 +63,8 @@ class TorrentClientPeerInfos {
 
 ```
 
-前章で定義したメッセージに対応したものですね。 
+前章で定義したメッセージに対応したものですね。 このListからChokeする、UnchokeするPeerの一覧を返すメソッドを作れば、Choke機能を実装したことになります。
+
 
 
 ### UnchokeしたPeerからChokeするPeerを選択する
