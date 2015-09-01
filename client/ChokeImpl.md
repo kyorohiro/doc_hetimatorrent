@@ -114,7 +114,7 @@ List<TorrentClientPeerInfo> extractChokePeerFromUnchoke(TorrentClientPeerInfos i
   }
 ```
 
-### Choke、UnchokeするPeerをを選択する
+### Choke、UnchokeするPeerを選択する
 
 ```
   TorrentAIChokeTestResult extractChokeAndUnchoke(TorrentClientPeerInfos infos, int maxUnchoke, int maxReplace) {
