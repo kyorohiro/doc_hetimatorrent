@@ -64,7 +64,7 @@ class TorrentClientPeerInfos {
 
 ### UnchokeしたPeerからChokeするPeerを選択する
 
-```:dart
+``
 List<TorrentClientPeerInfo> extractChokePeerFromUnchoke(TorrentClientPeerInfos infos, int maxOfReplace, int maxOfUnchoke) {
     List<TorrentClientPeerInfo> unchokedPeers = infos.getPeerInfos((TorrentClientPeerInfo info) {
       return (info.isClose == false && info.chokedFromMe == TorrentClientPeerInfo.STATE_OFF && info.amI == false);
