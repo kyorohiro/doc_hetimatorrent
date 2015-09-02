@@ -107,8 +107,11 @@ Chokeをする事によって、具体的にどうのような事が起きてい
 
 
 $$n: num of peer$$
+
 $$k: num of unchoke$$
+
 $$\binom nk = \dfrac {n!}{(n-k)!k!}$$
+
 $$ P(k) = \binom nk  (2/n)^k  ((n-2)/n)^{n-k} $$
 
 
