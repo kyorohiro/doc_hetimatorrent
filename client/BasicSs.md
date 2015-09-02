@@ -107,9 +107,7 @@ Chokeをする事によって、具体的にどうのような事が起きてい
 
 $$ 
 \[
-F(x) = \int_{-\infty}^{x}f(\xi)d\xi 
-     = \frac{1}{\sqrt{2 \pi} \sigma}
-       \int_{-\infty}^{x}\exp\{-\frac{(\xi - m)^{2}}{2 \sigma^{2}}\}d\xi
+F(x) = \binom{n}{m}
 \]
 $$ 
 
