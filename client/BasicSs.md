@@ -114,14 +114,13 @@ f(x) = \int_{-\infty}^\infty
 ```
 
 
-{% mermaid %}
+```mermaid
 graph TD;
   A-->B;
   A-->C;
   B-->D;
   C-->D;
-{% endmermaid %}
-
+```
 
 |unchokeの数||
 | -- | -- |
