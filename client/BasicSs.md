@@ -113,7 +113,7 @@ f(x) = \int_{-\infty}^\infty
 
 ```
 
-```mermaid
+
 {% mermaid %}
 graph TD;
   A-->B;
@@ -121,7 +121,6 @@ graph TD;
   B-->D;
   C-->D;
 {% endmermaid %}
-```
 
 
 |unchokeの数||
