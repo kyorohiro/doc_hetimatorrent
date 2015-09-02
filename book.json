@@ -5,9 +5,8 @@
         "mathjax"
     ],
     "pluginsConfig": {
-                "mathjax":{
+        "mathjax":{
             "forceSVG": true
         }
-        
     }
 }
