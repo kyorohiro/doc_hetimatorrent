@@ -112,6 +112,7 @@ f(x) = \int_{-\infty}^\infty
     \,d\xi
 
 ```
+
 ```mermaid
 {% mermaid %}
 graph TD;
