@@ -114,14 +114,6 @@ F(x) = \int_{-\infty}^{x}f(\xi)d\xi
 $$ 
 
 
-```mermaid
-graph TD;
-  A-->B;
-  A-->C;
-  B-->D;
-  C-->D;
-```
-
 
 |unchokeの数||
 | -- | -- |
