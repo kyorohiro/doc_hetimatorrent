@@ -123,6 +123,7 @@ graph TD;
 {% endmermaid %}
 ```
 
+
 |unchokeの数||
 | -- | -- |
 |0|13.5%|
