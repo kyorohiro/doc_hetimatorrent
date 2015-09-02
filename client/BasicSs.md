@@ -80,7 +80,7 @@ Chokeをする事によって、具体的にどうのような事が起きてい
 これに、Chokeされる確率は1/3であることを考慮すると。
 
 
-| Chokeの数| パターン| 確率|
+| Unchokeの数| パターン| 確率|
 | -- | -- | -- |
 | 無し | ooo | 2/3 x 2/3 x 2/3 x 1 == 30% |
 | ひとつ | xoo,oxo,oox | 1/3 x 2/3 x 2/3 x 3 == 45% |
@@ -108,7 +108,8 @@ Chokeをする事によって、具体的にどうのような事が起きてい
 
 $$
 n: num of peer \linebreak
-k: num of unchoke \linebreak
+k: num of received unchoked message \linebreak
+2: num of sendable unchoked message \linebreak
 \binom nk = \dfrac {n!}{(n-k)!k!} \linebreak
 P(k) = \binom nk  (2/n)^k  ((n-2)/n)^{n-k} \linebreak
 $$
