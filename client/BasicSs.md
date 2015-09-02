@@ -106,7 +106,7 @@ Chokeをする事によって、具体的にどうのような事が起きてい
 数式に落として考えて見ましょう。
 
 $$
-\binom nk \binom {n-k}{m-k}
+\binom nk \binom mk
 $$
 
 
