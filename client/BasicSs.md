@@ -107,9 +107,9 @@ Chokeをする事によって、具体的にどうのような事が起きてい
 
 
 $$
-n = num of peer \\
-k = num of received unchoked message \\
-2 = num of sendable unchoked message \\
+n = num_of_peer \\
+k = num_of_received_unchoked_message \\
+2 = num_of_sendable_unchoked_message \\
 \binom nk = \dfrac {n!}{(n-k)!k!} \\
 P(k) = \binom nk  (2/n)^k  ((n-2)/n)^{n-k} \\
 $$
