@@ -1,3 +1,7 @@
 {
-    "plugins": ["mermaid"]
+    "plugins": [
+        "mermaid",
+        "katex"
+    ],
+    "pluginsConfig": {}
 }
