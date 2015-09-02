@@ -1,4 +1,4 @@
 {
     "plugins": ["mermaid"]
-     plugins: ["katex"]
+    "plugins": ["katex"]
 }
