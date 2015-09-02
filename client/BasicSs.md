@@ -106,8 +106,9 @@ Chokeをする事によって、具体的にどうのような事が起きてい
 数式に落として考えて見ましょう。
 
 ```math
-\left( \sum_{k=1}^n a_k b_k \right)^{!!2} \leq
-\left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
+f(x) = \int_{-\infty}^\infty
+    \hat f(\xi)\,e^{2 \pi i \xi x}
+    \,d\xi
 ```
 
 |unchokeの数||
