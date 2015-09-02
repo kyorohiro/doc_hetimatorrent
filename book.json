@@ -1,11 +1,8 @@
 {
     "plugins": [
         "mermaid",
-        "mathjax"
+        "katex"
     ],
     "pluginsConfig": {
-        "mathjax":{
-            "forceSVG": true
-        }
     }
 }
