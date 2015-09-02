@@ -106,10 +106,11 @@ Chokeをする事によって、具体的にどうのような事が起きてい
 数式に落として考えて見ましょう。
 
 ```math
-f(x) = \int_{-\infty}^\infty
-    \hat f(\xi)\,e^{2 \pi i \xi x}
-    \,d\xi
-
+\[
+F(x) = \int_{-\infty}^{x}f(\xi)d\xi 
+     = \frac{1}{\sqrt{2 \pi} \sigma}
+       \int_{-\infty}^{x}\exp\{-\frac{(\xi - m)^{2}}{2 \sigma^{2}}\}d\xi
+\]
 ```
 
 
