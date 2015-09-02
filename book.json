@@ -2,6 +2,4 @@
     "plugins": [
         "mermaid",
     ],
-    "pluginsConfig": {
-    }
 }
