@@ -106,7 +106,6 @@ Chokeをする事によって、具体的にどうのような事が起きてい
 数式に落として考えて見ましょう。
 
 ```math
-
 f(x) = \int_{-\infty}^\infty
     \hat f(\xi)\,e^{2 \pi i \xi x}
     \,d\xi
