@@ -79,7 +79,7 @@ Object decodeBenObject(Uint8List buffer) {
 完成です。
 
 
-## More Parser
+## もっと Parser
 
 Torrentクライアントを実装するにあたり、さまざまなプロトコルを実装していきます。
 プログラム言語や自然言語ほど、複雑ではないので容易に解析可能です。
