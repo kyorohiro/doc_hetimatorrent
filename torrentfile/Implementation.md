@@ -1,4 +1,4 @@
-# Bencodingの実装
+# Bencodeの実装
 <hr>
 <br>
 
