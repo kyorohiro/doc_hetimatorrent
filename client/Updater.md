@@ -88,8 +88,8 @@ HandShake以外のメッセージは、決まった構造をしている事に�
 | Unchoke | 1|1 | アップロード許可 |
 | Interest |1|2| ダウンロード許可要求 |
 | NotInterest|1|3| ダウンード許可不要 |
-| Bitfield | |所持しているBlockを知らせる|　　|
-| Have | 所持しているBlockを知らせる |　　|
+| Have | 5|4|所持しているBlockを知らせる |
+| Bitfield |1+bitfield長|5|所持しているBlockを知らせる|
 | Request |13|6| ダウンロード要求 |
 | Piece |13*データ長|7|データアップロード |データダウンロード|
 | Cancel |13|8|ダウンロード要求破棄 |
