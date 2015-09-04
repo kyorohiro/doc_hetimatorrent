@@ -50,7 +50,8 @@ class Bitfield {
 }
 ```
 
-こんな感じです。
+こんな感じです。0x80が先頭Bitで、0x01が末Bit端なのが特徴です。
+
 
 
 ## BlockDataの実装
