@@ -7,6 +7,7 @@
 <hr>
 
 
+
 ## Bitfield実装
 
 Bitfieldを実装していきす。 Bitfield Bool値(0, 1)を持つ任意の長さの配列です。
