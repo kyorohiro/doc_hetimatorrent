@@ -94,6 +94,7 @@ Torrent Client で良く使われ方法として、同時にダウンロード�
 ##### 囚人のジレンマと「つきあい方の科学」
 
 
+https://ja.wikipedia.org/wiki/つきあい方の科学
 
 
 
