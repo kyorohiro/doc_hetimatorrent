@@ -9,11 +9,11 @@
 ブロック単位でデータを管理するためのコードを書いてみましょう。
 
 
-
-
 ## Bitfield実装
 
 Bitfieldを実装していきす。 Bitfield Bool値(0, 1)を持つ任意の長さの配列です。
+
+Torrentの場合だと、1がデータを持っている、0がデータを持っていないという事を表します。
 
 ```:dart
 class BitfieldSample {
