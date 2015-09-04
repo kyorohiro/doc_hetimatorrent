@@ -35,7 +35,6 @@
    * [FindNodeを実装](dht/FindNodesImpl.md)
    * [GetPeersでInfoHashに対応するPeerを探す](dht/GetPeers.md)
    * [テスト](dht/Test.md)
-* 囚人のジレンマ
 * スモールワールド
 * PortMapテクニック
 
