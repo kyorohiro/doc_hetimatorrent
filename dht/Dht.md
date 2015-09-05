@@ -1,1 +1,1 @@
-# DHTに対応してみる
+![](dht_cover.jpg)
