@@ -25,7 +25,7 @@
    * [リダイレクト](tracker/Redirect.md)
 * [ダウンロードゲームへ参加してみる](client/Client.md)
    * [ダウンロードゲーム](client/About.md)
-   * [ブロックデーの実装](client/BlockData.md)
+   * [ブロックデーターの実装](client/BlockData.md)
    * [配信用、Peerを作成してみよう](client/Updater.md)
    * [基本戦術](client/BasicSs.md)
    * [Chokeの実装](client/ChokeImpl.md)
