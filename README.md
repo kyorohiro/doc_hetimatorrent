@@ -26,6 +26,7 @@
    * [基本戦術](client/BasicSs.md)
    * [Chokeの実装](client/ChokeImpl.md)
 * [DHTに対応してみる](dht/Dht.md)
+   * [About](dht/About.md)
    * [Tracker無しでPeerを探す](dht/AboutDHT.md)
    * [KademliaのkBucketを利用している](dht/kBucket.md)
    * [RootingTableを実装してみよう](dht/kBucketImpl.md)
