@@ -21,12 +21,12 @@
    * [レスポンスの中身](tracker/Response.md)
    * [テスト](tracker/Test.md)
 * [ダウンロードゲームへ参加してみる](client/Client.md)
+   * [About](client/About.md) 
    * [ダウンロードゲーム](client/DownloadGame.md)
    * [ブロックデーターの実装](client/BlockData.md)
    * [配信用、Peerを作成してみよう](client/Updater.md)
    * [基本戦術](client/BasicSs.md)
    * [Chokeの実装](client/ChokeImpl.md)
-   * About.md
 * [DHTに対応してみる](dht/Dht.md)
    * [Tracker無しでPeerを探す](dht/About.md)
    * [KademliaのkBucketを利用している](dht/kBucket.md)
