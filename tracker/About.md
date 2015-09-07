@@ -33,4 +33,3 @@ Torrentファイルを解析が終わると、Trackerサーバーにアクセス
 
 -------
 Kyorohiro work
-このTrackerサーバーから、Peer一覧を取得することができます。
