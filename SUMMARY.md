@@ -8,8 +8,8 @@
 * おまかな仕組み
 * [Torrentファイルを読み込む](torrentfile/Torrentfile.md)
    * [TorrentFile](torrentfile/About.md)
-   * [Bencode](torrentfile/Bencode.md)
    * [Bencodeの実装](torrentfile/Implementation.md)
+   * [Bencode](torrentfile/Bencode.md)
    * [TorrentFileの中身](torrentfile/Content.md)
 * [Httpサーバーを作成してみる](http/Http.md)
 * [UPnpによるポートマップ](upnp/Upnp.md)
@@ -21,8 +21,6 @@
    * [リクエストの中身](tracker/Request.md)
    * [レスポンスの中身](tracker/Response.md)
    * [テスト](tracker/Test.md)
-* リダイレクトに対応
-   * [リダイレクト](tracker/Redirect.md)
 * [ダウンロードゲームへ参加してみる](client/Client.md)
    * [ダウンロードゲーム](client/About.md)
    * [ブロックデーターの実装](client/BlockData.md)
@@ -37,6 +35,4 @@
    * [FindNodeを実装](dht/FindNodesImpl.md)
    * [GetPeersでInfoHashに対応するPeerを探す](dht/GetPeers.md)
    * [テスト](dht/Test.md)
-* スモールワールド
-* PortMapテクニック
 
