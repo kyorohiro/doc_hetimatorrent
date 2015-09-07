@@ -3,26 +3,23 @@
    * [はじめに](intro/Introduction.md)
    * [Torrentとは](intro/About.md)
    * [ゴール](intro/Goal.md)
-* おまかな仕組み
 * [Torrentファイルを読み込む](torrentfile/Torrentfile.md)
-   * [TorrentFile](torrentfile/About.md)
-   * [Bencode](torrentfile/Bencode.md)
+   * [About](torrentfile/About.md)
    * [Bencodeの実装](torrentfile/Implementation.md)
+   * [Bencode](torrentfile/Bencode.md)
    * [TorrentFileの中身](torrentfile/Content.md)
 * [Httpサーバーを作成してみる](http/Http.md)
 * [UPnpによるポートマップ](upnp/Upnp.md)
    * [UPnPによるポートマップ](upnp/About.md)
    * [UPnPの実装](upnp/Implementation.md)
 * [Trackerへアクセスしてみる](tracker/Tracker.md)
-   * [Trackerへアクセスしてみる](tracker/About.md)
+   * [About](tracker/About.md)
    * [TrackerはHttpサーバ](tracker/Http.md)
    * [リクエストの中身](tracker/Request.md)
    * [レスポンスの中身](tracker/Response.md)
    * [テスト](tracker/Test.md)
-* リダイレクトに対応
-   * [リダイレクト](tracker/Redirect.md)
 * [ダウンロードゲームへ参加してみる](client/Client.md)
-   * [ダウンロードゲーム](client/About.md)
+   * [ダウンロードゲーム](client/DownloadGame.md)
    * [ブロックデーターの実装](client/BlockData.md)
    * [配信用、Peerを作成してみよう](client/Updater.md)
    * [基本戦術](client/BasicSs.md)
@@ -35,6 +32,5 @@
    * [FindNodeを実装](dht/FindNodesImpl.md)
    * [GetPeersでInfoHashに対応するPeerを探す](dht/GetPeers.md)
    * [テスト](dht/Test.md)
-* スモールワールド
 * PortMapテクニック
 
