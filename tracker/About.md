@@ -33,3 +33,5 @@ Torrentファイルを解析が終わると、Trackerサーバーにアクセス
 
 -------
 Kyorohiro work
+
+http://kyorohiro.strikingly.com
