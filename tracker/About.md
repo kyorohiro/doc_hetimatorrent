@@ -20,12 +20,10 @@ Torrentファイルを解析が終わると、Trackerサーバーにアクセス
 　Torrentクライアントは、このTrackerに登録して、データ配信しているPeerを紹介してもらいます。
 　
 
+　Tracker
 
 
 
-
-
-<hr>
 
 <hr style="page-break-before: always;">
 
