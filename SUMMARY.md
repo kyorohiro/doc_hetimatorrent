@@ -16,7 +16,7 @@
    * [UPnPによるポートマップ](upnp/About.md)
    * [UPnPの実装](upnp/Implementation.md)
 * [Trackerへアクセスしてみる](tracker/Tracker.md)
-   * [Trackerへアクセスしてみる](tracker/About.md)
+   * [About](tracker/About.md)
    * [TrackerはHttpサーバ](tracker/Http.md)
    * [リクエストの中身](tracker/Request.md)
    * [レスポンスの中身](tracker/Response.md)
