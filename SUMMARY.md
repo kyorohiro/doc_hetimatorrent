@@ -26,6 +26,7 @@
    * [配信用、Peerを作成してみよう](client/Updater.md)
    * [基本戦術](client/BasicSs.md)
    * [Chokeの実装](client/ChokeImpl.md)
+   * About.md
 * [DHTに対応してみる](dht/Dht.md)
    * [Tracker無しでPeerを探す](dht/About.md)
    * [KademliaのkBucketを利用している](dht/kBucket.md)
