@@ -16,16 +16,14 @@ Torrentファイルを解析が終わると、Trackerサーバーにアクセス
 　本章では、実際に簡易の Trackerサーバー を作成しながら、Tracker から Peer の一覧を取得する方法について解説し
 ます。
 
+
+
+
+
 　Trackerサーバーは「データダウンロードしたいPeer」、「データをアップロードしたいPeer」の一覧を管理しています。
+
 　Torrentクライアントは、このTrackerに登録して、データ配信しているPeerを紹介してもらいます。
-　
-
-　Tracker
-
-
-
-
-<hr style="page-break-before: always;">
+　Trackerに登録してもらうことによって、xxできます。
 
 
 
