@@ -5,7 +5,6 @@
    * [はじめに](intro/Introduction.md)
    * [Torrentとは](intro/About.md)
    * [ゴール](intro/Goal.md)
-* おまかな仕組み
 * [Torrentファイルを読み込む](torrentfile/Torrentfile.md)
    * [About](torrentfile/About.md)
    * [Bencodeの実装](torrentfile/Implementation.md)
