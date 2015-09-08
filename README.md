@@ -34,8 +34,6 @@
    * [FindNodeを実装](dht/FindNodesImpl.md)
    * [GetPeersでInfoHashに対応するPeerを探す](dht/GetPeers.md)
    * [テスト](dht/Test.md)
-
-
 * Appendix
    * PortMapテクニック
 * [Dartの基礎]
