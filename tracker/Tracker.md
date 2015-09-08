@@ -1,1 +1,1 @@
-# Trackerへアクセスしてみる
+![](tracker_cover.jpg)
