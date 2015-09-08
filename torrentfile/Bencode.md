@@ -1,4 +1,4 @@
-# Bencoding
+# Bencode
 <hr>
 <br>
 
