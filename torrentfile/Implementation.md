@@ -106,11 +106,10 @@ BNFで書かれた構文は機械的にパーサーを書く事ができます�
 
 ```
 Map decodeDiction(data.Uint8List buffer) {
-  Map ret = null;
   if(buffer[index++] != 0x64) {
     throw new ParseError("bendiction", buffer, index);
   }
-  ret = decodeDictionElements(buffer);
+  Map ret = decodeDictionElements(buffer);
   if(buffer[index++] != 0x65) {
     throw new ParseError("bendiction", buffer, index);
   }
