@@ -3,9 +3,9 @@
 <br>
 
 
-* **Torrentファイルはbencodingて書かれている。**
+* **Torrentファイルはbencodeで書かれている。**
 
-* **Bencodingは、Integer、String、List、Dictionaryを扱える。**
+* **Bencodeは、Integer、String、List、Dictionaryを扱える。**
 
 
 <br>
