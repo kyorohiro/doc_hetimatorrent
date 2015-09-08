@@ -5,8 +5,6 @@
    * [はじめに](intro/Introduction.md)
    * [Torrentとは](intro/About.md)
    * [ゴール](intro/Goal.md)
-* [Dartの基礎]
-   * [文法]
 * [Torrentファイルを読み込む](torrentfile/Torrentfile.md)
    * [About](torrentfile/About.md)
    * [Bencode](torrentfile/Bencode.md)
@@ -38,4 +36,5 @@
    * [FindNodeを実装](dht/FindNodesImpl.md)
    * [GetPeersでInfoHashに対応するPeerを探す](dht/GetPeers.md)
    * [テスト](dht/Test.md)
-
+* [Dartの基礎]
+   * [文法]
