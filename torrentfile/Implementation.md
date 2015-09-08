@@ -15,9 +15,9 @@
 
 Benodingを実装してみましょう。Bencodingで扱えるデータは、Number, String, List, Dictionary でした。これらを、Dartから扱えるようにしましょう。
 
-具体的には、Dartでサポートされているデータ構造に変換していきます。Dartのnumber,Uint8Array,List,Mapへ変換していきます。
+具体的には、Dartでサポートされているデータ構造に変換していきます。DartのNumber,Uint8Array,List,Mapへ変換していきます。
 
-BencodeのNumberは、Dartのnumで表現できます。BencodeのStringは、UInt8Arrayで表現できます。Stringでないところは少しトリッキーです。Bencodeでは、バイト配列を扱うこともあります。Unicodeでは使えないデータもStringとして扱うことになりまいから、Stringでなく、UInt8Arrayを利用します。Bencodeのリストは、Dart言語のcore.Listで、Bencodeの辞書は、Dart言語では Map< String, Object >で表現できます。
+BencodeのNumberは、Dartのnumで表現できます。BencodeのStringは、UInt8Arrayで表現できます。Stringでないところは少しトリッキーです。Bencodeでは、バイト配列を扱うこともあります。Unicodeでは使えないデータもStringとして扱うことになりまいから、Stringでなく、UInt8Arrayを利用します。Bencodeのリストは、Dart言語の Listで、Bencodeの辞書は、Dart言語では Map< String, Object >で表現できます。
 
 
 具体的には、以下のようなAPIを考えます。
