@@ -5,6 +5,8 @@
    * [はじめに](intro/Introduction.md)
    * [Torrentとは](intro/About.md)
    * [ゴール](intro/Goal.md)
+* [Dartの基礎]
+   * [文法]
 * [Torrentファイルを読み込む](torrentfile/Torrentfile.md)
    * [About](torrentfile/About.md)
    * [Bencode](torrentfile/Bencode.md)
