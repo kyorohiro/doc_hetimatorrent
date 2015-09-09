@@ -265,7 +265,58 @@ void main() {
 <br>
 <br>
 ---
+# Switch 文
 
+#### 1. DartPadを開く
+ https://dartpad.dartlang.org/
+ 
+
+#### 2. プログラムを書く
+
+```
+void main() {
+  int a = 0;
+  switch(a) {
+    case 0:
+      print("a=0");
+      break;
+    case 1:
+      print("a=1");
+      break;
+    default:
+      print("other");
+  }
+  
+  String b = "test";
+  switch(b) {
+    case "tests":
+      print("b=test");
+      break;
+    case "test":
+      print("b=test");
+      break;
+    default:
+      print("other");
+  }
+  
+}
+```
+
+#### 3. RUNボタンを押す。
+```
+a=0
+b=test
+```
+と文字列が表示されます。
+
+
+
+
+
+<br>
+<br>
+<br>
+---
 
 
 
