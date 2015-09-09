@@ -271,6 +271,39 @@ void main() {
 
 
 
+# While 文
+
+#### 1. DartPadを開く
+ https://dartpad.dartlang.org/
+ 
+
+#### 2. プログラムを書く
+
+```
+
+```
+
+#### 3. RUNボタンを押す。
+```
+
+```
+と文字列が表示されます。
+
+
+
+
+
+<br>
+<br>
+<br>
+---
+
+
+
+
+
+
+
 # Function
 
 #### 1. DartPadを開く
@@ -303,38 +336,6 @@ void main() {
 <br>
 ---
 
-
-
-
-
-
-
-# While 文
-
-#### 1. DartPadを開く
- https://dartpad.dartlang.org/
- 
-
-#### 2. プログラムを書く
-
-```
-
-```
-
-#### 3. RUNボタンを押す。
-```
-
-```
-と文字列が表示されます。
-
-
-
-
-
-<br>
-<br>
-<br>
----
 
 
 
