@@ -128,12 +128,14 @@ void main() {
   int c = (a+b).toInt();
   double d = a+b;
   var e = a+b;
-  print("${c} ${d} ${e}");
+  String f = "test";
+  String g = "game";
+  print("${c} ${d} ${e} ${f+g}");
 }
 ```
 
 #### 3. RUNボタンを押す。
 ```
-2 2.1 2.1
+2 2.1 2.1 testgame
 ```
 と文字列が表示されます。
