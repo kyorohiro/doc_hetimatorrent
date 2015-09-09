@@ -203,3 +203,38 @@ void main() {
 ```
 と文字列が表示されます。
 
+
+# Class
+
+
+#### 1. DartPadを開く
+ https://dartpad.dartlang.org/
+ 
+
+#### 2. プログラムを書く
+
+```
+class A {
+  int a = 0;
+  int b = 0;
+  
+  printStatus() {
+    print("${a} ${b}");
+  }
+}
+
+void main() {
+  A a = new A();
+  a.printStatus();
+  a.a = 100;
+  a.b = 200;
+  a.printStatus();
+}
+```
+
+#### 3. RUNボタンを押す。
+```
+0 0
+100 200
+```
+と文字列が表示されます。
