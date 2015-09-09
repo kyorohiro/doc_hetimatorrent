@@ -571,9 +571,17 @@ class A {
 void main() {
   A a = new A();
   a.printStatus();
+
   a.a = 100;
   a.b = 200;
   a.printStatus();
+  
+  A b = a;
+  b.printStatus();
+  
+  a.a = 3;
+  a.printStatus();
+  b.printStatus();
 }
 ```
 
@@ -581,6 +589,9 @@ void main() {
 ```
 0 0
 100 200
+100 200
+3 200
+3 200
 ```
 と文字列が表示されます。
 
