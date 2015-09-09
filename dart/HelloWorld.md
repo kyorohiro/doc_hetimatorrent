@@ -23,7 +23,15 @@ void main() {
 
 #### 3. RUNボタンを押す。
 
-「Hello World!!」と文字列が表示されます。
+```
+HTML OUTPUT
+CONSOLE
+Hello World (1) !!
+Hello World (2) !!
+  Hello
+  World (3) !!
+```
+と文字列が表示されます。
 
 
 # 四則演算
