@@ -136,7 +136,6 @@ void main() {
 
 ```
 void main() {
-void main() {
   int a = 1;
   double b = 1.1;
   int c = (a+b).toInt();
