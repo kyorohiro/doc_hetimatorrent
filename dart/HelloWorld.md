@@ -318,6 +318,96 @@ void main() {
 
 
 
+# Do-While 文
+
+#### 1. DartPadを開く
+ https://dartpad.dartlang.org/
+ 
+
+#### 2. プログラムを書く
+
+```
+void main() {
+  int i = 0;
+  do {
+    print("${i}");
+    i++;
+  } while(i<10);
+}
+```
+
+#### 3. RUNボタンを押す。
+```
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+```
+と文字列が表示されます。
+
+
+
+
+
+<br>
+<br>
+<br>
+---
+
+
+
+
+
+
+# For 文
+
+#### 1. DartPadを開く
+ https://dartpad.dartlang.org/
+ 
+
+#### 2. プログラムを書く
+
+```
+void main() {
+  for (int i=0;i<10;i++) {
+    print("${i}");
+  }
+}
+```
+
+#### 3. RUNボタンを押す。
+```
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+```
+と文字列が表示されます。
+
+
+
+
+
+<br>
+<br>
+<br>
+---
+
+
+
+
 
 # Function
 
