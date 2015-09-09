@@ -115,4 +115,25 @@ void main() {
 
 # 変数
 
+#### 1. DartPadを開く
+ https://dartpad.dartlang.org/
+ 
 
+#### 2. プログラムを書く
+
+```
+void main() {
+  int a = 1;
+  double b = 1.1;
+  int c = (a+b).toInt();
+  double d = a+b;
+  var e = a+b;
+  print("${c} ${d} ${e}");
+}
+```
+
+#### 3. RUNボタンを押す。
+```
+2 2.1 2.1
+```
+と文字列が表示されます。
