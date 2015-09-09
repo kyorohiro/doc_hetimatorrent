@@ -177,3 +177,29 @@ void main() {
 [E] 1000 2000
 ```
 と文字列が表示されます。
+
+# Function
+
+
+#### 1. DartPadを開く
+ https://dartpad.dartlang.org/
+ 
+
+#### 2. プログラムを書く
+
+```
+int plus(int a, int b) {
+  return a + b;
+}
+
+void main() {
+  print("${plus(100,10)}");
+}
+```
+
+#### 3. RUNボタンを押す。
+```
+110
+```
+と文字列が表示されます。
+
