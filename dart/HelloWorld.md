@@ -1,4 +1,4 @@
-# Dart で Hello World
+# Hello World
 
 
 コンソールに "HelloWorld!!" と文字列を表示するプログラムを書いてみましょぅ。
