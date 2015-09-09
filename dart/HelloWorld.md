@@ -298,7 +298,16 @@ void main() {
     default:
       print("other");
   }
-  
+
+  int c = 0;
+  switch(c) {
+    case 0:
+    case 1:
+      print("c=0 or c=1");
+      break;
+    default:
+      print("other");
+  }
 }
 ```
 
@@ -306,6 +315,7 @@ void main() {
 ```
 a=0
 b=test
+c=0 or c=1
 ```
 と文字列が表示されます。
 
