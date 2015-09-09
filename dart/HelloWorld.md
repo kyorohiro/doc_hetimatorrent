@@ -178,8 +178,10 @@ void main() {
 ```
 と文字列が表示されます。
 
-# Function
+# If 文
 
+
+# Function
 
 #### 1. DartPadを開く
  https://dartpad.dartlang.org/
