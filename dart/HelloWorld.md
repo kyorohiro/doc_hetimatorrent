@@ -136,6 +136,7 @@ void main() {
 
 ```
 void main() {
+void main() {
   int a = 1;
   double b = 1.1;
   int c = (a+b).toInt();
@@ -144,12 +145,54 @@ void main() {
   String f = "test";
   String g = "game";
   print("${c} ${d} ${e} ${f+g}");
+
+  // ++
+  print("[++]");
+  print("${++a} ${a++}");
+  print("${a}");
+  
+  // --
+  print("[--]");
+  print("${--a} ${a--}");
+  print("${a}");
+  
+  a = 1;
+  a += 10;
+  print("a+= ${a}");
+
+  a = 1;
+  a -= 10;
+  print("a-= ${a}");
+
+  a = 2;
+  a *= 3;
+  print("a*= ${a}");
+
+  a = 6;
+  a ~/= 3;
+  print("a~/= ${a}");
+  
+  a = 5;
+  a %= 3;
+  print("5%= ${a}");
+}
 }
 ```
 
 #### 3. RUNボタンを押す。
 ```
 2 2.1 2.1 testgame
+[++]
+2 2
+3
+[--]
+2 2
+1
+a+= 11
+a-= -9
+a*= 6
+a~/= 2
+5%= 2
 ```
 と文字列が表示されます。
 
