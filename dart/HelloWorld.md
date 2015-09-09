@@ -180,6 +180,47 @@ void main() {
 
 # If 文
 
+#### 1. DartPadを開く
+ https://dartpad.dartlang.org/
+ 
+
+#### 2. プログラムを書く
+
+```
+void main() {
+  if(true) {
+    print("[A] true");
+  } else {
+    print("[A] false");
+  }
+  
+  if(1==1) {
+    print("[B] true");
+  } else {
+    print("[B] false");
+  }
+  
+  if(1!=1) {
+    print("[C] true");
+  } else {
+    print("[C] false");
+  }
+}
+```
+
+#### 3. RUNボタンを押す。
+```
+[A] true
+[B] true
+[C] false
+```
+と文字列が表示されます。
+
+
+
+
+
+
 
 # Function
 
@@ -204,6 +245,14 @@ void main() {
 110
 ```
 と文字列が表示されます。
+
+
+
+
+
+
+
+
 
 
 # Class
