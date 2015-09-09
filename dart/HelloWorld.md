@@ -230,20 +230,21 @@ void main() {
 void main() {
   if(true) {
     print("[A] true");
-  } else {
-    print("[A] false");
   }
   
-  if(1==1) {
+  if(1!=1) {
     print("[B] true");
   } else {
     print("[B] false");
   }
   
-  if(1!=1) {
-    print("[C] true");
+  int a = 2;
+  if(a==1) {
+    print("[C] 1");
+  } else if(a ==2){
+    print("[C] 2");
   } else {
-    print("[C] false");
+    print("[C] other");    
   }
 }
 ```
@@ -251,8 +252,8 @@ void main() {
 #### 3. RUNボタンを押す。
 ```
 [A] true
-[B] true
-[C] false
+[B] false
+[C] 2
 ```
 と文字列が表示されます。
 
