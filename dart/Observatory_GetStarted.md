@@ -155,7 +155,7 @@ isolateについては [Isolate](https://www.dartlang.org/tools/observatory/isol
 ### What next?
 Where you should go next depends on what questions you’d like to answer.
 
-##### Unfamiliar with the terminology?
+##### 専門用語について知りたいなら?
 [Glossary of VM Terms](https://www.dartlang.org/tools/observatory/glossary.html)
 ##### Want to find screens and features in the UI?
 [Screens in Observatory](https://www.dartlang.org/tools/observatory/screens.html)
