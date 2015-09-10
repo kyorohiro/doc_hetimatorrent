@@ -135,9 +135,9 @@ VM動作している時間
 ##### refreshed at
 最後にサンプリングした時間
 ##### type checks enabled
-True if the VM is checking for type errors.
+type errorsをチェックするかどうか
 ##### asserts enabled
-True if assertion statements are evaluated by the VM.
+assertion statements を評価するかどうか。
 ##### pid
 The process ID.
 
