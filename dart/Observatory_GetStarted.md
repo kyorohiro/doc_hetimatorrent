@@ -167,10 +167,10 @@ Where you should go next depends on what questions you’d like to answer.
 ##### “power” profiling について知りたいなら!!
 [User and VM Tags](https://www.dartlang.org/tools/observatory/tags.html)
 
-##### breakpointsを設定したいなら?
+##### breakpointsを設定したいなら!!
 [Debugger](https://www.dartlang.org/tools/observatory/debugger.html)
 
-##### Or collect metrics about your app?
+##### アプリの metrics を集めたいなら!!
 [Metrics](https://www.dartlang.org/tools/observatory/metrics.html)
 
 ##### Curious about memory allocation?
