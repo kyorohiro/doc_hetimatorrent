@@ -28,3 +28,6 @@ applications　として動作させる方法です。 standalone appsの場合�
 browser-based apps の場合、command line からDartium 上でアプリを起動させる事で、Observatory を利用できます。
 
 つまり、どちらの場合でもObservatoryを利用する事ができます。
+
+
+### Start Observatory
