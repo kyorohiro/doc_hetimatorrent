@@ -99,3 +99,16 @@ Observatory uses a browser-based UI—the UI is the same no matter how it is lau
 
 A solid blue bar appears at the top of most screens. The word Observatory is on the left. In some screens, a Refresh button is on the right. You can resample the information at any time using the Refresh button. There may also be other buttons on the right that are specific to a particular screen, such as the Clear button in the CPU Profile screen.
 
+![](ObservatoryBar.png)
+
+A breadcrumb trail, inside the blue bar, shows where you are in the Observatory UI. You can click items in the breadcrumb trail to navigate to other parts of the UI.
+
+If you hover over the items in the breadcrumb bar, drop-down menus provide additional functionality for each screens. As shown in the following screenshot, hovering over the root isolate, profile.dart$main in this example, brings up a menu that includes debugger, cpu profile, allocation profile, and heap map.
+
+![](ObservatoryBreadCrumb.png)
+
+You can return to the [VM screen](https://www.dartlang.org/tools/observatory/screens.html#vm-screen) at any time by clicking Observatory in the breadcrumb bar.
+
+The next section describes the VM screen, Observatory’s landing page. For a comprehensive list of all screens, see [Screens in Observatory](https://www.dartlang.org/tools/observatory/screens.html).
+
+### VM screen
