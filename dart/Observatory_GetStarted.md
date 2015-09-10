@@ -62,4 +62,31 @@ Observatory listening on http://127.0.0.1:<port>
 ```
 
 ### Web apps
+Dartium上でアプリを起動してください。例えば、WebStormで実行する場合は、index.htmlとかを右クリックして、pop-up menuからRunをを選択します。
 
+Dartiumの中で、 select View > Developer > JavaScript ConsoleとしてCosoleを立ち上げると、以下のように表示されます。
+```
+Observatory listening on http://127.0.0.1:56246
+```
+このアドレスから、Observatory UI にアクセスできます。
+
+
+コマンドラインから起動する事ものできます。より詳細な情報は、　https://www.dartlang.org/tools/dart-vm/#observatory を参照してください
+
+* Mac OS:
+```
+cd <path-to-demo>/sunflower/web
+<path-to-Dartium>/Chromium.app/Contents/MacOS/Chromium --DART_FLAGS="--steal_breakpoints --pause-isolates-on-start" sunflower.html
+```
+
+* Windows:
+```
+cd <path-to-demo>\sunflower\web
+<path-to-Dartium>\Chromium\Application\chromium.exe --DART_FLAGS="--steal_breakpoints --pause-isolates-on-start" sunflower.html
+```
+
+* Linux:
+```
+cd <path-to-demo>/sunflower/web
+<path-to-Dartium>/chromium-browser --DART_FLAGS="--steal_breakpoints --pause-isolates-on-start" sunflower.html
+```
