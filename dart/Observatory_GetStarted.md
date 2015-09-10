@@ -129,7 +129,7 @@ vm screenn　には　以下の情報が含まれます。
 ##### version
 どのバージョンのVMなのか?どのアーキテクチャーのVMなのか?
 ##### started at
-The time stamp when the VM was started.
+VMを起動した時のThe time stamp
 ##### uptime
 How long the VM has been running.
 ##### refreshed at
