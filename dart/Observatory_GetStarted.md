@@ -96,9 +96,9 @@ cd <path-to-demo>/sunflower/web
 
 
 ### Observatory UI
-Observatory uses a browser-based UI—the UI is the same no matter how it is launched.
+Observatory は browser-based で動作します。
 
-A solid blue bar appears at the top of most screens. The word Observatory is on the left. In some screens, a Refresh button is on the right. You can resample the information at any time using the Refresh button. There may also be other buttons on the right that are specific to a particular screen, such as the Clear button in the CPU Profile screen.
+上部に青色のパーが表示さけます。その左に文字が表示されます。リフレッシュボタンが右にあります。リフレッシボタンを押すと情報が更新されます。
 
 ![](ObservatoryBar.png)
 
