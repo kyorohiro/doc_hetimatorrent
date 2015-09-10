@@ -147,7 +147,7 @@ process ID
 
 詳しくは [User and VM Tags](https://www.dartlang.org/tools/observatory/tags.html)　を参照してください。
 
-A list of links take you to various Observatory screens. For more information, see [Screens in Observatory](https://www.dartlang.org/tools/observatory/screens.html).
+さまざまなObservatory screen を持ちます。詳しは [Screens in Observatory](https://www.dartlang.org/tools/observatory/screens.html) を参照.
 
 Clicking the isolate’s name brings up an isolate screen, with detailed information about that isolate. For more information, see [Isolate](https://www.dartlang.org/tools/observatory/isolate.html).
 
