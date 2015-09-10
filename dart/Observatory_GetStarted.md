@@ -45,4 +45,9 @@ dart --observe <script>.dart
 次に、お好みのブラウザーで http://localhost:8181 にアクセスしてください。Observatory UI　が表示されます。
 
 
+デフォルトでは、このサービスは同コンピュータからのみ許可されています。
+この制限は、ssdhでport foward するなどして回避することもできます。
+```
+ssh -L8181:127.0.0.1:8181 user@targetmachine
+```
 
