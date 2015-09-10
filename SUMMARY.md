@@ -39,6 +39,6 @@
 * [Dartの基礎]
    * [なぜDart] 
    * [Test/Debug](dart/Observatory.md)
-     * [get started with Observatory](Observatory_GetStarted.md)
+     * [Get started with Observatory](Observatory_GetStarted.md)
    * [Hello World](dart/HelloWorld.md)
 
