@@ -32,3 +32,28 @@ https://youtu.be/y39pZCExsOs?list=PLOU2XLYxmsIIQorIS8gagUiMau9S84vZV
 
 ### Using Observatory
 * [get started with Observatory](Observatory_GetStarted.md)
+
+To learn about specific features, read these pages:
+
+* Allocation Profile
+* Code Coverage
+* CPU Profile
+* Debugger
+* Evaluating Expressions
+* Heap Map
+* Isolate
+* Metrics
+* User and VM Tags
+ 
+The following pages have reference information about Observatory:
+
+* dart: The Standalone VM
+* Glossary of VM Terms
+* Screens in Observatory
+
+##### Support and discussion
+
+Join the Observatory discussion mailing list to ask questions and chat with users.
+
+##### Filing bugs and feature requests
+To see existing issues or create a new one directly, see all Observatory issues.
