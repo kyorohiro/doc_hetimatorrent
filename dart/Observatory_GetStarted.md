@@ -173,7 +173,7 @@ Where you should go next depends on what questions you’d like to answer.
 ##### アプリの metrics を集めたいなら!!
 [Metrics](https://www.dartlang.org/tools/observatory/metrics.html)
 
-##### Curious about memory allocation?
+##### メモリーの割り当てについて知りたいならば!!
 [Allocation Profile](https://www.dartlang.org/tools/observatory/allocation-profile.html)
 
 ##### And possible memory fragmentation?
