@@ -161,7 +161,7 @@ Where you should go next depends on what questions you’d like to answer.
 ##### UIの画面の機能が知りたいなら!!
 [Screens in Observatory](https://www.dartlang.org/tools/observatory/screens.html)
 
-##### Jどの処理に時間を費やしているかしりたいなら!!
+##### どの処理に時間を費やしているかしりたいなら!!
 [CPU Profile](https://www.dartlang.org/tools/observatory/cpu-profile.html)
 
 ##### And dive into “power” profiling?
