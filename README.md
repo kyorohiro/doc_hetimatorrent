@@ -37,5 +37,6 @@
 * [おまけ : Dartの基礎]
    * [なぜDart]  
    * [Hello World](dart/HelloWorld.md)
-   * [Test](dart/Observatory.md)
+   * [Test/Debug](dart/Observatory.md)
+     * [get started with Observatory](Observatory_GetStarted.md)
 * [おまけ : PortMapテクニック]
