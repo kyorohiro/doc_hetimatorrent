@@ -182,7 +182,7 @@ Where you should go next depends on what questions you’d like to answer.
 ##### Dart codeを照会/変更したいならば!!
 [Evaluating Expressions](https://www.dartlang.org/tools/observatory/evaluate.html)
 
-##### Want to see if your code has executed?
+##### 特定のコードが実行されたかどうか知りたいならば
 [Code Coverage](https://www.dartlang.org/tools/observatory/code-coverage.html)
 
 ##### Want a stack trace?
