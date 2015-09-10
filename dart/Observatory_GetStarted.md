@@ -141,7 +141,7 @@ assertion statements を評価するかどうか。
 ##### pid
 process ID
 
-Below the VM information is a list of isolates. Every app has an initial isolate named <file>.dart$main.
+以下は、isolatesの一覧です。
 
 ![](VM-IsolateList.png)
 
