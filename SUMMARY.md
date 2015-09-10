@@ -37,6 +37,7 @@
    * [GetPeersでInfoHashに対応するPeerを探す](dht/GetPeers.md)
    * [テスト](dht/Test.md)
 * [Dartの基礎]
-   * [なぜDart]  
+   * [なぜDart] 
+   * [Test](dart/Observatory.md)
    * [Hello World](dart/HelloWorld.md)
 
