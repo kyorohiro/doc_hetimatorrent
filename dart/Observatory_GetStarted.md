@@ -152,26 +152,26 @@ Clicking the isolate’s name brings up an isolate screen, with detailed informa
 Where you should go next depends on what questions you’d like to answer.
 
 ##### Unfamiliar with the terminology?
-Glossary of VM Terms
+[Glossary of VM Terms](https://www.dartlang.org/tools/observatory/glossary.html)
 ##### Want to find screens and features in the UI?
-Screens in Observatory
+[Screens in Observatory](https://www.dartlang.org/tools/observatory/screens.html)
 ##### Want to see where your app is spending its time?
-CPU Profile
+[CPU Profile](https://www.dartlang.org/tools/observatory/cpu-profile.html)
 ##### And dive into “power” profiling?
-User and VM Tags
+[User and VM Tags](https://www.dartlang.org/tools/observatory/tags.html)
 ##### Want to set breakpoints?
-Debugger
+[Debugger](https://www.dartlang.org/tools/observatory/debugger.html)
 ##### Or collect metrics about your app?
-Metrics
+[Metrics](https://www.dartlang.org/tools/observatory/metrics.html)
 ##### Curious about memory allocation?
-Allocation Profile
+[Allocation Profile](https://www.dartlang.org/tools/observatory/allocation-profile.html)
 ##### And possible memory fragmentation?
-Heap Map
+[Heap Map](https://www.dartlang.org/tools/observatory/heap-map.html)
 ##### Want to query (or modify) Dart code?
-Evaluating Expressions
+[Evaluating Expressions](https://www.dartlang.org/tools/observatory/evaluate.html)
 ##### Want to see if your code has executed?
-Code Coverage
+[Code Coverage](https://www.dartlang.org/tools/observatory/code-coverage.html)
 ##### Want a stack trace?
-Debugger
+[Debugger](https://www.dartlang.org/tools/observatory/debugger.html)
 ##### Want to know the state of the root isolate or another isolate?
-Isolate
+[Isolate](https://www.dartlang.org/tools/observatory/isolate.html)
