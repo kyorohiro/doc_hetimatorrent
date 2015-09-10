@@ -164,7 +164,7 @@ Where you should go next depends on what questions you’d like to answer.
 ##### どの処理に時間を費やしているかしりたいなら!!
 [CPU Profile](https://www.dartlang.org/tools/observatory/cpu-profile.html)
 
-##### And dive into “power” profiling?
+##### “power” profiling について知りたいなら!!
 [User and VM Tags](https://www.dartlang.org/tools/observatory/tags.html)
 
 ##### Want to set breakpoints?
