@@ -77,7 +77,10 @@ Observatory listening on http://127.0.0.1:56246
 ```
 cd <path-to-demo>/sunflower/web
 <path-to-Dartium>/Chromium.app/Contents/MacOS/Chromium --DART_FLAGS="--steal_breakpoints --pause-isolates-on-start" sunflower.html
+
+※ kyorohiroの環境では、--DART_FLAGS="--steal_breakpoints --pause-isolates-on-start --observe --enable-vm-service --pause-isolates-on-exit"としました。
 ```
+
 
 * Windows:
 ```
