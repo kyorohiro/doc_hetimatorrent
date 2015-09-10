@@ -137,3 +137,12 @@ True if assertion statements are evaluated by the VM.
 ##### pid
 The process ID.
 
+Below the VM information is a list of isolates. Every app has an initial isolate named <file>.dart$main.
+
+![](VM-IsolateList.png)
+
+For each isolate, a pie chart shows the breakdown of the activities of the VM. For more information on the meaning of these activities, see [User and VM Tags](https://www.dartlang.org/tools/observatory/tags.html).
+
+A list of links take you to various Observatory screens. For more information, see [Screens in Observatory](https://www.dartlang.org/tools/observatory/screens.html).
+
+Clicking the isolate’s name brings up an isolate screen, with detailed information about that isolate. For more information, see [Isolate](https://www.dartlang.org/tools/observatory/isolate.html).
