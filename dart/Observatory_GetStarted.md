@@ -133,7 +133,7 @@ VMを起動した時のThe time stamp
 ##### uptime
 VM動作している時間
 ##### refreshed at
-When the data was last sampled.
+最後にサンプリングした時間
 ##### type checks enabled
 True if the VM is checking for type errors.
 ##### asserts enabled
