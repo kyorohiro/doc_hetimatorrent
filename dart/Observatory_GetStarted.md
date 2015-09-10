@@ -127,7 +127,7 @@ Observatoryに最初に接続した時、VM screenが表示されます。この
 vm screenn　には　以下の情報が含まれます。
 
 ##### version
-When the VM was built and for which architecture.
+どのバージョンのVMなのか?どのアーキテクチャーのVMなのか?
 ##### started at
 The time stamp when the VM was started.
 ##### uptime
