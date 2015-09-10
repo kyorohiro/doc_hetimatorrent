@@ -102,7 +102,7 @@ Observatory は browser-based で動作します。
 
 ![](ObservatoryBar.png)
 
-A breadcrumb trail, inside the blue bar, shows where you are in the Observatory UI. You can click items in the breadcrumb trail to navigate to other parts of the UI.
+blue bar の中には、 breadcrumb trail　がありす。これは、Observatory UI 上のどころいるかをしめしています。You can click items in the breadcrumb trail to navigate to other parts of the UI.
 
 If you hover over the items in the breadcrumb bar, drop-down menus provide additional functionality for each screens. As shown in the following screenshot, hovering over the root isolate, profile.dart$main in this example, brings up a menu that includes debugger, cpu profile, allocation profile, and heap map.
 
