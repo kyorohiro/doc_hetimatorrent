@@ -38,5 +38,5 @@
    * [なぜDart]  
    * [Hello World](dart/HelloWorld.md)
    * [Test/Debug](dart/Observatory.md)
-     * [Get started with Observatory](Observatory_GetStarted.md)
+     * [Get started with Observatory](dart/Observatory_GetStarted.md)
 * [おまけ : PortMapテクニック]
