@@ -9,4 +9,7 @@ https://www.dartlang.org/downloads/ から取得できます。
 issueやrequestは、 http://dartbug.com/new で受け付けています。
 ```
 
-Observatoryは動作中のDart VM の中身を覗くことができます。
+Observatoryは動作中のDart VM の中身を覗くことができます。そして、即座にレポートしてくれます。
+* どの部分に時間を費やしていたか
+* allocatedした メモリーを調べます。
+* 
