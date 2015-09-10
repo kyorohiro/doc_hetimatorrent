@@ -31,4 +31,4 @@ https://youtu.be/y39pZCExsOs?list=PLOU2XLYxmsIIQorIS8gagUiMau9S84vZV
 
 
 ### Using Observatory
-* [get started with Observatory](dart/Observatory_GetStarted.md)
+* [get started with Observatory](Observatory_GetStarted.md)
