@@ -139,7 +139,7 @@ type errorsをチェックするかどうか
 ##### asserts enabled
 assertion statements を評価するかどうか。
 ##### pid
-The process ID.
+process ID
 
 Below the VM information is a list of isolates. Every app has an initial isolate named <file>.dart$main.
 
