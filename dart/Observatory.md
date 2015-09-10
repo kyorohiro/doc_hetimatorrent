@@ -53,7 +53,7 @@ The following pages have reference information about Observatory:
 
 ##### Support and discussion
 
-Join the Observatory discussion mailing list to ask questions and chat with users.
+Join the [Observatory discussion mailing list](https://groups.google.com/a/dartlang.org/forum/#!forum/observatory-discuss) to ask questions and chat with users.
 
 ##### Filing bugs and feature requests
 To see existing issues or create a new one directly, see all Observatory issues.
