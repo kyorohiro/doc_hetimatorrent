@@ -116,3 +116,24 @@ breadcrumb bar を利用する事で、いつでも [VM screen](https://www.dart
 
 
 ### VM screen
+When you first connect to Observatory, it opens the VM screen, which reflects information available at the moment the app was sampled. For example:
+![](ObservatoryVM.png)
+To update the information, click the Refresh button in the upper right corner.
+
+The displayed information includes:
+
+* version
+When the VM was built and for which architecture.
+* started at
+The time stamp when the VM was started.
+* uptime
+How long the VM has been running.
+* refreshed at
+When the data was last sampled.
+* type checks enabled
+True if the VM is checking for type errors.
+* asserts enabled
+True if assertion statements are evaluated by the VM.
+* pid
+The process ID.
+
