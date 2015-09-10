@@ -21,6 +21,10 @@ issueやrequestは、 http://dartbug.com/new で受け付けています。
 ### Get Observatory
 Observatory は Dart SDK 中の toolsのひとつです。https://www.dartlang.org/downloads/　からダウンロードできます。
 
-Dartでアプリケーションをつくる場合2つの方法があります。 ひとつは、standalone applications として動作させる方法です。もうひとつは、web applications　として動作させる方法です。 standalone appsの場合、 command line から Observatory を使う事ができます。
+Dartでアプリケーションをつくる場合2つの方法があります。 ひとつは、standalone applications として動作させる方法です。もうひとつは、web 
 
-For browser-based apps, Observatory can be opened in any browser using information obtained when launching your app in Dartium from the command line. So you can use Observatory to profile and debug any Dart application.
+applications　として動作させる方法です。 standalone appsの場合、 command line から Observatory を使う事ができます。
+
+browser-based apps の場合、command line からDartium 上でアプリを起動させる事で、Observatory を利用できます。
+
+つまり、どちらの場合でもObservatoryを利用する事ができます。
