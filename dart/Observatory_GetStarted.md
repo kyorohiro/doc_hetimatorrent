@@ -119,7 +119,9 @@ breadcrumb bar を利用する事で、いつでも [VM screen](https://www.dart
 Observatoryに最初に接続した時、VM screenが表示されます。この時、この瞬間の情報がサンプリングされます。
 
 例えば:
+
 ![](ObservatoryVM.png)
+
 To update the information, click the Refresh button in the upper right corner.
 
 The displayed information includes:
