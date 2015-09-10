@@ -52,6 +52,7 @@ dart --observe <script>.dart
 ssh -L8181:127.0.0.1:8181 user@targetmachine
 ```
 
+LinuxやMacを使っている場合は、後から有効にすることもできます。
 You can also retroactively enable the VM service for a running process on Linux or Mac by sending the process SIGQUIT (perhaps you have a long-running server that started misbehaving and you want to investigate why). The process then displays the port that the VM service is bound to on its stdout.
 
 ```
