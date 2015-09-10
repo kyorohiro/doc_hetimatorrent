@@ -109,7 +109,8 @@ blue bar の中には、 breadcrumb trail　がありす。これは、Observato
 
 ![](ObservatoryBreadCrumb.png)
 
-You can return to the [VM screen](https://www.dartlang.org/tools/observatory/screens.html#vm-screen) at any time by clicking Observatory in the breadcrumb bar.
+breadcrumb bar を利用する事で、いつでも [VM screen](https://www.dartlang.org/tools/observatory/screens.html#vm-screen) に戻る事ができます。
+
 
 The next section describes the VM screen, Observatory’s landing page. For a comprehensive list of all screens, see [Screens in Observatory](https://www.dartlang.org/tools/observatory/screens.html).
 
