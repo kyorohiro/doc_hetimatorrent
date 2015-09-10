@@ -145,7 +145,7 @@ process ID
 
 ![](VM-IsolateList.png)
 
-For each isolate, a pie chart shows the breakdown of the activities of the VM. For more information on the meaning of these activities, see [User and VM Tags](https://www.dartlang.org/tools/observatory/tags.html).
+詳しくは [User and VM Tags](https://www.dartlang.org/tools/observatory/tags.html)　を参照してください。
 
 A list of links take you to various Observatory screens. For more information, see [Screens in Observatory](https://www.dartlang.org/tools/observatory/screens.html).
 
