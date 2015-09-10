@@ -61,3 +61,5 @@ $ kill -s SIGQUIT <pid>
 Observatory listening on http://127.0.0.1:<port>
 ```
 
+### Web apps
+
