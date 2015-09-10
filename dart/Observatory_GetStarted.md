@@ -149,3 +149,29 @@ Clicking the isolate’s name brings up an isolate screen, with detailed informa
 
 
 ### What next?
+Where you should go next depends on what questions you’d like to answer.
+
+##### Unfamiliar with the terminology?
+Glossary of VM Terms
+##### Want to find screens and features in the UI?
+Screens in Observatory
+##### Want to see where your app is spending its time?
+CPU Profile
+##### And dive into “power” profiling?
+User and VM Tags
+##### Want to set breakpoints?
+Debugger
+##### Or collect metrics about your app?
+Metrics
+##### Curious about memory allocation?
+Allocation Profile
+##### And possible memory fragmentation?
+Heap Map
+##### Want to query (or modify) Dart code?
+Evaluating Expressions
+##### Want to see if your code has executed?
+Code Coverage
+##### Want a stack trace?
+Debugger
+##### Want to know the state of the root isolate or another isolate?
+Isolate
