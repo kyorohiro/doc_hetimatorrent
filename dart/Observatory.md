@@ -35,15 +35,15 @@ https://youtu.be/y39pZCExsOs?list=PLOU2XLYxmsIIQorIS8gagUiMau9S84vZV
 
 To learn about specific features, read these pages:
 
-* Allocation Profile
-* Code Coverage
-* CPU Profile
-* Debugger
-* Evaluating Expressions
-* Heap Map
-* Isolate
-* Metrics
-* User and VM Tags
+* [Allocation Profile](https://www.dartlang.org/tools/observatory/allocation-profile.html)
+* [Code Coverage](https://www.dartlang.org/tools/observatory/code-coverage.html)
+* [CPU Profile](https://www.dartlang.org/tools/observatory/cpu-profile.html)
+* [Debugger](https://www.dartlang.org/tools/observatory/debugger.html)
+* [Evaluating Expressions](https://www.dartlang.org/tools/observatory/evaluate.html)
+* [Heap Map](https://www.dartlang.org/tools/observatory/heap-map.html)
+* [Isolate](https://www.dartlang.org/tools/observatory/isolate.html)
+* [Metrics](https://www.dartlang.org/tools/observatory/metrics.html)
+* [User and VM Tags](https://www.dartlang.org/tools/observatory/tags.html)
  
 The following pages have reference information about Observatory:
 
