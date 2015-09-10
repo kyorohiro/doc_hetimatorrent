@@ -122,18 +122,18 @@ To update the information, click the Refresh button in the upper right corner.
 
 The displayed information includes:
 
-* version
+##### version
 When the VM was built and for which architecture.
-* started at
+##### started at
 The time stamp when the VM was started.
-* uptime
+##### uptime
 How long the VM has been running.
-* refreshed at
+##### refreshed at
 When the data was last sampled.
-* type checks enabled
+##### type checks enabled
 True if the VM is checking for type errors.
-* asserts enabled
+##### asserts enabled
 True if assertion statements are evaluated by the VM.
-* pid
+##### pid
 The process ID.
 
