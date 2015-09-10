@@ -1,6 +1,7 @@
 # Getting Started with Observatory
-https://www.dartlang.org/tools/observatory/get-started.html
 
+https://www.dartlang.org/tools/observatory/get-started.html
+の訳
 
 
 #### [Contents]
