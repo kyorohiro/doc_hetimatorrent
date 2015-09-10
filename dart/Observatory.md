@@ -1,4 +1,11 @@
 # Observatory: A Profiler for Dart Apps
+
+本書ではテストファーストで開発を進める事を推奨しています。
+テストで固めて、コードをリファクタリングできるように維持していきましょう。
+
+本章では、「Observatory」の使い方についての日本語訳を掲載します。
+
+
 引用(https://www.dartlang.org/tools/observatory/)
 
 Observatoryは profiling と debugging 用のツールです。
