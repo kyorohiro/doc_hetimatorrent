@@ -122,9 +122,9 @@ Observatoryに最初に接続した時、VM screenが表示されます。この
 
 ![](ObservatoryVM.png)
 
-To update the information, click the Refresh button in the upper right corner.
+この情報は、Refresh button をクリックする事で更新されます。
 
-The displayed information includes:
+vm screenn　には　以下の情報が含まれます。
 
 ##### version
 When the VM was built and for which architecture.
