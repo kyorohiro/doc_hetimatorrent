@@ -163,21 +163,30 @@ Where you should go next depends on what questions you’d like to answer.
 
 ##### Jどの処理に時間を費やしているかしりたいなら!!
 [CPU Profile](https://www.dartlang.org/tools/observatory/cpu-profile.html)
+
 ##### And dive into “power” profiling?
 [User and VM Tags](https://www.dartlang.org/tools/observatory/tags.html)
+
 ##### Want to set breakpoints?
 [Debugger](https://www.dartlang.org/tools/observatory/debugger.html)
+
 ##### Or collect metrics about your app?
 [Metrics](https://www.dartlang.org/tools/observatory/metrics.html)
+
 ##### Curious about memory allocation?
 [Allocation Profile](https://www.dartlang.org/tools/observatory/allocation-profile.html)
+
 ##### And possible memory fragmentation?
 [Heap Map](https://www.dartlang.org/tools/observatory/heap-map.html)
+
 ##### Want to query (or modify) Dart code?
 [Evaluating Expressions](https://www.dartlang.org/tools/observatory/evaluate.html)
+
 ##### Want to see if your code has executed?
 [Code Coverage](https://www.dartlang.org/tools/observatory/code-coverage.html)
+
 ##### Want a stack trace?
 [Debugger](https://www.dartlang.org/tools/observatory/debugger.html)
+
 ##### Want to know the state of the root isolate or another isolate?
 [Isolate](https://www.dartlang.org/tools/observatory/isolate.html)
