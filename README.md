@@ -37,4 +37,5 @@
 * [おまけ : Dartの基礎]
    * [なぜDart]  
    * [Hello World](dart/HelloWorld.md)
+   * [Test](dart/Observatory.md)
 * [おまけ : PortMapテクニック]
