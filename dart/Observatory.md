@@ -47,13 +47,13 @@ To learn about specific features, read these pages:
  
 The following pages have reference information about Observatory:
 
-* dart: The Standalone VM
-* Glossary of VM Terms
-* Screens in Observatory
+* [dart: The Standalone VM](https://www.dartlang.org/tools/dart-vm/#observatory)
+* [Glossary of VM Terms](https://www.dartlang.org/tools/observatory/glossary.html)
+* [Screens in Observatory](https://www.dartlang.org/tools/observatory/screens.html)
 
 ##### Support and discussion
 
 Join the [Observatory discussion mailing list](https://groups.google.com/a/dartlang.org/forum/#!forum/observatory-discuss) to ask questions and chat with users.
 
 ##### Filing bugs and feature requests
-To see existing issues or create a new one directly, see all Observatory issues.
+To see existing issues or create a new one directly, see all [Observatory issues](https://github.com/dart-lang/sdk/labels/Area-Observatory).
