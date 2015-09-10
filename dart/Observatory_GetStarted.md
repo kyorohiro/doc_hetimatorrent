@@ -131,7 +131,7 @@ vm screenn　には　以下の情報が含まれます。
 ##### started at
 VMを起動した時のThe time stamp
 ##### uptime
-How long the VM has been running.
+VM動作している時間
 ##### refreshed at
 When the data was last sampled.
 ##### type checks enabled
