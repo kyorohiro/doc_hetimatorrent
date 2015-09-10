@@ -176,7 +176,7 @@ Where you should go next depends on what questions you’d like to answer.
 ##### メモリーの割り当てについて知りたいならば!!
 [Allocation Profile](https://www.dartlang.org/tools/observatory/allocation-profile.html)
 
-##### And possible memory fragmentation?
+##### メモリーの断片化について知りたいならば!!
 [Heap Map](https://www.dartlang.org/tools/observatory/heap-map.html)
 
 ##### Want to query (or modify) Dart code?
