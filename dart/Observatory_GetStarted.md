@@ -12,3 +12,8 @@ https://www.dartlang.org/tools/observatory/get-started.html
 * VM screen
 * What next?
 
+```
+ObservatoryはFreeでGETできます。
+https://www.dartlang.org/downloads/ から取得できます。
+issueやrequestは、 http://dartbug.com/new で受け付けています。
+```
