@@ -188,5 +188,5 @@ Where you should go next depends on what questions you’d like to answer.
 ##### stack traceを知りたいならば!!
 [Debugger](https://www.dartlang.org/tools/observatory/debugger.html)
 
-##### Want to know the state of the root isolate or another isolate?
+##### isolateについて知りたいならは!!
 [Isolate](https://www.dartlang.org/tools/observatory/isolate.html)
