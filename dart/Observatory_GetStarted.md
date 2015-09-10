@@ -35,3 +35,10 @@ standaloneか web appかによって、 Observatory 有効にする方法は異�
 しかし、UIについてだいだい同じです。
 
 ##### Standalone apps from the command line
+
+Observatoryを有効にするには、dartvm を起動する時にオプションを追加します。
+
+```
+dart --observe <script>.dart
+```
+
