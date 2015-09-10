@@ -31,3 +31,4 @@ browser-based apps の場合、command line からDartium 上でアプリを起�
 
 
 ### Start Observatory
+How you enable Observatory depends on whether you are writing a standalone app or a web app, and how you prefer to work. No matter how you launch Observatory, its UI is exactly the same.
