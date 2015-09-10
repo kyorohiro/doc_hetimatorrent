@@ -42,4 +42,6 @@ Observatoryを有効にするには、dartvm を起動する時にオプショ�
 dart --observe <script>.dart
 ```
 
+次に、お好みのブラウザーで http://localhost:8181 にアクセスしてください。Observatory UI　が表示されます。
+
 
