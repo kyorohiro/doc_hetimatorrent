@@ -149,7 +149,7 @@ process ID
 
 さまざまなObservatory screen を持ちます。詳しは [Screens in Observatory](https://www.dartlang.org/tools/observatory/screens.html) を参照してください.
 
-isolateについては [Isolate](https://www.dartlang.org/tools/observatory/isolate.html)を参照.
+isolateについては [Isolate](https://www.dartlang.org/tools/observatory/isolate.html)を参照してください.
 
 
 ### What next?
