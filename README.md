@@ -1,5 +1,5 @@
 ![](cover.jpg)
-* [イントロ](intro/Intro.md)
+ [イントロ](intro/Intro.md)
    * [はじめに](intro/Introduction.md)
    * [Torrentとは](intro/About.md)
    * [ゴール](intro/Goal.md)
@@ -34,9 +34,8 @@
    * [FindNodeを実装](dht/FindNodesImpl.md)
    * [GetPeersでInfoHashに対応するPeerを探す](dht/GetPeers.md)
    * [テスト](dht/Test.md)
-* [おまけ : Dartの基礎]
-   * [なぜDart]  
+* [Dartの基礎]
+   * [なぜDart] 
    * [Hello World](dart/HelloWorld.md)
    * [Test/Debug](dart/Observatory.md)
      * [Get started with Observatory](dart/Observatory_GetStarted.md)
-* [おまけ : PortMapテクニック]
